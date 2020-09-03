@@ -5,8 +5,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!--CSS CODE BELOW-->
 <style>
-z {
+.navbar {
 	text-decoration: none;
 	position: fixed;
 	z-index: 1;
@@ -16,18 +17,29 @@ z {
 	margin-left: 20px;
 	margin-top: 80px;
 }
-</style>
 
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 3px;
+  margin-top: 140px;
+}
+</style>
+<!--HTML CODE BELOW-->
 
 <div style="position: fixed;z-index: 0;left:0px; margin-top: -10px; width:100vw; height: 156px; background-color:#222222"></div>
 
-<h1 style="font-family:Arial; margin-left: 130px; position: fixed; z-index: 1; margin-top: 24px; color: white; float: left;">Hello9999901.github.io</h1
+<h1 style="font-family:Arial; margin-left: 130px; position: fixed; z-index: 1; margin-top: 24px; color: white; float: left;">Hello9999901.github.io</h1>
 	
-<a href="https://menu.com">
+<a href="index.html">
 <img src="image/menu.png"; alt="3 Bars"; style="margin-top: 4px; float: left; position: fixed; width:115px;height:70px; z-index: 1;">
 </a>
 
-<z>
+<div class="navbar">
 <a style="color: white; text-decoration: none; padding-right: 13px;" href="https://www.blender.org";>Blender Models</a>
 <a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
 <a style="color: white; text-decoration: none; padding-right: 13px;" href="https://www.github.com";>Github Projects</a>
@@ -35,10 +47,17 @@ z {
 <a style="color: white; text-decoration: none; padding-right: 13px;" href="https://www.lttstore.com";>Tech Blogs</a>
 <a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
 <a style="color: white; text-decoration: none; padding-right: 13px;" href="https://www.about.com";>About</a>
-</z>
+</div>
 
-<img src="image/ProDisplayXDR Render Cycles.png"; alt="Apple Monitor"; style="width: 50%; height: auto; z-index: 1; margin-top: 140px; margin-left: 0px;">
-<img src="image/Sports Car Improved Cycles.png"; alt="Sports Car Render Cycles"; style="width: 50%; height: auto; z-index: 1; margin-top: 0px;">
+<div class="row">
+	<div class="column">
+	  <img src="image/Sports Car Improved Cycles.png" alt="Sports Car" style="width:100%">
+	</div>
+	<div class="column">
+	  <img src="image/ProDisplayXDR Render Cycles.png" alt="ProDisplayXDR" style="width:100%">
+	</div>
+</div>
+
 
 </body>
 </html>
