@@ -27,17 +27,49 @@
       display: flex;
     }
     
-    /* Create three equal columns that sits next to each other */
     .column {
       padding: 3px;
-      margin-top: 140px;
+      margin-top: 143px;
     }
     
     .modaltext {
         font-size: 25px;
         color: #333333;
     }
-    </style>
+        
+    .container {
+        position: relative;
+        width: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #008CBA;
+        overflow: hidden;
+        width: auto;
+        height: 0;
+        transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+        height: 20%;
+    }
+
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+</style>
 <!--HTML CODE BELOW-->
 
 <div id="myModal" class="modal fade">
@@ -62,7 +94,7 @@
     </div>
 </div>
 
-<div style="position: fixed;z-index: 0;left:0px; margin-top: -10px; width:100vw; height: 156px; background-color:#e87d0d"></div>
+<div style="position: fixed;z-index: 1;left:0px; margin-top: -10px; width:100vw; height: 156px; background-color:#e87d0d"></div>
 
 <h1 style="font-family:Arial; margin-left: 130px; position: fixed; z-index: 1; margin-top: 24px; color: white; float: left;">Hello9999901.github.io</h1>
 
@@ -82,13 +114,24 @@
 <a style="color: white; text-decoration: none; padding-right: 13px;" href="https://www.about.com";>Scrapped/Failed Projects</a>
 </div>
 
+
 <div class="row">
-	<div class="column">
-		<img src="image/Mercedes Benz - G.png" alt="Sports Car" style="width:100%">
-	  </div>
-	<div class="column">
-	  <img src="image/ProDisplayXDR Render Cycles.png" alt="ProDisplayXDR" style="width:100%">
-	</div>
+    <div class="container">
+        <div class="column">
+            <img src="image/Mercedes Benz - G.png" alt="Sports Car" style="width: 100%">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="column">
+            <img src="image/ProDisplayXDR Render Cycles.png" alt="ProDisplayXDR" style="width: 100%">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="row">
