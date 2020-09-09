@@ -12,7 +12,9 @@
 </script>
 <!--CSS CODE BELOW-->
 <style>
-    .navbar {
+* {box-sizing: border-box;}
+
+.navbar {
         text-decoration: none;
         position: fixed;
         z-index: 1;
@@ -23,19 +25,44 @@
         margin-top: 80px;
     }
     
-    .row {
+.row {
       display: flex;
     }
     
-    .column {
+.column {
       padding: 3px;
       margin-top: 143px;
     }
     
-    .modaltext {
-        font-size: 25px;
-        color: #333333;
+.modaltext {
+    font-size: 25px;
+    color: #333333;
     }
+
+.container {
+  position: relative;
+  width: auto;
+}
+
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f2f2f2; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
 </style>
 <!--HTML CODE BELOW-->
 
@@ -66,7 +93,7 @@
 <h1 style="font-family:Arial; margin-left: 130px; position: fixed; z-index: 1; margin-top: 24px; color: white; float: left;">Hello9999901.github.io</h1>
 
 <a href="index.html">
-<img src="image/menu.png"; alt="3 Bars"; style="margin-top: 4px; float: left; position: fixed; width:115px;height:70px; z-index: 1;">
+    <img src="image/Home Icon.png"; alt="Home Icon"; style="margin-top: -13px; float: left; position: fixed; width:115px; height:115px; z-index: 1;">
 </a>
 
 <div class="navbar">
@@ -84,7 +111,10 @@
 
 <div class="row">
         <div class="column">
-            <img src="image/Mercedes Benz - G.png" alt="Sports Car" style="width: 100%">
+            <div class="container">
+                <img src="image/Mercedes Benz - G.png" alt="Sports Car" style="width: 100%">
+                <div class="overlay">Hello World</div>
+            </div>
         </div>
         <div class="column">
             <img src="image/ProDisplayXDR Render Cycles.png" alt="ProDisplayXDR" style="width: 100%">
