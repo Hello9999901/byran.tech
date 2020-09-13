@@ -21,6 +21,26 @@
   box-sizing: border-box;
 }
 
+.bar{
+	position: fixed;
+	z-index: 0;
+	left: 0px; 
+	margin-top: -10px; 
+	width:100vw; 
+	height: 156px; 
+	background-color:#222222
+}
+
+.title{
+	font-family: Arial; 
+	margin-left: 130px; 
+	position: fixed; 
+	z-index: 1; 
+	margin-top: 24px; 
+	color: white; 
+	float: left;
+}
+
 .navbar {
 	text-decoration: none;
 	position: fixed;
@@ -30,6 +50,28 @@
 	font-family: sans-serif;
 	margin-left: 20px;
 	margin-top: 80px;
+}
+
+@media screen and (max-width: 1051px) {
+  .navbar {
+	text-decoration: none;
+	position: fixed;
+	z-index: 1;
+	font-size: 23px;
+	color: white;
+	font-family: sans-serif;
+	margin-left: 20px;
+	margin-top: 80px;
+  }
+}
+
+.homeicon {
+	margin-top: -13px; 
+	float: left; 
+	position: fixed; 
+	width:115px; 
+	height:115px; 
+	z-index: 1;
 }
 
 .row {
@@ -44,6 +86,7 @@
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
+  margin-top: 144px;
 }
 
 .column img {
@@ -51,13 +94,12 @@
   vertical-align: middle;
   width: 100%;
 }
-
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1200px) {
   .column {
     -ms-flex: 50%;
     flex: 50%;
-    max-width: 50%;
+	max-width: 50%;
   }
 }
 
@@ -114,22 +156,22 @@
 </div>
 <!--Code snippet from: https://www.tutorialrepublic.com/faq/how-to-launch-bootstrap-modal-on-page-load.php-->
 
-<div style="position: fixed;z-index: 0;left:0px; margin-top: -10px; width:100vw; height: 156px; background-color:#222222"></div>
+<div class="bar"></div>
 
-<h1 style="font-family:Arial; margin-left: 130px; position: fixed; z-index: 1; margin-top: 24px; color: white; float: left;">byran.tech | Github Projects</h1>
+<h1 class="title">byran.tech | Github Projects</h1>
 	
 <a href="index.html">
-<img src="image/Home Icon.png"; alt="Home Icon"; style="margin-top: -13px; float: left; position: fixed; width:115px; height:115px; z-index: 1;">
+<img src="image/Home Icon.png"; alt="Home Icon"; class="homeicon">
 </a>
 
 <div class="navbar">
-<a style="color: white; text-decoration: none; padding-right: 13px;" href="blenderprojects.html";>Blender Models</a>
-<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-<a style="color: white; text-decoration: none; padding-right: 13px;" href="githubprojects.html";>Github Projects</a>
-<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-<a style="color: white; text-decoration: none; padding-right: 13px;" href="techblogs.html";>Tech Blogs</a>
-<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-<a style="color: white; text-decoration: none; padding-right: 13px;" href="about.html";>About</a>
-<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-<a style="color: white; text-decoration: none; padding-right: 13px;" href="scrappedprojects.html";>Scrapped/Failed Projects</a>
+	<a style="color: white; text-decoration: none; padding-right: 13px;" href="blenderprojects.html";>Blender Models</a>
+	<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+	<a style="color: white; text-decoration: none; padding-right: 13px;" href="githubprojects.html";>Github Projects</a>
+	<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+	<a style="color: white; text-decoration: none; padding-right: 13px;" href="techblogs.html";>Tech Blogs</a>
+	<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+	<a style="color: white; text-decoration: none; padding-right: 13px;" href="about.html";>About</a>
+	<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+	<a style="color: white; text-decoration: none; padding-right: 13px;" href="scrappedprojects.html";>Scrapped Projects</a>
 </div>
