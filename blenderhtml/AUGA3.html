@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<body style="background-color:black;">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 <head>
-	<title>byran.tech</title>
+    <title>byran.tech | AUG A3 Model</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <body style="background-color:black;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   </head>
 <!--Credits to https://www.w3schools.com for HTML references and resources-->
 
@@ -18,7 +18,7 @@
 
 .bar{
 	position: fixed;
-	z-index: 0;
+	z-index: 10;
 	left: 0px; 
 	margin-top: -10px; 
 	width:100vw; 
@@ -30,7 +30,7 @@
 	font-family: Arial; 
 	margin-left: 130px; 
 	position: fixed; 
-	z-index: 1; 
+	z-index: 10; 
 	margin-top: 24px; 
     color: #ffffff;
 	float: left;
@@ -39,7 +39,7 @@
 .navbar {
     color: #ffffff !important;
 	position: fixed;
-	z-index: 1;
+	z-index: 10;
 	font-size: 28px;
 	font-family: sans-serif;
 	margin-left: 20px;
@@ -66,7 +66,7 @@
 	position: fixed; 
 	width:115px; 
 	height:115px; 
-	z-index: 1;
+	z-index: 10;
 }
 
 .homeicon:hover {
@@ -79,47 +79,26 @@
     filter: invert();
 }
 
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-.column {
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 4px;
-  margin-top: 144px;
-}
-
-.column img {
-  margin-top: 8px;
-  width: 100%;
-}
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1200px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-	max-width: 50%;
-  }
-}
-
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
 .modaltext {
 	font-size: 25px;
 	color: #333333;
+}
+
+#container {
+  position: relative;
+  text-align: center;
+  color: white;
+  right: 25vw;
+}
+
+#top-right {
+  position: absolute;
+  top: 170px;
+  margin-left: 15px;
+  padding-left: 75vw;
+  font-size: 45px;
+  text-align: left;
+  overflow: hidden;
 }
 </style>
 <!--HTML CODE BELOW-->
@@ -146,13 +125,24 @@
     <a style="color: white; text-decoration: none; padding-right: 13px;" href="../scrappedprojects.html";>Scrapped Projects</a>
 </div>
 
-<img src="../image/AUG A3.png"; alt="AUG A3"; style="z-index: 0; position: absolute; padding-top: 156px; width: 50vw; height: auto;">
-<a>
-    <h1 style="z-index: 1; position: absolute; padding-top: 160px;">
-        hi
-    </h1>
-</a>
-<!--Code snippets from: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp-->
+<div id="container">
+    <img src="../image/AUG A3.png"; alt="AUG A3"; style="z-index: 0; padding-top: 156px; width: 50vw; height: auto;">
+    <div id="top-right">
+        AUG A3
+        <br>
+        File Size: 1.8 MB
+        <br>
+        Completion Date: May 25th, 2020
+        <br>
+        Description:
+        Low poly Steyr AUG A3 M1. Free to use as game assets, or anything else. Feel free to credit me!
+        <br>
+        Downloads:
+        <br>
+        <a href="../blenderfiles/AUG A3/">AUG A3 (.blend and .blend1)</a>
+    </div>
+</div>
+<!--Code snippets from: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp AND https://www.w3schools.com/howto/howto_css_image_text.asp-->
 
 </body>
 </html>
