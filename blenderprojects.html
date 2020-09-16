@@ -31,14 +31,39 @@
 	background-color: #e87d0d
 }
 
+@media screen and (max-width: 1360px) {
+    .bar{
+        position: fixed;
+        z-index: 0;
+        left: 0px; 
+        margin-top: -10px; 
+        width:100vw; 
+        height: 200px; 
+        background-color: #e87d0d
+    }
+}
+
 .title{
-	font-family: Arial; 
+    font-family: Arial; 
+    font-size: 2.5em;
 	margin-left: 130px; 
 	position: fixed; 
 	z-index: 1; 
 	margin-top: 24px; 
     color: #ffffff;
 	float: left;
+}
+
+@media screen and (max-width: 1051px) {
+    .title{
+	font-family: Arial; 
+	margin-left: 130px; 
+	position: fixed; 
+	z-index: 1; 
+	margin-top: 24px; 
+    color: #ffffff;
+    font-size: 2em;
+    }
 }
 
 .navbar {
@@ -56,9 +81,8 @@
   .navbar {
 	color: white; text-decoration: none;
 	position: fixed;
-	z-index: 1;
-	font-size: 23px;
-	
+    z-index: 1;
+    font-size: 24px;
 	font-family: sans-serif;
 	margin-left: 20px;
 	margin-top: 80px;
@@ -126,6 +150,26 @@
 	font-size: 25px;
 	color: #333333;
 }
+
+.navbarinfo{
+    padding-left: 75vw; 
+    z-index: 12; 
+    position: fixed; 
+    padding-top: 35px; 
+    color: #ffffff; 
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1360px) {
+    .navbarinfo{
+        padding-left: 20px;
+        z-index: 12; 
+        position: fixed; 
+        padding-top: 155px; 
+        color: #ffffff; 
+        font-size: 22px;
+    }
+}
 </style>
 <!--HTML CODE BELOW-->
 
@@ -167,12 +211,12 @@
 
 <div class="bar"></div>
 
-<h1 class="title">byran.tech | Blender Projects</h1>
+<div class="title">byran.tech | Blender Projects</div>
 	
 <a href="index.html">
 <img src="image/Home Icon.png"; alt="Home Icon"; class="homeicon">
 </a>
-<div style="padding-left: 75vw; z-index: 12; position: fixed;">Click on the images for downloads more!</div>
+
 <div class="navbar">
     <a style="color: white; text-decoration: none; padding-right: 13px;" href="blenderprojects.html";>Blender Models</a>
     <a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
@@ -184,6 +228,8 @@
     <a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
     <a style="color: white; text-decoration: none; padding-right: 13px;" href="scrappedprojects.html";>Scrapped Projects</a>
 </div>
+
+<div class="navbarinfo" >Click on the images for downloads and more!</div>
 
 <div class="row"> 
     <div class="column">
