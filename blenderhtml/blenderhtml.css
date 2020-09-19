@@ -4,7 +4,7 @@
 
   .showcaseimage{
     z-index: 0; 
-    padding-top: 156px; 
+    padding-top: 95px; 
     width: 50vw; 
     height: auto;
   }
@@ -20,9 +20,8 @@
       position: fixed;
       z-index: 10;
       left: 0px; 
-      margin-top: -10px; 
       width:100vw; 
-      height: 166px; 
+      height: 95px; 
       background-color: #e87d0d
   }
   
@@ -80,7 +79,7 @@
   #top-right {
     color: white !important;
     position: absolute;
-    top: 170px;
+    top: 90px;
     margin-left: 50vw;
     padding-left: 10px;
     font-size: 40px;
