@@ -37,27 +37,14 @@
   }
   
   .navbar {
+    opacity: 0;
       color: #ffffff !important;
       position: fixed;
-      z-index: 11;
+      z-index: -11;
       font-size: 28px;
       font-family: sans-serif;
       margin-left: 20px;
       margin-top: 80px;
-  }
-  
-  
-  @media screen and (max-width: 1051px) {
-    .navbar {
-      color: white; text-decoration: none;
-      position: fixed;
-      z-index: 1;
-      font-size: 23px;
-      
-      font-family: sans-serif;
-      margin-left: 20px;
-      margin-top: 80px;
-    }
   }
   
   .homeicon {

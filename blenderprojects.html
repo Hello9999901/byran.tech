@@ -38,6 +38,25 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .bar{
+        height: 210px; 
+    }
+}
+
+
+@media screen and (max-width: 424px) {
+    .bar{
+        height: 230px; 
+    }
+}
+
+@media screen and (max-width: 293px) {
+    .bar{
+        height: 165px; 
+    }
+}
+
 .title{
     font-family: Arial; 
     font-size: 2.5em;
@@ -51,15 +70,29 @@
 
 @media screen and (max-width: 1051px) {
     .title{
-	font-family: Arial; 
-	margin-left: 130px; 
-	position: fixed; 
-	z-index: 1; 
-	margin-top: 24px; 
-    color: #ffffff;
     font-size: 2em;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .title{
+    font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .title{
+    font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 293px) {
+    .title{
+    opacity: 0;
+    z-index: -2;
+    }
+}
+
 
 .navbar {
 	position: fixed;
@@ -73,14 +106,28 @@
 
 @media screen and (max-width: 1051px) {
   .navbar {
-	position: fixed;
-    z-index: 1;
     font-size: 24px;
-	font-family: sans-serif;
-	margin-left: 20px;
-    margin-top: 80px;
-    text-align: center;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+      margin-top: 95px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 293px) {
+    .navbar{
+    opacity: 0;
+    z-index: -2;
+    }
 }
 
 .navbarmore{
@@ -165,8 +212,21 @@
         z-index: 12; 
         position: fixed; 
         padding-top: 155px; 
-        color: #ffffff; 
         font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbarinfo{ 
+        font-size: 20px;
+        padding-top: 165px;
+    }
+}
+
+@media screen and (max-width: 293px) {
+    .navbarinfo{ 
+        font-size: 20px;
+        padding-top: 85px;
     }
 }
 </style>
