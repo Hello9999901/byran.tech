@@ -8,6 +8,13 @@
     width: 50vw; 
     height: auto;
   }
+
+  .showcaseimage2{
+    z-index: 0; 
+    padding-top: 10px; 
+    width: 50vw; 
+    height: auto;
+  }
   
   .bar{
       position: fixed;
