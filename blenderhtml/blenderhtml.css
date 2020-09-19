@@ -25,7 +25,7 @@
   .navbar {
       color: #ffffff !important;
       position: fixed;
-      z-index: 10;
+      z-index: 11;
       font-size: 28px;
       font-family: sans-serif;
       margin-left: 20px;
