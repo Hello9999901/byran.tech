@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .bar{
+      position: fixed;
+      z-index: 10;
+      left: 0px; 
+      margin-top: -10px; 
+      width:100vw; 
+      height: 166px; 
+      background-color: #e87d0d
+  }
+  
+  .title{
+      font-family: Arial; 
+      margin-left: 130px; 
+      position: fixed; 
+      z-index: 10; 
+      margin-top: 24px; 
+      color: #ffffff;
+      float: left;
+  }
+  
+  .navbar {
+      color: #ffffff !important;
+      position: fixed;
+      z-index: 10;
+      font-size: 28px;
+      font-family: sans-serif;
+      margin-left: 20px;
+      margin-top: 80px;
+  }
+  
+  
+  @media screen and (max-width: 1051px) {
+    .navbar {
+      color: white; text-decoration: none;
+      position: fixed;
+      z-index: 1;
+      font-size: 23px;
+      
+      font-family: sans-serif;
+      margin-left: 20px;
+      margin-top: 80px;
+    }
+  }
+  
+  .homeicon {
+      margin-top: -13px; 
+      float: left; 
+      position: fixed; 
+      width:115px; 
+      height:115px; 
+      z-index: 10;
+  }
+  
+  .homeicon:hover {
+      margin-top: -13px; 
+      float: left; 
+      position: fixed; 
+      width:115px; 
+      height:115px; 
+      z-index: 10;
+      filter: invert();
+  }
+  
+  .modaltext {
+      font-size: 25px;
+      color: #333333;
+  }
+  
+  #container {
+    position: relative;
+    text-align: left;
+    color: white;
+  }
+  
+  #top-right {
+    color: white !important;
+    position: absolute;
+    top: 170px;
+    margin-left: 50vw;
+    padding-left: 10px;
+    font-size: 40px;
+    text-align: left;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  @media screen and (max-width: 1051px) {
+    #top-right {
+      font-size: 27px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #top-right {
+      font-size: 20px;
+    }
+  }
