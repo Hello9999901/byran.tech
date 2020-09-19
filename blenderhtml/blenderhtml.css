@@ -1,6 +1,13 @@
 * {
     box-sizing: border-box;
   }
+
+  .showcaseimage{
+    z-index: 0; 
+    padding-top: 156px; 
+    width: 50vw; 
+    height: auto;
+  }
   
   .bar{
       position: fixed;
