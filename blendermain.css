@@ -6,21 +6,15 @@
       position: fixed;
       z-index: 0;
       left: 0px; 
-      margin-top: -10px; 
-      width:100vw; 
+      width: 100vw; 
       height: 166px; 
-      background-color: #e87d0d
+      background-color: #e87d0d;
+      overflow: hidden;
   }
   
   @media screen and (max-width: 1360px) {
-      .bar{
-          position: fixed;
-          z-index: 0;
-          left: 0px; 
-          margin-top: -10px; 
-          width:100vw; 
+      .bar{ 
           height: 200px; 
-          background-color: #e87d0d
       }
   }
   
@@ -82,7 +76,7 @@
   
   .navbar {
       position: fixed;
-      z-index: 10;
+      z-index: 51;
       font-size: 28px;
       font-family: sans-serif;
       margin-left: 20px;
@@ -131,22 +125,16 @@
   }
   
   .homeicon {
-    margin-top: 5px; 
-    margin-left: 20px;
+    margin-top: 14px; 
+    margin-left: 30px;
     position: fixed; 
-    width: 90px; 
-    height: 75px; 
-    z-index: 1;
+    width: 75px; 
+    height: 60px; 
+    z-index: 50;
 }
 
   
   .homeicon:hover {
-      margin-top: -13px; 
-      float: left; 
-      position: fixed; 
-      width:115px; 
-      height:115px; 
-      z-index: 110;
       filter: invert();
   }
   
@@ -158,12 +146,13 @@
     padding: 0 4px;
   }
   .column {
-    -ms-flex: 33%; /* IE10 */
-    flex: 33%;
-    max-width: 33%;
+    -ms-flex: 33.333%; /* IE10 */
+    flex: 33.333%;
+    max-width: 33.333%;
     padding: 0 4px;
-    margin-top: 181px;
+    margin-top: 158px;
   }
+  
   
   .column img {
     margin-top: 8px;
@@ -171,11 +160,17 @@
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1360px) {
     .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
+        margin-top: 192px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
   }
   

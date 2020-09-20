@@ -13,11 +13,12 @@
   }
   
   .title{
+      font-size: 2.5em;
       font-family: Arial; 
       margin-left: 130px; 
       position: fixed; 
       z-index: 1; 
-      margin-top: 24px; 
+      margin-top: 30px; 
       color: white; 
       float: left;
   }
@@ -47,14 +48,34 @@
   }
   
   .homeicon {
-      margin-top: 5px; 
-      margin-left: 20px;
-      position: fixed; 
-      width: 90px; 
-      height: 75px; 
-      z-index: 1;
+    margin-top: 14px; 
+    margin-left: 30px;
+    position: fixed; 
+    width: 75px; 
+    height: 60px; 
+    z-index: 100;
+}
+
+.homeicon:hover {
+    filter: invert(0.5);
+}
+  
+.githubicon {
+    position: fixed;
+    z-index: 2;
+    margin-top: 15px;
+    filter: invert(1);
+    overflow: hidden;
+    right: 15px;
   }
   
+  @media screen and (max-width: 1180px) {
+    .githubicon {
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+
   .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;

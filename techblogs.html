@@ -1,167 +1,22 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<body style="background-color:black;">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+
 <head>
-	<title>byran.tech</title>
+	<html lang="en-US">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<body style="background-color:black;">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>byran.tech | Tech Blogs</title>
+	<link rel="stylesheet" href="main.css">
   </head>
-<script>
-	$(document).ready(function(){
-		$("#myModal").modal('show');
-	});
-</script>
-<!--Credits to https://www.w3schools.com for HTML references and resources-->
-
-<!--CSS CODE BELOW-->
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.bar{
-	position: fixed;
-	z-index: 0;
-	left: 0px; 
-	margin-top: -10px; 
-	width:100vw; 
-	height: 156px; 
-	background-color:#222222
-}
-
-.title{
-	font-family: Arial; 
-	margin-left: 130px; 
-	position: fixed; 
-	z-index: 1; 
-	margin-top: 24px; 
-	color: white; 
-	float: left;
-}
-
-.navbar {
-	text-decoration: none;
-	position: fixed;
-	z-index: 1;
-	font-size: 28px;
-	color: white;
-	font-family: sans-serif;
-	margin-left: 20px;
-	margin-top: 80px;
-}
-
-@media screen and (max-width: 1051px) {
-  .navbar {
-	text-decoration: none;
-	position: fixed;
-	z-index: 1;
-	font-size: 23px;
-	color: white;
-	font-family: sans-serif;
-	margin-left: 20px;
-	margin-top: 80px;
-  }
-}
-
-.homeicon {
-	margin-top: -13px; 
-	float: left; 
-	position: fixed; 
-	width:115px; 
-	height:115px; 
-	z-index: 1;
-}
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-  margin-top: 144px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1200px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-	max-width: 50%;
-  }
-}
-
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-.modaltext {
-	font-size: 25px;
-	color: #333333;
-}
-</style>
-<!--HTML CODE BELOW-->
-
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h2>byran.tech</h2>
-            </div>
-            <div class="modal-body">
-				<div class="modaltext">
-					Hello! I'm Byran, and this is my website!
-					<br>
-					<br>
-					I made it as a challenge to <b>ONLY</b> use raw HTML and CSS to make the website (no website makers)
-					<br>
-					<br>
-					That is the reason why this website may appear abnormally in some screen sizes.
-					<br>
-					<br>
-					First, some basic info on how to navigate this website:
-					<br>
-					<ol>
-						<br>
-						<li>This website is optimized mainly for desktop use. For the best experience, please view on screens wider than 1140px.</li>
-						<br>
-						<li>All of the renders are <b>free</b> to use. <br> (Licensed under MIT license)</li> 
-						<br>
-						<li>All Blender and Github files are also <b>free</b> to use.</li>
-					</ol>
-
-				</div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Code snippet from: https://www.tutorialrepublic.com/faq/how-to-launch-bootstrap-modal-on-page-load.php-->
 
 <div class="bar"></div>
 
 <h1 class="title">byran.tech | Tech Blogs</h1>
 	
 <a href="index.html">
-<img src="image/Home Icon.png"; alt="Home Icon"; class="homeicon">
+	<img src="image/Home Icon.png"; alt="Home Icon"; class="homeicon">
 </a>
 
 <div class="navbar">
@@ -176,5 +31,16 @@
 	<a style="color: white; text-decoration: none; padding-right: 13px;" href="scrappedprojects.html";>Scrapped Projects</a>
 </div>
 
+<div style="z-index: 2; color: white; padding-top: 153px; margin-left: 44vw; padding-top: 50vh;">
+	<h1>
+		PLACEHOLDER
+	</h1>
+</div>
+
+<!--Code snippets from: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp-->
+
 </body>
 </html>
+
+
+
