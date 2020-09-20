@@ -82,7 +82,7 @@
   
   .navbar {
       position: fixed;
-      z-index: 1;
+      z-index: 10;
       font-size: 28px;
       font-family: sans-serif;
       margin-left: 20px;
@@ -131,13 +131,14 @@
   }
   
   .homeicon {
-      margin-top: -13px; 
-      float: left; 
-      position: fixed; 
-      width:115px; 
-      height:115px; 
-      z-index: 110;
-  }
+    margin-top: 5px; 
+    margin-left: 20px;
+    position: fixed; 
+    width: 90px; 
+    height: 75px; 
+    z-index: 1;
+}
+
   
   .homeicon:hover {
       margin-top: -13px; 
