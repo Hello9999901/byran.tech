@@ -47,21 +47,16 @@
   }
   
   .homeicon {
-      margin-top: -13px; 
-      float: left; 
-      position: fixed; 
-      width:115px; 
-      height:115px; 
-      z-index: 10;
-  }
+    margin-top: 14px; 
+    margin-left: 30px;
+    position: fixed; 
+    width: 75px; 
+    height: 60px; 
+    z-index: 50;
+}
+
   
   .homeicon:hover {
-      margin-top: -13px; 
-      float: left; 
-      position: fixed; 
-      width:115px; 
-      height:115px; 
-      z-index: 10;
       filter: invert();
   }
   
