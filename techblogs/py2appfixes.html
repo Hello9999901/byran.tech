@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>byran.tech | Tech Blogs</title>
+    <link rel="stylesheet" href="../techblogs/techblogs.css">
+    </head>
+<h1 class="code-line" data-line-start=0 data-line-end=1><a id="HOMEindexhtml_0"></a><a href="../index.html">HOME</a></h1>
+<h2 class="code-line" data-line-start=1 data-line-end=2><a id="py2app_fixes_1"></a>py2app fixes</h2>
+<h3 class="code-line" data-line-start=3 data-line-end=4><a id="py2app_is_a_Terminal_based_application_that_turns_python_code_into_macOS_applications_3"></a>py2app is a Terminal based application that turns python code into macOS applications.</h3>
+<h1 class="code-line" data-line-start=4 data-line-end=5><a id="_4"></a></h1>
+<h4 class="code-line" data-line-start=5 data-line-end=6><a id="It_is_a_little_bit_confusing_and_the_instructions_are_not_for_python3_code_5"></a>It is a little bit confusing and the instructions are not for python3 code.</h4>
+<h5 class="code-line" data-line-start=7 data-line-end=8><a id="Here_is_the_official_readthedocs_httpspy2appreadthedocsioenlatest_7"></a>Here is the official readthedocs: <a href="https://py2app.readthedocs.io/en/latest/">https://py2app.readthedocs.io/en/latest/</a></h5>
+<h1 class="code-line" data-line-start=8 data-line-end=9><a id="_8"></a></h1>
+<h5 class="code-line" data-line-start=9 data-line-end=10><a id="The_biggest_problem_that_I_ran_into_was_build_errors_9"></a>The biggest problem that I ran into was build errors.</h5>
+<h1 class="code-line" data-line-start=10 data-line-end=11><a id="_10"></a></h1>
+<pre><code class="has-line-data" data-line-start="12" data-line-end="14" class="language-sh">$ python setup.py py2app
+</code></pre>
+<h5 class="code-line" data-line-start=14 data-line-end=15><a id="That_is_what_official_py2app_says_That_is_only_for_python2_code_Python3_code_needs_this_14"></a>That is what official py2app says. That is only for python2 code. Python3 code needs this:</h5>
+<h1 class="code-line" data-line-start=15 data-line-end=16><a id="_15"></a></h1>
+<pre><code class="has-line-data" data-line-start="17" data-line-end="19" class="language-sh">$ python3 setup.py py2app
+</code></pre>
+<h5 class="code-line" data-line-start=19 data-line-end=20><a id="The_second_error_I_ran_into_was_file_not_found_This_can_be_fixed_by_using_cd_to_find_the_folder_Say_my_python_file_was_in_my_documents_folder_This_is_how_19"></a>The second error I ran into was “file not found”. This can be fixed by using cd to find the folder. Say my python file was in my documents folder. This is how:</h5>
+<h1 class="code-line" data-line-start=20 data-line-end=21><a id="_20"></a></h1>
+<pre><code class="has-line-data" data-line-start="22" data-line-end="24" class="language-sh">$ <span class="hljs-built_in">cd</span> Documents
+</code></pre>
+<h5 class="code-line" data-line-start=24 data-line-end=25><a id="The_reason_behind_this_error_is_due_to_incorrect_file_paths_Terminal_goes_into_the_root_directory_so_you_can_either_move_the_file_into_the_root_directory_or_cd_into_the_folder_that_contains_your_files_24"></a>The reason behind this error is due to incorrect file paths. Terminal goes into the root directory, so you can either move the file into the root directory or cd into the folder that contains your files.</h5>
+<h5 class="code-line" data-line-start=25 data-line-end=26><a id="Then_run_it_25"></a>Then run it.</h5>
+</body></html>
