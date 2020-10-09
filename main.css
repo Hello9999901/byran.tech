@@ -1,6 +1,16 @@
 * {
     box-sizing: border-box;
   }
+
+  @font-face {
+    font-family: skyer;
+    src: url(fonts/Skyer-Regular.woff);
+  }
+
+  @font-face {
+    font-family: anurati;
+    src: url(fonts/Anurati-Regular.woff);
+  }
   
   .bar{
       position: fixed;
@@ -8,56 +18,49 @@
       left: 0px; 
       margin-top: -10px; 
       width:100vw; 
-      height: 166px; 
+      height: 184px; 
       background-color:#222222
   }
-  
-  .title{
-      font-size: 2.5em;
-      font-family: Arial; 
-      margin-left: 130px; 
-      position: fixed; 
-      z-index: 1; 
-      margin-top: 30px; 
-      color: white; 
-      float: left;
-  }
-  
-  .navbar {
-      text-decoration: none;
-      position: fixed;
-      z-index: 1;
-      font-size: 28px;
-      color: white;
-      font-family: sans-serif;
-      margin-left: 20px;
-      margin-top: 80px;
-  }
-  
-  @media screen and (max-width: 1051px) {
-    .navbar {
-      text-decoration: none;
-      position: fixed;
-      z-index: 1;
-      font-size: 23px;
-      color: white;
-      font-family: sans-serif;
-      margin-left: 20px;
-      margin-top: 80px;
-    }
-  }
-  
-  .homeicon {
-    margin-top: 14px; 
-    margin-left: 30px;
-    position: fixed; 
-    width: 75px; 
-    height: 60px; 
-    z-index: 100;
+
+  .orangebar {
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    margin-top: 164px;
+    width: 100vw;
+    height: 10px;
+    background-color: rgb(252, 110, 0);
 }
 
-.homeicon:hover {
-    filter: invert(0.5);
+
+  
+.title {
+  font-size: 50px;
+  font-family: anurati;
+  margin-left: 625px;
+  position: fixed;
+  z-index: 1;
+  margin-top: 25px;
+  color: white;
+  float: left;
+}
+
+  .navbar {
+    text-decoration: none;
+    position: fixed;
+    z-index: 1;
+    font-size: 60px;
+    font-family: skyer;
+    margin-left: 625px;
+    margin-top: 75px;
+}
+
+  
+.homeicon {
+    position: fixed;
+    width: 624px;
+    height: 169px;
+    z-index: 100;
 }
   
 .githubicon {
