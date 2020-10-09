@@ -2,67 +2,127 @@
     box-sizing: border-box;
   }
 
-  @font-face {
-    font-family: skyer;
-    src: url(fonts/Skyer-Regular.woff);
-  }
-
-  @font-face {
-    font-family: anurati;
-    src: url(fonts/Anurati-Regular.woff);
-  }
-  
-  .bar{
-      position: fixed;
-      z-index: 0;
-      left: 0px; 
-      margin-top: -10px; 
-      width:100vw; 
-      height: 184px; 
-      background-color:#222222
-  }
-
-  .orangebar {
-    position: fixed;
-    z-index: 1;
-    left: 0px;
-    margin-top: 164px;
-    width: 100vw;
-    height: 10px;
-    background-color: rgb(252, 110, 0);
+@font-face {
+  font-family: skyer;
+  src: url(fonts/Skyer-Regular.woff);
 }
 
-
+@font-face {
+  font-family: anurati;
+  src: url(fonts/Anurati-Regular.woff);
+}
   
+.bar{
+  position: fixed;
+  z-index: 0;
+  left: 0px; 
+  margin-top: -10px; 
+  width:100vw; 
+  height: 184px; 
+  background-color:#222222
+}
+
+.orangebar {
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  margin-top: 188px;
+  height: 8px;
+  width: 100vw;
+  background-color: #fc6e00;
+}
+
+.homeicon {
+  position: fixed;
+  width: 624px;
+  height: 169px;
+  z-index: 100;
+  margin-top: 68px;
+  margin-left: 58px;
+}
+
 .title {
-  font-size: 50px;
+  font-size: 55px;
+  right: 20px;
   font-family: anurati;
   margin-left: 625px;
   position: fixed;
   z-index: 1;
-  margin-top: 25px;
+  margin-top: 50px;
   color: white;
   float: left;
 }
 
-  .navbar {
-    text-decoration: none;
-    position: fixed;
-    z-index: 1;
-    font-size: 60px;
-    font-family: skyer;
-    margin-left: 625px;
-    margin-top: 75px;
+.navbar {
+  text-decoration: none;
+  position: fixed;
+  z-index: 1;
+  font-size: 43px;
+  font-family: skyer;
+  margin-top: 130px;
+  right: 20px;
 }
 
-  
-.homeicon {
-    position: fixed;
-    width: 624px;
-    height: 169px;
-    z-index: 100;
+@media screen and (max-width: 2386px) {
+  .navbar {
+    font-size: 55px;
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 2247px) {
+  .navbar {
+    font-size: 50px;
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 2109px) {
+  .navbar {
+    font-size: 45px;
+    margin-top: 95px;
+  }
+}
+@media screen and (max-width: 1969px) {
+  .navbar {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 1830px) {
+  .navbar {
+    font-size: 35px;
+    margin-top: 105px;
+  }
+}
+
+@media screen and (max-width: 1694px) {
+  .navbar {
+    font-size: 30px;
+    margin-top: 75px;
+    margin-left: 475px;
+  }
+  .homeicon{
+    width: 468px;
+    height: 127px;
+  }
+  .orangebar {
+    margin-top: 120px;
+  }
+  .title {
+    margin-left: 475px;
+    font-size: 60px;
+  }
+  .bar {
+    height: 143px;
+  }
 }
   
+@media screen and (max-width: 1404px) {
+  .navbar {
+    font-size: 25px;
+    margin-top: 80px;
+  }
+}
+
 .githubicon {
     position: fixed;
     z-index: 2;
@@ -122,3 +182,68 @@
       font-size: 25px;
       color: #333333;
   }
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  z-index: 100;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  cursor: pointer;
+  padding: 15px 15px;
+  z-index: 100;
+  width: 115px;
+  height: auto;
+}
+
+.openbtn:hover {
+  background-color: rgba(252, 110, 0, 0.5);
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+padding: 200px;
+  z-index: 100;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
