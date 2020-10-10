@@ -7,30 +7,47 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <body style="background-color:black;">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-        <link rel="stylesheet" href="blenderhtml.css">
+        <link rel="stylesheet" href="../main.css">
       </head>
 <!--HTML CODE BELOW-->
 
-<!--Code snippet from: https://www.tutorialrepublic.com/faq/how-to-launch-bootstrap-modal-on-page-load.php-->
+
+<script>
+	function openNav() {
+	  document.getElementById("mySidebar").style.width = "calc(10vw + 250px)";
+	  document.getElementById("main").style.marginLeft = "250px";
+	}
+	
+	function closeNav() {
+	  document.getElementById("mySidebar").style.width = "0";
+	  document.getElementById("main").style.marginLeft= "0";
+	}
+</script>
 
 <div class="bar"></div>
 
-<h1 class="title">byran.tech | Blender Projects</h1>
+<div class="orangebar"></div>
+
+<h1 class="title">B Y R A N . T E C H</h1>
   
 <a href="../index.html";>
-<img src="../image/Home Icon.jpg"; alt="Home Icon"; class="homeicon">
+<img src="../image/logo.png"; alt="Home Icon"; class="homeicon">
 </a>
 
-<div class="navbar">
-    <a style="color: white; text-decoration: none; padding-right: 13px;" href="../blenderprojects.html";>Blender Models</a>
-    <a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-    <a style="color: white; text-decoration: none; padding-right: 13px;" href="../githubprojects.html";>Github Projects</a>
-    <a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-    <a style="color: white; text-decoration: none; padding-right: 13px;" href="../techblogs.html";>Tech Blogs</a>
-    <a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-    <a style="color: white; text-decoration: none; padding-right: 13px;" href="../about.html";>About</a>
-    <a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-    <a style="color: white; text-decoration: none; padding-right: 13px;" href="../scrappedprojects.html";>Scrapped Projects</a>
+<div id="mySidebar" class="sidebar">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div style="padding-top: 20px;"></div>
+	<a href="../blenderprojects.html">Blender Projects</a>
+	<a href="../githubprojects.html">Github Projects</a>
+	<a href="../techblogs.html">Tech Blogs</a>
+	<a href="../about.html">About</a>
+	<a href="../anything.html">Anything</a>
+</div>
+  
+<div id="main" style="opacity: 1; z-index: 10;">
+	<a>
+		<img src="../image/menubutton.jpg" class="openbtn"; onclick="openNav()">
+	</a>
 </div>
 
 <div id="container">

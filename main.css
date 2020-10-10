@@ -2,16 +2,45 @@
     box-sizing: border-box;
   }
 
-@font-face {
+
+/* FONTS */
+@font-face { /* skyer font */
   font-family: skyer;
-  src: url(fonts/Skyer-Regular.woff);
-}
-/* skyer font */
-@font-face {
+  src: url(fonts/Skyer-Regular.woff);}
+@font-face { /*anurati*/
   font-family: anurati;
-  src: url(fonts/Anurati-Regular.woff);
+  src: url(fonts/Anurati-Regular.woff);}
+@font-face { /*B612 Mono*/
+  font-family: B612 Mono;
+  src: url(fonts/B612Mono-Regular.woff)}
+/* FONTS */
+
+#top-right {
+  color: white !important;
+  position: absolute;
+  top: 228px;
+  margin-left: 50vw;
+  padding-left: 10px;
+  font-size: 1.75vw;
+  text-align: left;
+  overflow: hidden;
+  z-index: 0;
+  font-family: Skyer;
 }
-/*anurati*/
+
+.showcaseimage{
+  z-index: 0; 
+  padding-top: 237px; 
+  width: 50vw; 
+  height: auto;
+}
+
+.showcaseimage2{
+  z-index: 0; 
+  padding-top: 10px; 
+  width: 50vw; 
+  height: auto;
+}
 
 .bar{
   position: fixed;
@@ -70,7 +99,6 @@
   z-index: 100;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
   position: fixed;
@@ -80,22 +108,17 @@
   opacity: 0;
 }
 
+/* SCREEN SIZE ADAPTIONS */
 @media screen and (max-width: 2179px) {
   .navbar {
     font-size: 40px;
     margin-top: 130px;
-    transition: 0.5s;
-  }
-}
-
+    transition: 0.5s;}}
 @media screen and (max-width: 2085px) {
   .navbar {
     font-size: 35px;
     margin-top: 140px;
-    transition: 0.5s;
-  }
-}
-
+    transition: 0.5s;}}
 @media screen and (max-width: 1941px) {
   .navbar {
     font-size: 37px;
@@ -119,25 +142,16 @@
   }
   .orangebar {
     margin-top: 174px;
-    transition: 0.5s;
-  }
-}
-
+    transition: 0.5s;}}
 @media screen and (max-width: 1849px) {
   .navbar {
     font-size: 32px;
     margin-top: 127px;
-    transition: 0.5s;
-  }
-}
-
+    transition: 0.5s;}}
 @media screen and (max-width: 1849px) {
   .navbar {
     font-size: 29px;
-    transition: 0.5s;
-  }
-}
-
+    transition: 0.5s;}}
 @media screen and (max-width: 1593px) {
   #main {
     z-index: 10;
@@ -155,11 +169,7 @@
     margin-top: 68px; 
   }
   .title {
-    font-size: 38px;
-  }
-}
-
-
+    font-size: 38px;}}
 @media screen and (max-width: 835px) {
   .openbtn {
     width: 124px;
@@ -181,30 +191,18 @@
     margin-top: 80px;
   }
   .bar {
-    height: 102px;
-  }
-}
-
+    height: 102px;}}
 @media screen and (max-width: 671px) {
   .homeicon {
     width: 300px;
-    height: auto;
-  }
-}
-
+    height: auto;}}
 @media screen and (max-width: 563px) {
   .title {
     margin-top: 130px;
-    left: 35px;
-  }
-}
-
+    left: 35px;}}
 @media screen and (max-width: 457px) {
   .openbtn {
-    width: 115px !important;
-  }
-}
-
+    width: 115px !important;}}
 @media screen and (max-width: 428px) {
   .homeicon {
     width: 250px;
@@ -213,10 +211,11 @@
   }
   .title {
     font-size: 22px;
-    left: 27px;
-  }
-}
+    left: 27px;}}
+/* SCREEN SIZE ADAPTIONS */
 
+
+/* IMAGE COLUMNS */
 .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
@@ -231,13 +230,11 @@
     padding: 0 4px;
     margin-top: 144px;
 }
-  
 .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
 }
-  /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1200px) {
     .column {
       -ms-flex: 50%;
@@ -245,9 +242,6 @@
       max-width: 50%;
     }
 }
-  
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
     .column {
       -ms-flex: 100%;
@@ -255,14 +249,19 @@
       max-width: 100%;
     }
 }
-  
+/* IMAGE COLUMNS */
+
+
+/* MODAL */
 .modaltext {
       font-size: 25px;
       color: #333333;
 }
+/* MODAL */
 
-/* The sidebar menu */
-.sidebar {
+
+/* MENU SIDEBAR CSS */
+.sidebar { /* The sidebar menu */
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -272,9 +271,7 @@
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
-
-/* The sidebar links */
-.sidebar a {
+.sidebar a { /* The sidebar links */
   padding: 8px 8px 8px 32px;
   font-family: skyer;
   text-decoration: none;
@@ -283,14 +280,10 @@
   display: block;
   transition: 0.3s;
 }
-
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
+.sidebar a:hover { /* When you mouse over the navigation links, change their color */
   color: #000000;
 }
-
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
+.sidebar .closebtn { /* Position and style the close button (top right corner) */
   position: absolute;
   top: 0;
   right: 25px;
@@ -298,9 +291,7 @@
   margin-left: 50px;
   z-index: 100;
 }
-
-/* The button used to open the sidebar */
-.openbtn {
+.openbtn { /* The button used to open the sidebar */
   cursor: pointer;
   padding: 15px 15px;
   z-index: 100;
@@ -308,15 +299,12 @@
   height: auto;
   border-radius: 20px;
 }
-
-.openbtn:hover {
+.openbtn:hover { /* Button color when hovering*/
   background-color: rgba(252, 110, 0, 0.5);
   transition: 0.5s;
 }
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) { /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
+/* MENU SIDEBAR CSS */
