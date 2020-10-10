@@ -185,6 +185,31 @@
   }
 }
 
+@media screen and (max-width: 563px) {
+  .title {
+    margin-top: 130px;
+    left: 35px;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .openbtn {
+    width: 115px !important;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .homeicon {
+    width: 250px;
+    margin-top: 48px;
+    margin-left: 20px;
+  }
+  .title {
+    font-size: 22px;
+    left: 27px;
+  }
+}
+
 .githubicon {
     position: fixed;
     z-index: 2;
@@ -251,9 +276,7 @@
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 100; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #111; /* Black*/
+  background-color: rgba(252, 110, 0, 0.9); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -262,16 +285,17 @@
 /* The sidebar links */
 .sidebar a {
   padding: 8px 8px 8px 32px;
+  font-family: skyer;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 30px;
+  color: #f1f1f1;
   display: block;
   transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #000000;
 }
 
 /* Position and style the close button (top right corner) */
