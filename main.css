@@ -6,19 +6,20 @@
   font-family: skyer;
   src: url(fonts/Skyer-Regular.woff);
 }
-
+/* skyer font */
 @font-face {
   font-family: anurati;
   src: url(fonts/Anurati-Regular.woff);
 }
-  
+/*anurati*/
+
 .bar{
   position: fixed;
   z-index: 0;
   left: 0px; 
   margin-top: -10px; 
   width:100vw; 
-  height: 184px; 
+  height: 202px; 
   background-color:#222222
 }
 
@@ -35,7 +36,7 @@
 .homeicon {
   position: fixed;
   width: 624px;
-  height: 169px;
+  height: auto;
   z-index: 100;
   margin-top: 68px;
   margin-left: 58px;
@@ -45,7 +46,6 @@
   font-size: 55px;
   right: 20px;
   font-family: anurati;
-  margin-left: 625px;
   position: fixed;
   z-index: 1;
   margin-top: 50px;
@@ -63,63 +63,125 @@
   right: 20px;
 }
 
-@media screen and (max-width: 2386px) {
-  .navbar {
-    font-size: 55px;
-    margin-top: 80px;
-  }
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  position: fixed;
+  right: -14px;
+  padding-top: 100px;
+  z-index: -10;
+  opacity: 0;
 }
-@media screen and (max-width: 2247px) {
-  .navbar {
-    font-size: 50px;
-    margin-top: 90px;
-  }
-}
-@media screen and (max-width: 2109px) {
-  .navbar {
-    font-size: 45px;
-    margin-top: 95px;
-  }
-}
-@media screen and (max-width: 1969px) {
+
+@media screen and (max-width: 2179px) {
   .navbar {
     font-size: 40px;
-    margin-top: 100px;
-  }
-}
-@media screen and (max-width: 1830px) {
-  .navbar {
-    font-size: 35px;
-    margin-top: 105px;
+    margin-top: 130px;
+    transition: 0.5s;
   }
 }
 
-@media screen and (max-width: 1694px) {
+@media screen and (max-width: 2085px) {
   .navbar {
-    font-size: 30px;
-    margin-top: 75px;
-    margin-left: 475px;
-  }
-  .homeicon{
-    width: 468px;
-    height: 127px;
-  }
-  .orangebar {
-    margin-top: 120px;
-  }
-  .title {
-    margin-left: 475px;
-    font-size: 60px;
-  }
-  .bar {
-    height: 143px;
+    font-size: 35px;
+    margin-top: 140px;
+    transition: 0.5s;
   }
 }
-  
-@media screen and (max-width: 1404px) {
+
+@media screen and (max-width: 1941px) {
   .navbar {
-    font-size: 25px;
+    font-size: 37px;
+    margin-top: 117px;
+    transition: 0.5s;
+  }
+  .homeicon {
+    width: 468px;
+    height: 127px;
+    margin-top: 100px;
     margin-top: 80px;
+    transition: 0.5s;
+  }
+  .title {
+    font-size: 45px;
+    transition: 0.5s;
+  }
+  .bar {
+    height: 192px;
+    transition: 0.5s;
+  }
+  .orangebar {
+    margin-top: 174px;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 1849px) {
+  .navbar {
+    font-size: 32px;
+    margin-top: 127px;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 1849px) {
+  .navbar {
+    font-size: 29px;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 1593px) {
+  #main {
+    z-index: 10;
+    opacity: 1;
+    transition: 0.75s;
+  }
+  .navbar {
+    opacity: 0;
+    z-index: -10;
+    transition: 0.5s;
+  }
+  .homeicon {
+    width: 624px;
+    height: auto;
+    margin-top: 68px; 
+  }
+  .title {
+    font-size: 38px;
+  }
+}
+
+
+@media screen and (max-width: 835px) {
+  .openbtn {
+    width: 124px;
+  }
+  #main {
+    padding-top: 64px;
+  }
+  .title {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .homeicon {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 455px;
+    height: auto;
+  }
+  .orangebar {
+    margin-top: 80px;
+  }
+  .bar {
+    height: 102px;
+  }
+}
+
+@media screen and (max-width: 671px) {
+  .homeicon {
+    width: 300px;
+    height: auto;
   }
 }
 
@@ -130,58 +192,58 @@
     filter: invert(1);
     overflow: hidden;
     right: 15px;
-  }
+}
   
-  @media screen and (max-width: 1180px) {
+@media screen and (max-width: 1180px) {
     .githubicon {
       opacity: 0;
       z-index: -10;
     }
-  }
+}
 
-  .row {
+.row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
-  }
-  .column {
+}
+.column {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
     margin-top: 144px;
-  }
+}
   
-  .column img {
+.column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-  }
+}
   /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .column {
       -ms-flex: 50%;
       flex: 50%;
       max-width: 50%;
     }
-  }
+}
   
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .column {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
     }
-  }
+}
   
-  .modaltext {
+.modaltext {
       font-size: 25px;
       color: #333333;
-  }
+}
 
 /* The sidebar menu */
 .sidebar {
@@ -227,20 +289,16 @@
   cursor: pointer;
   padding: 15px 15px;
   z-index: 100;
-  width: 115px;
+  width: 150px;
   height: auto;
+  border-radius: 20px;
 }
 
 .openbtn:hover {
   background-color: rgba(252, 110, 0, 0.5);
+  transition: 0.5s;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s; /* If you want a transition effect */
-padding: 200px;
-  z-index: 100;
-}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
