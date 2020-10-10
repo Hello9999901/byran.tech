@@ -11,16 +11,31 @@
 	<link rel="stylesheet" href="main.css">
   </head>
 
+<script>
+	function openNav() {
+	  document.getElementById("mySidebar").style.width = "calc(10vw + 250px)";
+	  document.getElementById("main").style.marginLeft = "250px";
+	}
+	
+	function closeNav() {
+	  document.getElementById("mySidebar").style.width = "0";
+	  document.getElementById("main").style.marginLeft= "0";
+	}
+</script>
+
 <div class="bar"></div>
 
 <div class="orangebar"></div>
 
-<h1 class="title">byran.tech | Github Projects</h1>
-	
+<h1 class="title">B Y R A N . T E C H</h1>
+
+<a href="https://github.com/Hello9999901">
+<img src="image/GIthublogo.jpg" alt="github logo" class="githublogo">
+</a>
+
 <a href="index.html">
 	<img src="image/logo.png"; alt="Home Icon"; class="homeicon">
 </a>
-<!--3746 × 1019-->
 
 <div class="navbar">
 	<a style="color: white; text-decoration: none; padding-right: 13px;" href="blenderprojects.html";>Blender Models</a>
@@ -30,14 +45,30 @@
 	<a style="color: white; text-decoration: none; padding-right: 13px;" href="techblogs.html";>Tech Blogs</a>
 	<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
 	<a style="color: white; text-decoration: none; padding-right: 13px;" href="about.html";>About</a>
+	<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+	<a style="color: white; text-decoration: none; padding-right: 13px;" href="anything.html";>Anything</a>
 </div>
 
-<h1 style="margin-top: 50vh; position: absolute; color: white; justify-self: center; margin-left: 50px;">
-	CURRENTLY WORK-IN-PROGRESS
-	<br>
-	BLENDER PROJECTS AND TECH BLOGS WORKING
-</h1>
+<div id="mySidebar" class="sidebar">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div style="padding-top: 20px;"></div>
+	<a href="blenderprojects.html">Blender Projects</a>
+	<a href="githubprojects.html">Github Projects</a>
+	<a href="techblogs.html">Tech Blogs</a>
+	<a href="about.html">About</a>
+	<a href="anything.html">Anything</a>
+</div>
+  
+<div id="main">
+	<a>
+		<img src="image/menubutton.jpg" class="openbtn" onclick="openNav()">
+	</a>
+</div>
 
+<video style="margin-left: 25vw; width: 50vw; height: auto; margin-top: 174px; text-align: center;" controls>
+	<source src="videos/Phone Commercial.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+</video>
 <!--Code snippets from: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp-->
 
 </body>

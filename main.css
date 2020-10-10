@@ -63,6 +63,13 @@
   right: 20px;
 }
 
+.githublogo {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
@@ -208,22 +215,6 @@
     font-size: 22px;
     left: 27px;
   }
-}
-
-.githubicon {
-    position: fixed;
-    z-index: 2;
-    margin-top: 15px;
-    filter: invert(1);
-    overflow: hidden;
-    right: 15px;
-}
-  
-@media screen and (max-width: 1180px) {
-    .githubicon {
-      opacity: 0;
-      z-index: -10;
-    }
 }
 
 .row {
