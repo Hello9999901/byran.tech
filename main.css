@@ -249,6 +249,37 @@
       max-width: 100%;
     }
 }
+
+/* GITHUB IMAGE COLUMNS*/
+.githubcolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.githubcolumn {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+  margin-top: 237px;
+}
+
+.githubshowcaseimage {
+  transition: 0.3s;
+}
+
+.githubshowcaseimage:hover {
+    width: calc(50vw + 50px);
+    height: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .githubcolumn {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 /* IMAGE COLUMNS */
 
 
