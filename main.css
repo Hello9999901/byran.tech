@@ -251,26 +251,33 @@
 }
 
 /* GITHUB IMAGE COLUMNS*/
+.wrapperfort2 {
+  margin-top: 237px;
+}
+
+.wrapperformacose {
+  margin-top: 237px;
+}
+
+.wrapperforsc {
+  margin-top: -8px;
+}
+
 .githubcolumn img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 
+.trinketcolumn {
+  width: 25vw;
+  margin-top: 0px;
+}
+
 .githubcolumn {
   -ms-flex: 50%;
   flex: 50%;
   max-width: 50%;
-  margin-top: 237px;
-}
-
-.githubshowcaseimage {
-  transition: 0.3s;
-}
-
-.githubshowcaseimage:hover {
-    width: calc(50vw + 50px);
-    height: auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -279,11 +286,19 @@
     flex: 100%;
     max-width: 100%;
   }
-  .githubshowcaseimage:hover {
-    width: calc(100vw + 50px);
-    height: auto;
+  .trinketcolumn {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .wrapperformacose {
+    margin-top: 20px;
+  }
+  .trinketcolumn {
+    margin-top: 20px;
+  }
 }
-}
+
 /* IMAGE COLUMNS */
 
 
