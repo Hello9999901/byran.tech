@@ -23,53 +23,6 @@
 	}
 </script>
 
-<script>
-	$(document).ready(function(){
-		$("#myModal").modal('show');
-	});
-</script>
-
-
-
-
-<!--HTML CODE BELOW-->
-
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h2>byran.tech</h2>
-            </div>
-            <div class="modal-body">
-				<div class="modaltext">
-					Hello! I'm Byran, and this is my website!
-					<br>
-					<br>
-					I made it as a challenge to <b>ONLY</b> use raw HTML and CSS to make the website (no website makers)
-					<br>
-					<br>
-					That is the reason why this website may appear abnormally in some screen sizes.
-					<br>
-					<br>
-					First, some basic info on how to navigate this website:
-					<br>
-					<ol>
-						<br>
-						<li>This website is optimized mainly for desktop use. For the best experience, please view on screens wider than 1140px.</li>
-						<br>
-						<li>All of the renders are <b>free</b> to use. <br> (Licensed under MIT license)</li> 
-						<br>
-						<li>All Blender and Github files are also <b>free</b> to use.</li>
-					</ol>
-
-				</div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Code snippet from: https://www.tutorialrepublic.com/faq/how-to-launch-bootstrap-modal-on-page-load.php-->
-
 <div class="bar"></div>
 
 <div class="orangebar"></div>
@@ -77,7 +30,11 @@
 <h1 class="title">B Y R A N . T E C H</h1>
 	
 <a href="index.html">
-	<img src="image/logo.png"; alt="Home Icon"; class="homeicon">
+	<picture>
+    <source type="image/jp2" srcset="image/logo.jp2">
+    <source type="image/webp" srcset="image/logo.webp">
+		<img src="image/logo.jpg"; alt="Home Icon"; class="homeicon">
+	</picture>
 </a>
 
 <div class="navbar">
