@@ -108,16 +108,6 @@
   opacity: 0;
 }
 
-.phonevideo {
-    width: 80%; 
-    height: auto; 
-    margin-top: 237px; 
-    text-align: center;
-    position: absolute;
-    z-index: -1;
-    margin-left: 10%;
-}
-
 /* SCREEN SIZE ADAPTIONS */
 @media screen and (max-width: 2179px) {
   .navbar {
@@ -227,19 +217,26 @@
 
 /* IMAGE COLUMNS */
 .row {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0 4px;
 }
 .column {
-    -ms-flex: 33.33%; /* IE10 */
+    -ms-flex: 33.33%;
     flex: 33.33%;
     max-width: 33.33%;
     padding: 0 4px;
     margin-top: 230px;
 }
+
+.column video {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
 .column img {
     margin-top: 8px;
     vertical-align: middle;
@@ -252,6 +249,9 @@
       max-width: 100%;
     }
 }
+/* IMAGE COLUMNS */
+
+/* MAIN PAGE IMAGE COLUMNS */
 
 /* GITHUB IMAGE COLUMNS*/
 .wrapperfort2 {
