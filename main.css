@@ -307,6 +307,41 @@
 
 /* IMAGE COLUMNS */
 
+/* VIDEO COLUMNS */
+.videocolumn{
+  padding: 0 4px;
+  margin-top: 230px;
+  position: absolute;
+  z-index: -1;
+}
+
+.videocolumn video{
+  margin-top: 8px;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.videocolumn img {
+  margin-top: 8px;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .videocolumn video{
+    width: 100%;
+  }
+  .videocolumn img{
+    width: 100%;
+  }
+}
+/* VIDEO COLUMNS */
+
+
 
 /* MODAL */
 .modaltext {
