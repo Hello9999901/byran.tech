@@ -233,106 +233,106 @@
   .title {
     font-size: 22px;
     left: 27px;}}
+@media screen and (max-width: 370px) {
+  #main {
+    padding-top: 4px;
+    }}
 /* SCREEN SIZE ADAPTIONS */
 
 /* BLENDER PROJECTS */
-
 .main {
   max-width: 1000px;
   margin: auto;
 }
-
 h1 {
   font-size: 50px;
   word-break: break-all;
 }
-
 h4 {
   color: rgb(132, 174, 230);
   font-family: skyer;
   font-size: 40px;
 }
-
 .imageLinks {
   text-decoration: none;
 }
-
 p {
   font-family: skyer;
   font-size: 30px;
 }
-
 .row {
   margin: 10px -16px;
   font-family: arial;
 }
-
 .row,
 .row > .column {
   padding: 8px;
 }
-
 .column {
   float: left;
   width: 33.33%;
   display: none;
 }
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .content {
   background-color: rgb(241, 240, 240);
   padding: 10px;
 }
-
 .show {
   display: block;
 }
-
 .btn {
   border: none;
   outline: none;
   cursor: pointer;
   background-color: transparent;
 }
-
 .myBtnContainerCSS {
     z-index: -1;
     margin-top: 199px;
     position: absolute;
     right: 10px;
 }
-
 .tabImages {
     z-index: -1;
     height: auto;
     width: 124px;
 }
-
 .galleryWrapper {
     margin-top: 237px;
     position: absolute;
     z-index: -1;
 }
-
 @media screen and (max-width: 1331px) {
   .column {
     width: 50%;
   }
 }
-
 @media screen and (max-width: 840px) {
   .column {
     width: 100%;
   }
 }
+@media screen and (max-width: 438px) {
+  .galleryWrapper {
+    margin-top: 331px !important;
+  }
+}
 /* BLENDER PROJECTS */
 
 /* GITHUB IMAGE COLUMNS*/
+.githubrow {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
 .wrapperfort2 {
   margin-top: 237px;
 }
