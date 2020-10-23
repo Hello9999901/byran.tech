@@ -214,44 +214,102 @@
     left: 27px;}}
 /* SCREEN SIZE ADAPTIONS */
 
+/* BLENDER PROJECTS */
 
-/* IMAGE COLUMNS */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+h4 {
+  color: rgb(132, 174, 230);
+  font-family: skyer;
+  font-size: 40px;
+}
+
+.imageLinks {
+  text-decoration: none;
+}
+
+p {
+  font-family: skyer;
+  font-size: 30px;
+}
+
 .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 0 4px;
+  margin: 10px -16px;
+  font-family: arial;
 }
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
 .column {
-    -ms-flex: 33.33%;
-    flex: 33.33%;
-    max-width: 33.33%;
-    padding: 0 4px;
-    margin-top: 230px;
+  float: left;
+  width: 33.33%;
+  display: none;
 }
 
-.column video {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+.content {
+  background-color: white;
+  padding: 10px;
 }
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.myBtnContainerCSS {
+    z-index: -1;
+    margin-top: 199px;
+    position: absolute;
+    right: 10px;
+}
+
+.tabImages {
+    z-index: -1;
+    height: auto;
+    width: 124px;
+}
+
+.galleryWrapper {
+    margin-top: 237px;
+    position: absolute;
+    z-index: -1;
+}
+
 @media screen and (max-width: 1200px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
+  .column {
+    width: 50%;
+  }
 }
-/* IMAGE COLUMNS */
 
-/* MAIN PAGE IMAGE COLUMNS */
+@media screen and (max-width: 840px) {
+  .column {
+    width: 100%;
+  }
+}
+/* BLENDER PROJECTS */
 
 /* GITHUB IMAGE COLUMNS*/
 .wrapperfort2 {
