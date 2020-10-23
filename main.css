@@ -164,12 +164,20 @@
     transition: 0.5s;
   }
   .homeicon {
-    width: 624px;
+    width: 500px;
     height: auto;
-    margin-top: 68px; 
+    margin-top: 83px;
   }
   .title {
-    font-size: 38px;}}
+    font-size: 38px;}
+  .myBtnContainerCSS {
+    margin-top: 221px !important;
+    transition: 0.5s;
+  }
+  .galleryWrapper {
+    margin-top: 260px !important;
+    transition: 0.5s;
+  }}
 @media screen and (max-width: 835px) {
   .openbtn {
     width: 124px;
@@ -190,8 +198,21 @@
   .orangebar {
     margin-top: 80px;
   }
+  .galleryWrapper {
+    margin-top: 216px !important;
+    transition: 0.5s;
+  } 
+  .myBtnContainerCSS {
+    margin-top: 177px !important;
+    transition: 0.5s;
+  }
   .bar {
     height: 102px;}}
+@media screen and (max-width: 726px) {
+  .galleryWrapper {
+    margin-top: 273px !important;
+    transition: 0.5s;
+    }}
 @media screen and (max-width: 671px) {
   .homeicon {
     width: 300px;
@@ -264,7 +285,7 @@ p {
 }
 
 .content {
-  background-color: white;
+  background-color: rgb(241, 240, 240);
   padding: 10px;
 }
 
@@ -298,7 +319,7 @@ p {
     z-index: -1;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1331px) {
   .column {
     width: 50%;
   }
