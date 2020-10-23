@@ -2,12 +2,9 @@
 
 <head>
 	<html lang="en-US">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<body style="background-color:black;">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-	<title>byran.tech | Blender Projects</title>
+	<title>byran.tech</title>
 	<link rel="stylesheet" href="main.css">
   </head>
 
@@ -23,6 +20,11 @@
 	}
 </script>
 
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<!--HTML CODE BELOW-->
 <div class="bar"></div>
 
 <div class="orangebar"></div>
@@ -65,90 +67,256 @@
 	</a>
 </div>
 
-<div class="row"> 
-    <div class="column">
-      <a href="blenderhtml/AUGA3.html">
-        <img 
-        src="image/jpg/AUG A3.jpg">
-      </a>
-      <a href="blenderhtml/AR.html">
-        <img 
-        src="image/jpg/AR.jpg">
-      </a>
-      <a href="blenderhtml/AWP.html">
-        <img 
-        src="image/jpg/AWP Eevee.jpg">
-      </a>
-      <a href="blenderhtml/barrett99.html">
-        <img 
-        src="image/jpg/Barrett 99.jpg">
-      </a>
-      <a href="blenderhtml/FNShotgun.html">
-        <img 
-        src="image/jpg/FN Shotgun.jpg">
-      </a>
-      <a href="blenderhtml/scar.html">
-        <img 
-		src="image/jpg/SCAR Render.jpg">
-      </a>
-	</div>
-	<div class="column">
-        <a href="blenderhtml/bmw.html">
-            <img 
-            src="image/jpg/BMW Cycles.jpg" >
-        </a>
-        <a href="blenderhtml/m3.html">
-            <img 
-            src="image/jpg/M3.jpg">
-        </a>
-        <a href="blenderhtml/minecraft.html">
-            <img 
-            src="image/jpg/minecraft.jpg">
-        </a>
-        <a href="blenderhtml/scope.html">
-            <img 
-            src="image/jpg/Scope Only Eevee.jpg">
-        </a> 
-        <a href="blenderhtml/sportscar.html">
-            <img 
-            src="image/jpg/Sports Car Improved Cycles.jpg" >
-        </a>
-        <a href="blenderhtml/AWP.html">    
-            <img 
-            src="image/jpg/AWP Eevee.jpg">
-        </a>    
-	  </div>
-	  <div class="column">
-        <a href="blenderhtml/mercedes.html">
-            <img 
-            src="image/jpg/Mercedes Benz - G.jpg" >
-        </a>
-        <a href="blenderhtml/prodisplay.html">
-            <img 
-            src="image/jpg/ProDisplayXDR Render Cycles.jpg" >
-        </a>
-        <a href="blenderhtml/smartrifle.html">
-            <img 
-            src="image/jpg/SmartRifle.jpg" >
-        </a>
-        <a href="blenderhtml/KC22CRB.html">
-            <img 
-            src="image/jpg/Eevee Render KC 22-CRB.jpg" >
-        </a>
-        <a href="blenderhtml/scope.html">
-            <img 
-            src="image/jpg/Scope Eevee.jpg" >
-        </a>
-        <a href="blenderhtml/airplanewheels.html">
-            <img 
-            src="image/jpg/AirplaneWheels.jpg" >
-        </a>
-	  </div>
+<div id="myBtnContainer" class="myBtnContainerCSS">
+    <button class="btn active" onclick="filterSelection('all')">
+        <img src="image/showall.png" class="tabImages">
+    </button>
+    <button class="btn" onclick="filterSelection('gameassets')">
+        <img src="image/gameassetstab.png" class="tabImages">
+    </button>
+    <button class="btn" onclick="filterSelection('cars')"> 
+        <img src="image/carsimagetab.png" class="tabImages">
+    </button>
+    <button class="btn" onclick="filterSelection('objects')">
+        <img src="image/objectstab.png" class="tabImages">
+    </button>
+    <button class="btn" onclick="filterSelection('animations')">
+        <img src="image/animationstab.png" class="tabImages">
+    </button>
 </div>
-<!--Code snippets from: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp-->
+
+<!-- Portfolio Gallery Grid -->
+<div class="galleryWrapper">
+    <div class="row">
+    <div class="column gameassets">
+        <div class="content">
+            <a href="blenderhtml/AUG A3.html" class="imageLinks" target="_blank">
+            <img src="image/jpg/AUG A3.jpg" alt="AUG A3" style="width:100%">
+            <h4>AUG A3 ></h4>
+            </a>
+        <p>Styer AUG A3</p>
+        </div>
+    </div>
+    <div class="column animations">
+        <div class="content">
+        <video src="videos/Phone Commercial.mp4" alt="Byran Phone MK I" style="width: 100%" autoplay loop controls></video>
+        <h4>PHONE></h4>
+        <p>Mockup Phone-Commercial</p>
+        </div>
+    </div>
+    <div class="column cars">
+        <div class="content">
+            <a href="blenderhtml/BMW.html" class="imageLinks" target="_blank">
+            <img src="image/jpg/BMW Cycles.jpg" alt="BMW" style="width:100%">
+            <h4>BMW ></h4>
+            </a>
+        <p>BMW Car</p>
+        </div>
+    </div>
+    <div class="column cars">
+        <div class="content">
+            <a href="blenderhtml/Mercedes Benz G-Class.html" class="imageLinks" target="_blank">
+            <img src="image/jpg/Mercedes Benz - G.jpg" alt="Mercedes Benz G-Class" style="width:100%">
+            <h4>Mercedes Benz ></h4>
+            </a>
+        <p>Mercedes Benz G-Class Car</p>
+        </div>
+    </div>
+    
+    <div class="column gameassets">
+        <div class="content">
+        <img src="image/jpg/AR.jpg" alt="Barrett REC-7DI" style="width:100%">
+        <a href="blenderhtml/Barret REC-7DI.html" class="imageLinks" target="_blank">
+            <h4>Barrett REC-7DI></h4>
+        </a>
+        <p>Barrett REC-7DI</p>
+        </div>
+    </div>
+    <div class="column gameassets">
+        <div class="content">
+        <img src="image/jpg/M3.jpg" alt="M3" style="width:100%">
+        <a href="blenderhtml/M3.html" class="imageLinks" target="_blank">
+            <h4>M3 ></h4>
+        </a>
+        <p>M3 (AKA Grease Gun)</p>
+        </div>
+    </div>
+    <div class="column gameassets">
+        <div class="content">
+        <img src="image/jpg/AWP Eevee.jpg" alt="AWP" style="width:100%">
+        <a href="blenderhtml/AWP.html" class="imageLinks" target="_blank">
+            <h4>AWP ></h4>
+        </a>
+        <p>AWP</p>
+        </div>
+    </div>
+    <div class="column objects">
+        <div class="content">
+        <img src="image/jpg/ProDisplayXDR Render Cycles.jpg" alt="Pro Display XDR" style="width:100%">
+        <a href="blenderhtml/Pro Display XDR.html" class="imageLinks" target="_blank">
+            <h4>Pro Display XDR ></h4>
+        </a>
+        <p>Pro Display XDR</p>
+        </div>
+    </div>
+    <div class="column animations">
+        <div class="content">
+        <video src="videos/Cloth Animation.mp4" alt="Cloth Simulation Animation" style="width: 100%" autoplay loop controls></video>
+        <h4>Cloth></h4>
+        <p>Blender Cloth Simulation</p>
+        </div>
+    </div>
+    <div class="column objects">
+        <div class="content">
+        <img src="image/jpg/minecraft.jpg" alt="Minecraft" style="width:100%">
+        <a href="blenderhtml/Minecraft.html" class="imageLinks" target="_blank">
+            <h4>Minecraft ></h4>
+        </a>
+        <p>Minecraft</p>
+        </div>
+    </div>
+    <div class="column gameassets">
+        <div class="content">
+        <img src="image/jpg/SmartRifle.jpg" alt="Smart Rifle" style="width:100%">
+        <a href="blenderhtml/Smart Rifle.html" class="imageLinks" target="_blank">
+            <h4>Smart Rifle ></h4>
+        </a>
+        <p>Smart Rifle</p>
+        </div>
+    </div>
+    <div class="column gameassets">
+        <div class="content">
+        <img src="image/jpg/Barrett 99.jpg" alt="Barrett Model 99" style="width:100%">
+        <a href="blenderhtml/Barrett 99.html" class="imageLinks" target="_blank">
+            <h4>Barrett Model 99 ></h4>
+        </a>
+        <p>Barrett Model 99</p>
+        </div>
+    </div>
+    <div class="column gameassets">
+        <div class="content">
+        <img src="image/jpg/Scope Only Eevee.jpg" alt="Scope" style="width:100%">
+        <a href="blenderhtml/Sniper Scope.html" class="imageLinks" target="_blank">
+            <h4>Sniper Scope ></h4>
+        </a>
+        <p>Sniper Scope</p>
+        </div>
+    </div>
+    <div class="column animations">
+        <div class="content">
+        <video src="videos/Ridgid Body Cube copy.mp4" alt="Ridgid Body Cube" style="width: 100%" autoplay loop controls></video>
+        <h4>Cube></h4>
+        <p>Cube Falling Apart</p>
+        </div>
+    </div>
+
+    <div class="column gameassets">
+        <div class="content">
+        <img src="image/jpg/Eevee Render KC 22-CRB.jpg" alt="Kriss-Vector 22-CRB" style="width:100%">
+        <a href="blenderhtml/KC 22-CRB.html" class="imageLinks" target="_blank">
+            <h4>KV 22-CRB ></h4>
+        </a>
+        <p>Kriss-Vector 22-CRB</p>
+        </div>
+    </div>
+    <div class="column gameassets">
+        <div class="content">
+        <img src="image/jpg/FN Shotgun.jpg" alt="FN Shotgun" style="width:100%">
+        <a href="blenderhtml/FN Shotgun.html" class="imageLinks" target="_blank">
+            <h4>FN Shotgun ></h4>
+        </a>
+        <p>FN SLP Competition Shotgun</p>
+        </div>
+    </div>
+    <div class="column cars">
+        <div class="content">
+        <a href="blenderhtml/Sports Car.html" class="imageLinks" target="_blank">
+        <img src="image/jpg/Sports Car Improved Cycles.jpg" alt="Sports Car" style="width:100%">
+        <h4>Sports Car ></h4>
+        </a>
+        <p>Red Sports Car</p>
+        </div>
+    </div>
+    <div class="column gameassets">
+        <div class="content">
+        <a href="blenderhtml/Sniper Scope.html" class="imageLinks" target="_blank"> 
+        <img src="image/jpg/Scope Eevee.jpg" alt="Scope" style="width:100%">
+        <h4>Scope + Gun ></h4>
+        </a>
+        <p>Scope on Barrett Model 99</p>
+        </div>
+    </div>
+    <div class="column gameassets">
+        <div class="content">
+        <a href="blenderhtml/FN SCAR.html" class="imageLinks" target="_blank"> 
+        <img src="image/jpg/SCAR Render.jpg" alt="SCAR" style="width:100%">
+        <h4>FN SCAR ></h4>
+        </a>
+        <p>FN SCAR</p>
+        </div>
+    </div>
+    <div class="column objects">
+        <div class="content">
+        <a href="blenderhtml/Airplane Wheels.html" class="imageLinks" target="_blank"> 
+        <img src="image/jpg/AirplaneWheels.jpg" alt="Airplane Wheels" style="width:100%">
+        <h4>Airplane Wheels ></h4>
+        </a>
+        <p>Airplane Wheels</p>
+        </div>
+    </div>
+</div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
 </body>
 </html>
-
-
 
