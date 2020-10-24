@@ -100,12 +100,16 @@
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: 0.5s;
   position: fixed;
   right: -14px;
   padding-top: 100px;
   z-index: -10;
   opacity: 0;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* SCREEN SIZE ADAPTIONS */
@@ -440,6 +444,9 @@ p {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
 }
 .sidebar a { /* The sidebar links */
   padding: 8px 8px 8px 32px;
