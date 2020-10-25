@@ -13,6 +13,9 @@
 @font-face { /*B612 Mono*/
   font-family: B612 Mono;
   src: url(fonts/B612Mono-Regular.woff)}
+@font-face { /*Ubuntu Regular*/
+  font-family: Ubuntu Regular;
+  src: url(fonts/Ubuntu-Regular.woff)}
 /* FONTS */
 
 #top-right {
