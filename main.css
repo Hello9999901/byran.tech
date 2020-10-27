@@ -75,12 +75,12 @@
 }
 
 .title {
-  font-size: 55px;
-  right: 20px;
+  font-size: 50px;
+  left: 35px;
   font-family: anurati;
   position: fixed;
   z-index: 1;
-  margin-top: 50px;
+  margin-top: 28px;
   color: white;
   float: left;
 }
@@ -105,8 +105,8 @@
 #main {
   transition: 0.5s;
   position: fixed;
-  right: -14px;
-  padding-top: 100px;
+  right: 10px;
+  top: 18px;
   z-index: -10;
   opacity: 0;
 }
@@ -140,15 +140,15 @@ body {
     transition: 0.5s;
   }
   .title {
-    font-size: 45px;
+    font-size: 50px;
     transition: 0.5s;
   }
   .bar {
-    height: 192px;
+    height: 114px;
     transition: 0.5s;
   }
   .orangebar {
-    margin-top: 174px;
+    margin-top: 95px;
     transition: 0.5s;}}
 @media screen and (max-width: 1849px) {
   .navbar {
@@ -176,7 +176,7 @@ body {
     margin-top: 83px;
   }
   .title {
-    font-size: 38px;}
+    font-size: 50px;}
   .myBtnContainerCSS {
     margin-top: 221px !important;
     transition: 0.5s;
@@ -396,7 +396,7 @@ p {
 /* VIDEO COLUMNS */
 .videocolumn{
   padding: 0 4px;
-  margin-top: 230px;
+  margin-top: 100px;
   position: absolute;
   z-index: -1;
 }
@@ -473,11 +473,11 @@ p {
 }
 .openbtn { /* The button used to open the sidebar */
   cursor: pointer;
-  padding: 15px 15px;
+  padding: 5px 5px;
   z-index: 100;
-  width: 150px;
+  width: 80px;
   height: auto;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .openbtn:hover { /* Button color when hovering*/
   background-color: rgba(252, 110, 0, 0.5);
