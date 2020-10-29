@@ -51,7 +51,7 @@
   left: 0px; 
   margin-top: -10px; 
   width:100vw; 
-  height: 202px; 
+height: 114px;
   background-color:#222222
 }
 
@@ -59,7 +59,7 @@
   position: fixed;
   z-index: 1;
   left: 0px;
-  margin-top: 188px;
+  margin-top: 95px;
   height: 8px;
   width: 100vw;
   background-color: #fc6e00;
@@ -80,7 +80,7 @@
   font-family: anurati;
   position: fixed;
   z-index: 1;
-  margin-top: 28px;
+  margin-top: 20px;
   color: white;
   float: left;
 }
@@ -91,7 +91,7 @@
   z-index: 1;
   font-size: 43px;
   font-family: skyer;
-  margin-top: 130px;
+  margin-top: 24px;
   right: 20px;
 }
 
@@ -178,11 +178,11 @@ body {
   .title {
     font-size: 50px;}
   .myBtnContainerCSS {
-    margin-top: 221px !important;
+    margin-top: 111px !important;
     transition: 0.5s;
   }
   .galleryWrapper {
-    margin-top: 260px !important;
+    margin-top: 150px !important;
     transition: 0.5s;
   }}
 @media screen and (max-width: 835px) {
@@ -193,7 +193,6 @@ body {
     padding-top: 64px;
   }
   .title {
-    margin-top: 30px;
     font-size: 30px;
   }
   .homeicon {
@@ -210,7 +209,7 @@ body {
     transition: 0.5s;
   } 
   .myBtnContainerCSS {
-    margin-top: 177px !important;
+    margin-top: 111px !important;
     transition: 0.5s;
   }
   .bar {
@@ -224,10 +223,6 @@ body {
   .homeicon {
     width: 300px;
     height: auto;}}
-@media screen and (max-width: 563px) {
-  .title {
-    margin-top: 130px;
-    left: 35px;}}
 @media screen and (max-width: 457px) {
   .openbtn {
     width: 115px !important;}}
@@ -235,11 +230,7 @@ body {
   .homeicon {
     width: 250px;
     margin-top: 48px;
-    margin-left: 20px;
-  }
-  .title {
-    font-size: 22px;
-    left: 27px;}}
+    margin-left: 20px;}}
 @media screen and (max-width: 370px) {
   #main {
     padding-top: 4px;
@@ -300,7 +291,7 @@ p {
 }
 .myBtnContainerCSS {
     z-index: -1;
-    margin-top: 199px;
+    margin-top: 111px !important;
     position: absolute;
     right: 10px;
 }
@@ -310,7 +301,7 @@ p {
     width: 124px;
 }
 .galleryWrapper {
-    margin-top: 237px;
+    margin-top: 150px !important;
     position: absolute;
     z-index: -1;
 }
@@ -326,7 +317,7 @@ p {
 }
 @media screen and (max-width: 438px) {
   .galleryWrapper {
-    margin-top: 331px !important;
+    margin-top: 150px;
   }
 }
 /* BLENDER PROJECTS */
@@ -341,11 +332,11 @@ p {
 }
 
 .wrapperfort2 {
-  margin-top: 237px;
+  margin-top: 99px;
 }
 
 .wrapperformacose {
-  margin-top: 237px;
+  margin-top: 99px;
 }
 
 .wrapperforsc {
