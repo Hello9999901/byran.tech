@@ -83,6 +83,7 @@ height: 114px;
   margin-top: 20px;
   color: white;
   float: left;
+  transition: 0.5s;
 }
 
 .navbar {
@@ -91,8 +92,9 @@ height: 114px;
   z-index: 1;
   font-size: 43px;
   font-family: skyer;
-  margin-top: 24px;
+  margin-top: 22px;
   right: 20px;
+  transition: 0.5s;
 }
 
 .githublogo {
@@ -116,125 +118,69 @@ body {
 }
 
 /* SCREEN SIZE ADAPTIONS */
-@media screen and (max-width: 2179px) {
+@media screen and (max-width: 2260px) {
   .navbar {
     font-size: 40px;
-    margin-top: 130px;
-    transition: 0.5s;}}
-@media screen and (max-width: 2085px) {
+    margin-top: 28px;
+  }
+}
+@media screen and (max-width: 2146px) {
   .navbar {
     font-size: 35px;
-    margin-top: 140px;
-    transition: 0.5s;}}
-@media screen and (max-width: 1941px) {
+    margin-top: 31px;
+  }
+}
+@media screen and (max-width: 1922px) {
   .navbar {
-    font-size: 37px;
-    margin-top: 117px;
-    transition: 0.5s;
-  }
-  .homeicon {
-    width: 468px;
-    height: 127px;
-    margin-top: 100px;
-    margin-top: 80px;
-    transition: 0.5s;
-  }
-  .title {
-    font-size: 50px;
-    transition: 0.5s;
-  }
-  .bar {
-    height: 114px;
-    transition: 0.5s;
-  }
-  .orangebar {
-    margin-top: 95px;
-    transition: 0.5s;}}
-@media screen and (max-width: 1849px) {
-  .navbar {
-    font-size: 32px;
-    margin-top: 127px;
-    transition: 0.5s;}}
-@media screen and (max-width: 1849px) {
-  .navbar {
-    font-size: 29px;
-    transition: 0.5s;}}
-@media screen and (max-width: 1593px) {
-  #main {
-    z-index: 10;
-    opacity: 1;
-    transition: 0.75s;
-  }
-  .navbar {
-    opacity: 0;
-    z-index: -10;
-    transition: 0.5s;
-  }
-  .homeicon {
-    width: 500px;
-    height: auto;
-    margin-top: 83px;
-  }
-  .title {
-    font-size: 50px;}
-  .myBtnContainerCSS {
-    margin-top: 111px !important;
-    transition: 0.5s;
-  }
-  .galleryWrapper {
-    margin-top: 150px !important;
-    transition: 0.5s;
-  }}
-@media screen and (max-width: 835px) {
-  .openbtn {
-    width: 124px;
-  }
-  #main {
-    padding-top: 64px;
-  }
-  .title {
     font-size: 30px;
+    margin-top: 34px;
+  }  
+  .title {
+    font-size: 46px;
+    margin-top: 24px;
   }
-  .homeicon {
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 455px;
-    height: auto;
+}
+@media screen and (max-width: 1662px) {
+  .navbar {
+    font-size: 25px;
+    margin-top: 38px;
+  }  
+}
+@media screen and (max-width: 1524px) {
+  .navbar {
+    font-size: 23px;
+    margin-top: 38px;
+  }  
+}
+@media screen and (max-width: 1418px) {
+  .title {
+    font-size: 42px;
+    margin-top: 27px;
+  }  
+}
+@media screen and (max-width: 1375px) {
+  .navbar {
+    z-index: -10;
+    opacity: 0;
   }
-  .orangebar {
-    margin-top: 80px;
-  }
-  .galleryWrapper {
-    margin-top: 216px !important;
-    transition: 0.5s;
-  } 
-  .myBtnContainerCSS {
-    margin-top: 111px !important;
-    transition: 0.5s;
-  }
-  .bar {
-    height: 102px;}}
-@media screen and (max-width: 726px) {
-  .galleryWrapper {
-    margin-top: 273px !important;
-    transition: 0.5s;
-    }}
-@media screen and (max-width: 671px) {
-  .homeicon {
-    width: 300px;
-    height: auto;}}
-@media screen and (max-width: 457px) {
-  .openbtn {
-    width: 115px !important;}}
-@media screen and (max-width: 428px) {
-  .homeicon {
-    width: 250px;
-    margin-top: 48px;
-    margin-left: 20px;}}
-@media screen and (max-width: 370px) {
   #main {
-    padding-top: 4px;
-    }}
+    z-index: 1;
+    opacity: 1;
+    top: 26px;
+  }
+
+}
+@media screen and (max-width: 620px) {
+  .title {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 537px) {
+  #main {
+     top: 30px; 
+  }
+
+}
 /* SCREEN SIZE ADAPTIONS */
 
 /* BLENDER PROJECTS */
@@ -468,7 +414,7 @@ p {
   z-index: 100;
   width: 80px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 .openbtn:hover { /* Button color when hovering*/
   background-color: rgba(252, 110, 0, 0.5);
