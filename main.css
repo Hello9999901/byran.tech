@@ -168,18 +168,11 @@ body {
     opacity: 1;
     top: 26px;
   }
-
-}
-@media screen and (max-width: 620px) {
-  .title {
-    font-size: 10px;
-  }
 }
 @media screen and (max-width: 537px) {
   #main {
      top: 30px; 
   }
-
 }
 /* SCREEN SIZE ADAPTIONS */
 
