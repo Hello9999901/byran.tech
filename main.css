@@ -418,3 +418,29 @@ p {
   .sidebar a {font-size: 18px;}
 }
 /* MENU SIDEBAR CSS */
+
+/* TECH BLOGS CSS */
+.blogs {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: -20px;
+  margin-right: 20px;
+}
+.blogtext {
+  font-size: 30px; 
+  font-family: Ubuntu Regular; 
+  color: black; 
+  margin-left: 60px;
+}
+.blogdate {
+  font-size: 30px;  
+  font-family: Ubuntu Regular; 
+  color: black; 
+  margin-left: 60px;
+}
+.blogtitle {
+  font-size: 50px;  
+  font-family: Ubuntu Regular; 
+  color: black; 
+  margin-left: 60px;
+}
