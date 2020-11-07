@@ -51,7 +51,7 @@
   left: 0px; 
   margin-top: -10px; 
   width:100vw; 
-height: 114px;
+  height: 112px;
   background-color:#222222
 }
 
@@ -113,6 +113,13 @@ height: 114px;
   opacity: 0;
 }
 
+#navbarwrapper {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: 0.5s;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -164,7 +171,7 @@ body {
     opacity: 0;
   }
   #main {
-    z-index: 1;
+    z-index: 10;
     opacity: 1;
     top: 26px;
   }
