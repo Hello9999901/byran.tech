@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<title>byran.tech | Tech Blogs</title>
 	<link rel="stylesheet" href="main.css">
+	<script src="scripts.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
     <script>
@@ -16,7 +17,6 @@
     gtag('config', 'G-9TVWTTPKRX');
     </script>
   </head>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
 <div id="navbarwrapper">
 	<div class="bar"></div>
@@ -50,8 +50,7 @@
 		<a href="techblogs.html">Tech Blogs</a>
 		<a href="about.html">About</a>
 		<a href="anything.html">Anything</a>
-	</div>
-	  
+	</div>  
 </div>
 
 
@@ -78,31 +77,6 @@
 	<p class="blogtext">Using these 3 questions can give you a rough idea of how it should run and look like. My setup values portability, as I can unplug my computer at any time and bring it on the go. Also, the battery acts like a UPS that runs for 8+ hours. Combined that gives my 16 hours of computer use even if my power goes out (there won’t be wifi so there won’t be much point). I think that the performance sacrifices are worth it. You, however, might want a dedicated UPS and a full gaming rig. Your friend might simply want a MacBook for school. It varies from person to person, and it is up to YOU to determine what is best for YOU.</p>
 	<p class="blogtext">P.S. NOBODY should convince you to change your setup as long as YOU’RE happy with it.</p>
 </div>
-
-<script>
-	function openNav() {
-	  document.getElementById("mySidebar").style.width = "calc(10vw + 250px)";
-	  document.getElementById("main").style.marginLeft = "250px";
-	}
-	
-	function closeNav() {
-	  document.getElementById("mySidebar").style.width = "0";
-	  document.getElementById("main").style.marginLeft= "0";
-	}
-	
-	var prevScrollpos = window.pageYOffset;
-	window.onscroll = function() {
-	var currentScrollPos = window.pageYOffset;
-	if (prevScrollpos > currentScrollPos || $(window).scrollTop() <= 0) {
-		document.getElementById("navbarwrapper").style.top = "0";
-		document.getElementById("main").style.opacity= "1";
-	} else {
-		document.getElementById("navbarwrapper").style.top = "-95px";
-		document.getElementById("main").style.opacity= "0";
-	}
-	prevScrollpos = currentScrollPos;
-	}
-</script>
 
 </body>
 </html>
