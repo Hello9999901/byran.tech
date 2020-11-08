@@ -390,7 +390,7 @@ p {
   position: fixed; /* Stay in place */
   z-index: 100; /* Stay on top */
   background-color: rgba(252, 110, 0, 0.9); /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
   left: 0px;
@@ -405,6 +405,7 @@ p {
   color: #f1f1f1;
   display: block;
   transition: 0.3s;
+  overflow: hidden;
 }
 .sidebar a:hover { /* When you mouse over the navigation links, change their color */
   color: #000000;

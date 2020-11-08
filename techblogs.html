@@ -19,19 +19,6 @@
   </head>
 
 <script>
-	var prevScrollpos = window.pageYOffset;
-	window.onscroll = function() {
-	var currentScrollPos = window.pageYOffset;
-	  if (prevScrollpos >= currentScrollPos || $(window).scrollTop() <= 0) {
-		document.getElementById("navbarwrapper").style.top = "0";
-	  } 
-	  else {
-		document.getElementById("navbarwrapper").style.top = "-95px";
-	  }
-	}
-</script>
-
-<script>
 	function openNav() {
 	  document.getElementById("mySidebar").style.width = "calc(10vw + 250px)";
 	  document.getElementById("main").style.marginLeft = "250px";
@@ -43,7 +30,18 @@
 	}
 </script>
 
-
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos || $(window).scrollTop() <= 0) {
+    document.getElementById("navbarwrapper").style.top = "0";
+  } else {
+    document.getElementById("navbarwrapper").style.top = "-95px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 
 <script>
  $(window).scroll(function() {   
@@ -76,15 +74,7 @@
 		<img src="image/menu1.png" class="openbtn" onclick="openNav()">
 	</div>
 
-	<div id="mySidebar" class="sidebar">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<div style="padding-top: 20px;"></div>
-		<a href="blenderprojects.html">Blender Projects</a>
-		<a href="githubprojects.html">Github Projects</a>
-		<a href="techblogs.html">Tech Blogs</a>
-		<a href="about.html">About</a>
-		<a href="anything.html">Anything</a>
-	</div>
+
 </div>
 
 
