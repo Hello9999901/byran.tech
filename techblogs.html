@@ -2,9 +2,10 @@
 
 <head>
 	<html lang="en-US">
-	<body style="background-color:#f6f7eb;">
+	<body style="background-color:#f9faf4;">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<title>byran.tech | Tech Blogs</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="main.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
@@ -18,6 +19,19 @@
   </head>
 
 <script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos >= currentScrollPos || $(window).scrollTop() <= 0) {
+		document.getElementById("navbarwrapper").style.top = "0";
+	  } 
+	  else {
+		document.getElementById("navbarwrapper").style.top = "-95px";
+	  }
+	}
+</script>
+
+<script>
 	function openNav() {
 	  document.getElementById("mySidebar").style.width = "calc(10vw + 250px)";
 	  document.getElementById("main").style.marginLeft = "250px";
@@ -29,17 +43,13 @@
 	}
 </script>
 
+
+
 <script>
-	var prevScrollpos = window.pageYOffset;
-	window.onscroll = function() {
-	var currentScrollPos = window.pageYOffset;
-	  if (prevScrollpos > currentScrollPos) {
-		document.getElementById("navbarwrapper").style.top = "0";
-	  } else {
-		document.getElementById("navbarwrapper").style.top = "-95px";
-	  }
-	  prevScrollpos = currentScrollPos;
-	}
+ $(window).scroll(function() {   
+   if($(window).scrollTop() <= 0) {
+	   console.log("TOP!")
+   }});
 </script>
 
 <div id="navbarwrapper">
@@ -61,23 +71,23 @@
 		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
 		<a style="color: white; text-decoration: none; padding-right: 13px;" href="anything.html";>Anything</a>
 	</div>
+
+	<div id="main">
+		<img src="image/menu1.png" class="openbtn" onclick="openNav()">
+	</div>
+
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div style="padding-top: 20px;"></div>
+		<a href="blenderprojects.html">Blender Projects</a>
+		<a href="githubprojects.html">Github Projects</a>
+		<a href="techblogs.html">Tech Blogs</a>
+		<a href="about.html">About</a>
+		<a href="anything.html">Anything</a>
+	</div>
 </div>
 
-<div id="mySidebar" class="sidebar">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<div style="padding-top: 20px;"></div>
-	<a href="blenderprojects.html">Blender Projects</a>
-	<a href="githubprojects.html">Github Projects</a>
-	<a href="techblogs.html">Tech Blogs</a>
-	<a href="about.html">About</a>
-	<a href="anything.html">Anything</a>
-</div>
-  
-<div id="main">
-	<a>
-		<img src="image/menu1.png" class="openbtn" onclick="openNav()">
-	</a>
-</div>
+
 
 <div class="blogs">
 	<h5 class="blogdate" >Sunday, July 19, 2020</h5>
@@ -101,6 +111,7 @@
 	<p class="blogtext">Using these 3 questions can give you a rough idea of how it should run and look like. My setup values portability, as I can unplug my computer at any time and bring it on the go. Also, the battery acts like a UPS that runs for 8+ hours. Combined that gives my 16 hours of computer use even if my power goes out (there won’t be wifi so there won’t be much point). I think that the performance sacrifices are worth it. You, however, might want a dedicated UPS and a full gaming rig. Your friend might simply want a MacBook for school. It varies from person to person, and it is up to YOU to determine what is best for YOU.</p>
 	<p class="blogtext">P.S. NOBODY should convince you to change your setup as long as YOU’RE happy with it.</p>
 </div>
+
 
 </body>
 </html>

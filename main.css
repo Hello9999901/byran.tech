@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    overflow: auto;
   }
 
 
@@ -114,7 +115,7 @@
 }
 
 #navbarwrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 10;
   transition: 0.5s;
@@ -177,8 +178,16 @@ body {
   }
 }
 @media screen and (max-width: 537px) {
+  .title {
+     font-size: 30px;
+     margin-top: 38px;
+  }
+  .openbtn {
+    width: 50px !important;
+    height: auto;
+   }
   #main {
-     top: 30px; 
+    top: 37px;
   }
 }
 /* SCREEN SIZE ADAPTIONS */
@@ -411,10 +420,11 @@ p {
 .openbtn { /* The button used to open the sidebar */
   cursor: pointer;
   padding: 5px 5px;
-  z-index: 100;
+  z-index: 10;
   width: 80px;
   height: auto;
   border-radius: 2px;
+  transition: 0.5s;
 }
 .openbtn:hover { /* Button color when hovering*/
   background-color: rgba(252, 110, 0, 0.5);
