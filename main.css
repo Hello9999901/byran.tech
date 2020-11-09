@@ -22,7 +22,7 @@
 #top-right {
   color: white !important;
   position: absolute;
-  top: 228px;
+  top: 125px;
   margin-left: 50vw;
   padding-left: 10px;
   font-size: 1.75vw;
@@ -34,7 +34,7 @@
 
 .showcaseimage{
   z-index: 0; 
-  padding-top: 237px; 
+  padding-top: 124px;
   width: 50vw; 
   height: auto;
 }
