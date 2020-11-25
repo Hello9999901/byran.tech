@@ -465,6 +465,16 @@ p {
   color: black; 
   margin-left: 60px;
 }
+.bloglink {
+  font-size: 30px;  
+  font-family: oxygen-light; 
+  color:rgb(106, 185, 255); 
+  margin-left: 60px;
+  transition: 0.2s;
+}
+.bloglink:hover {
+  background-color: rgba(184, 184, 184, 0.25);
+}
 .blogtitle {
   font-size: 50px;  
   font-family: oxygen-bold; 

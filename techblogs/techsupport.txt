@@ -1,2 +1,2 @@
 Turn off PWR and ACT lights in RPI
-$ echo 0 | sudo tee /sys/class/leds/led1/brightness ; echo 0 | sudo tee /sys/class/leds/led0/brightness
+echo led1 | sudo tee /sys/class/leds/led1/brightness ; echo led0 | sudo tee /sys/class/leds/led0/brightness
