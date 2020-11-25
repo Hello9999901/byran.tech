@@ -8,13 +8,22 @@
 @font-face { /* skyer font */
   font-family: skyer;
   src: url(fonts/Skyer-Regular.woff);}
-@font-face { /*anurati*/
+@font-face { /* oxygen-regular font */
+  font-family: oxygen-regular;
+  src: url(fonts/Oxygen/Oxygen-Regular.woff);}
+@font-face { /* oxygen-light font */
+  font-family: oxygen-light;
+  src: url(fonts/Oxygen/Oxygen-Light.woff);}
+@font-face { /* oxygen-bold font */
+  font-family: oxygen-bold;
+  src: url(fonts/Oxygen/Oxygen-Bold.woff);}
+@font-face { /* anurati */
   font-family: anurati;
   src: url(fonts/Anurati-Regular.woff);}
-@font-face { /*B612 Mono*/
+@font-face { /* B612 Mono */
   font-family: B612 Mono;
   src: url(fonts/B612Mono-Regular.woff)}
-@font-face { /*Ubuntu Regular*/
+@font-face { /* Ubuntu Regular */
   font-family: Ubuntu Regular;
   src: url(fonts/Ubuntu-Regular.woff)}
 /* FONTS */
@@ -441,24 +450,24 @@ p {
 .blogs {
   position: absolute;
   margin-top: 70px;
-  margin-left: -20px;
-  margin-right: 20px;
+  margin-left: 35px;
+  margin-right: 80px;
 }
 .blogtext {
   font-size: 30px; 
-  font-family: Ubuntu Regular; 
+  font-family: oxygen-regular; 
   color: black; 
   margin-left: 60px;
 }
 .blogdate {
   font-size: 30px;  
-  font-family: Ubuntu Regular; 
+  font-family: oxygen-light; 
   color: black; 
   margin-left: 60px;
 }
 .blogtitle {
   font-size: 50px;  
-  font-family: Ubuntu Regular; 
+  font-family: oxygen-bold; 
   color: black; 
   margin-left: 60px;
 }
