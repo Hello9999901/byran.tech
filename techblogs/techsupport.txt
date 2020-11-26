@@ -1,2 +1,3 @@
-Turn off PWR and ACT lights in RPI
+How to turn off the power (PWR) and activity (ACT) lights on the Raspberry Pi
+Run in Terminal:
 echo led1 | sudo tee /sys/class/leds/led1/brightness ; echo led0 | sudo tee /sys/class/leds/led0/brightness
