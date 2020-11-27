@@ -455,10 +455,12 @@ p {
 }
 .blogtext {
   font-size: 30px; 
-  font-family: oxygen-regular; 
+  font-family: oxygen-light; 
   color: black; 
   margin-left: 60px;
+  transition: 0.2s;
 }
+
 .blogdate {
   font-size: 30px;  
   font-family: oxygen-light; 
@@ -477,7 +479,7 @@ p {
 }
 .blogtitle {
   font-size: 50px;  
-  font-family: oxygen-bold; 
+  font-family: oxygen-regular; 
   color: black; 
   margin-left: 60px;
 }
@@ -485,4 +487,38 @@ p {
   width: 50%; 
   height: auto; 
   margin-left: 22px;
+}
+
+@media screen and (max-width: 900px) {
+  .blogtext {
+    font-size: 25px;
+  }
+  .bloglink{
+    font-size: 20px;
+  }
+  .blogtitle {
+    font-size: 40px;
+  }
+  .blogdate{
+    font-size: 20px
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .blogtext {
+    font-size: 15px;
+  }
+  .bloglink{
+    font-size: 15px;
+  }
+  .blogtitle {
+    font-size: 30px;
+  }
+  .blogdate{
+    font-size: 15px
+  }
+  .blogs {
+    margin-left: 0px;
+    margin-right: 30px;
+  }
 }
