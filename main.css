@@ -448,7 +448,7 @@ p {
 
 /* TECH BLOGS CSS */
 .blogs {
-  position: absolute;
+  position: relative;
   margin-top: 70px;
   margin-left: 35px;
   margin-right: 80px;
