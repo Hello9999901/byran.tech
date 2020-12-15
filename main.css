@@ -21,7 +21,7 @@
   font-family: anurati;
   src: url(fonts/Anurati-Regular.woff);}
 @font-face { /* B612 Mono */
-  font-family: B612 Mono;
+  font-family: B612-Mono;
   src: url(fonts/B612Mono-Regular.woff)}
 @font-face { /* Ubuntu Regular */
   font-family: Ubuntu Regular;
@@ -453,7 +453,24 @@ VIDEO COLUMNS */
   margin-left: 60px;
   transition: 0.2s;
 }
-
+.code {
+  font-size: 30px; 
+  font-family: B612-Mono; 
+  color: white;
+  background-color: rgba(30, 30, 30, 0.9);
+  border-radius: 8px; 
+  margin-left: 60px;
+  transition: 0.2s;
+  padding: 10px;
+}
+.photocaption {
+  font-size: 20px; 
+  font-family: oxygen-light; 
+  color: gray; 
+  margin-left: 150px;
+  margin-top: 10px;
+  transition: 0.2s;
+}
 .blogdate {
   font-size: 30px;  
   font-family: oxygen-light; 
