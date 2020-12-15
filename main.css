@@ -464,8 +464,10 @@ VIDEO COLUMNS */
   font-size: 30px;  
   font-family: oxygen-light; 
   color:rgb(106, 185, 255); 
-  margin-left: 60px;
   transition: 0.2s;
+}
+.bloglink-wrapper {
+  margin-left: 60px;
 }
 .bloglink:hover {
   background-color: rgba(184, 184, 184, 0.25);
