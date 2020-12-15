@@ -224,7 +224,6 @@ p {
 }
 .row {
   margin: 10px -16px;
-  font-family: arial;
 }
 .row,
 .row > .column {
@@ -348,7 +347,7 @@ p {
 
 /* GITHUB IMAGE COLUMNS */
 
-/* VIDEO COLUMNS */
+/* VIDEO COLUMNS
 .videocolumn{
   padding: 0 4px;
   margin-top: 100px;
@@ -374,7 +373,7 @@ p {
     width: 100%;
   }
 }
-/* VIDEO COLUMNS */
+VIDEO COLUMNS */
 
 
 
@@ -516,11 +515,82 @@ p {
     margin-right: 30px;
   }
 }
+
 /* MAIN PAGE */
-.maintitle {
-  font-size: 70px;  
-  font-family: anurati; 
-  letter-spacing: 10px;
-  margin-left: 100px;
-  color: white; 
+.maincontent-wrapper {
+  margin-top: 100px;
+  margin-left: 12.207vw;
+  margin-right: 12.207vw;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.mainrow,
+.mainrow > .maincolumn {
+  padding: 8px;
+}
+
+.mainrow p {
+  color: white;
+}
+.mainrow h3 {
+  color: white;
+}
+
+/* Create four equal columns that floats next to each other */
+.maincolumn {
+  float: left;
+  width: 50%;
+  border-radius: 8px;
+}
+
+/* Clear floats after rows */ 
+.mainrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.maincontent-wrapper2 {
+  padding: 10px;
+}
+
+.maincontent {
+  background-color: rgba(129, 129, 129, 0.219);
+  padding: 10px;
+  border-radius: 8px;
+  font-family: oxygen-light;
+  color: white;
+}
+
+.maincontent p {
+  font-family: oxygen-light;
+  font-size: 40px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.maincontent attr {
+  font-family: oxygen-light;
+  font-size: 15px;
+  color: gray;
+}
+
+.maincontent more {
+  font-family: oxygen-light;
+  font-size: 20px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .maincolumn {
+    width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .maincolumn {
+    width: 100%;
+  }
 }
