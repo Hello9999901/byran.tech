@@ -512,7 +512,13 @@ VIDEO COLUMNS */
     font-size: 40px;
   }
   .blogdate{
-    font-size: 20px
+    font-size: 20px;
+  }
+  .code {
+    font-size: 20px;
+  }
+  .photocaption {
+    font-size: 15px;
   }
 }
 
@@ -527,11 +533,17 @@ VIDEO COLUMNS */
     font-size: 30px;
   }
   .blogdate{
-    font-size: 15px
+    font-size: 15px;
+  }
+  .code {
+    font-size: 15px;
   }
   .blogs {
     margin-left: 0px;
     margin-right: 30px;
+  }
+  .photocaption {
+    font-size: 10px;
   }
 }
 

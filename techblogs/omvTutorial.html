@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+	<html lang="en-US">
+	<body style="background-color: white;">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>byran.tech | OMV5 on RPi</title>
+	<link rel="stylesheet" href="../main.css">
+	<script src="../scripts.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9TVWTTPKRX');
+    </script>
+  </head>
+
+<div id="navbarwrapper">
+	<div class="bar"></div>
+
+	<div class="orangebar"></div>
+
+	<a href="../index.html">
+		<h1 class="title">B Y R A N . T E C H</h1>
+	</a>
+	<div class="navbar">
+		<a style="color: white; text-decoration: none; padding-right: 13px;" href="../blenderprojects.html";>Blender Models</a>
+		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+		<a style="color: white; text-decoration: none; padding-right: 13px;" href="../githubprojects.html";>Github Projects</a>
+		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+		<a style="color: white; text-decoration: none; padding-right: 13px;" href="../techblogs.html";>Tech Blogs</a>
+		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+		<a style="color: white; text-decoration: none; padding-right: 13px;" href="../about.html";>About</a>
+		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+		<a style="color: white; text-decoration: none; padding-right: 13px;" href="../anything.html";>Anything</a>
+	</div>
+
+	<div id="main">
+		<img src="../image/menu1.png" class="openbtn" onclick="openNav()">
+	</div>
+
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div style="padding-top: 20px;"></div>
+		<a href="../blenderprojects.html">Blender Projects</a>
+		<a href="../githubprojects.html">Github Projects</a>
+		<a href="../techblogs.html">Tech Blogs</a>
+		<a href="../about.html">About</a>
+		<a href="../anything.html">Anything</a>
+	</div>  
+</div>
+
+<div class="blogs">
+    <h5 class="blogdate" >Monday, December 19, 2020</h5>
+	<h2 class="blogtitle" >Open Media Vault 5 for Raspberry Pi (WORK IN PROGRESS!)</h2>
+	<p class="blogtext">
+        Requirements:
+        <br>
+        Raspberry Pi - any will work, as long as it has network connection Network Connection - best if wired
+        <br>
+        Linux / Mac / Windows 10 device for OS installation and SSH Ethernet Cable - optional if going wireless
+        <br>
+        SD Card - 16 GB or more
+        <br>
+        Storage Devices - SSDs, HDDs, USB thumbdrives, etc.
+        <br>
+        Display - HDMI
+        <br>
+        Mouse and Keyboard
+        <br>
+        <br>
+        OPTIONAL: Case with fan
+        <br>
+        <br>
+
+    1. Download the Raspberry Pi Imager (RPI Imager) from
+	<a class="bloglink" href="https://www.raspberrypi.org/downloads">the Raspberry Pi downloads website</a>. 
+	It is available for Mac, Linux and Windows.
+    <br>
+	2. Plug the SD card into the Linux / Mac / Win 10 device. Open up the RPI Imager.
+	</p>
+	<img class="blogimage" src="../image/Tutorial Images/OmvTutorial/ImagerMain.png">
+	<p class="blogtext">3. Once opened, choose the SD card.</p>
+	<img class="blogimage" src="../image/Tutorial Images/OmvTutorial/ImagerDiskSelection.png">
+	<p class="blogtext">4. Click Choose OS and select Raspberry Pi OS (other)</p>
+	<img class="blogimage" src="../image/Tutorial Images/OmvTutorial/ImagerChooseOS.png">
+	<p class="blogtext">5. Choose Raspberry Pi OS Lite (32-bit)</p>
+	<img class="blogimage" src="../image/Tutorial Images/OmvTutorial/ImagerChooseOS2.png">
+	<p class="blogtext">6. Click WRITE</p>
+	<img class="blogimage" src="../image/Tutorial Images/OmvTutorial/ImagerReadytoWrite.png">
+	<p class="blogtext">7. It may ask for your username and password. Please enter them.</p>
+	<img class="blogimage" src="../image/Tutorial Images/OmvTutorial/ImagerPermissions.png">
+	<p class="blogtext">8. It will take some time to write (depending on how fast your SD card is). 
+		When it’s done, eject if needed and plug the SD card into Raspberry Pi. 
+		The SD card slot is on the underside of the Raspberry Pi (thin, silver slit).</p>
+	<img class="blogimage" src="../image/Tutorial Images/OmvTutorial/ImagerSuccessful.png">
+
+</div>
+
+
+</body>
+</html>
+
+
+
