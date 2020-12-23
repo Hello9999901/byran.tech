@@ -3,6 +3,10 @@
     overflow: auto;
   }
 
+body {
+  transition: 0.5s
+}
+
 /* FONTS */
 @font-face { /* skyer font */
   font-family: skyer;
@@ -71,7 +75,7 @@
   margin-top: 95px;
   height: 8px;
   width: 100vw;
-  background-color: #fc6e00;
+  background-color: rgba(252, 110, 0, 1);
 }
 
 .homeicon {
@@ -196,6 +200,44 @@ body {
    }
   #main {
     top: 37px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .bar {
+    height: 73px;
+  }
+  .orangebar {
+    margin-top: 57px;
+  }
+  #main {
+    top: 72px;
+  }
+  .title {
+    margin-top: 14px;
+  }
+  .title {
+    font-size: 35px;
+    margin-top: 15px;
+    left: 20px;
+  }
+  .openbtn{
+    background-color: rgba(252, 110, 0, 1);
+    padding: 5px 4px !important;
+  }
+}
+@media screen and (max-width: 370px) {
+  .title {
+    font-size: 26px;
+    margin-top: 18px;
+  }
+}
+@media screen and (max-width: 288px) {
+  .title {
+    font-size: 19px;
+    margin-top: 22px;
+  }
+  .openbtn {
+    width: 40px !important;
   }
 }
 /* SCREEN SIZE ADAPTIONS */
@@ -611,16 +653,45 @@ VIDEO COLUMNS */
   font-size: 20px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .maincolumn {
     width: 100%;
   }
+  .maincontent-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .maincontent p {
+    font-size: 30px;
+  }
+  .maincontent attr {
+    font-size: 13px;
+  }
+  .maincontent more {
+    font-size: 15px;
+  }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .maincolumn {
     width: 100%;
+  }
+  .maincontent-wrapper {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  .maincontent p {
+    font-size: 25px;
+  }
+  .maincontent attr {
+    font-size: 10px;
+  }
+  .maincontent more {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .maincontent p {
+    font-size: 20px;
   }
 }
