@@ -562,19 +562,13 @@ VIDEO COLUMNS */
 
 @media screen and (max-width: 650px) {
   .blogtext {
-    font-size: 15px;
-  }
-  .bloglink{
-    font-size: 15px;
+    font-size: 20px;
   }
   .blogtitle {
     font-size: 30px;
   }
-  .blogdate{
-    font-size: 15px;
-  }
   .code {
-    font-size: 15px;
+    font-size: 13px;
   }
   .blogs {
     margin-left: 0px;
