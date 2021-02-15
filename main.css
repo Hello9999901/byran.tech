@@ -30,8 +30,14 @@ body {
   font-family: B612-Mono;
   src: url(fonts/B612Mono-Regular.woff)}
 @font-face { /* Ubuntu Regular */
-  font-family: Ubuntu Regular;
+  font-family: Ubuntu-Regular;
   src: url(fonts/Ubuntu-Regular.woff)}
+@font-face { /* Source Serif Pro */
+  font-family: Source-Serif-Pro;
+  src: url(fonts/SourceSerifPro-Regular.woff)}
+@font-face { /* Open-Sans (APACHE LICENSE - NO CHANGES MADE) */
+  font-family: Open-Sans;
+  src: url(fonts/OpenSans-Regular.ttf)}
 /* FONTS */
 
 #top-right {
@@ -489,7 +495,7 @@ VIDEO COLUMNS */
 }
 .blogtext {
   font-size: 30px; 
-  font-family: oxygen-light; 
+  font-family: Open-Sans; 
   color: black; 
   margin-left: 60px;
   transition: 0.2s;
@@ -514,13 +520,13 @@ VIDEO COLUMNS */
 }
 .blogdate {
   font-size: 30px;  
-  font-family: oxygen-light; 
+  font-family: Open-Sans; 
   color: black; 
   margin-left: 60px;
 }
 .bloglink {
   font-size: 30px;  
-  font-family: oxygen-light; 
+  font-family: Open-Sans; 
   color:rgb(106, 185, 255); 
   transition: 0.2s;
 }
@@ -532,7 +538,7 @@ VIDEO COLUMNS */
 }
 .blogtitle {
   font-size: 50px;  
-  font-family: oxygen-regular; 
+  font-family: Open-Sans; 
   color: black; 
   margin-left: 60px;
 }
