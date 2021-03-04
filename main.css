@@ -2,42 +2,69 @@
 /* https://www.w3schools.com */
 
 * {
-    box-sizing: border-box;
-    overflow: auto;
-  }
+  box-sizing: border-box;
+  overflow: auto;
+}
 
 body {
   transition: 0.5s;
 }
 
 /* FONTS */
-@font-face { /* skyer font */
+@font-face {
+  /* skyer font */
   font-family: skyer;
-  src: url(fonts/Skyer-Regular.woff);}
-@font-face { /* oxygen-regular font */
+  src: url(fonts/Skyer-Regular.woff);
+}
+
+@font-face {
+  /* oxygen-regular font */
   font-family: oxygen-regular;
-  src: url(fonts/Oxygen/Oxygen-Regular.woff);}
-@font-face { /* oxygen-light font */
+  src: url(fonts/Oxygen/Oxygen-Regular.woff);
+}
+
+@font-face {
+  /* oxygen-light font */
   font-family: oxygen-light;
-  src: url(fonts/Oxygen/Oxygen-Light.woff);}
-@font-face { /* oxygen-bold font */
+  src: url(fonts/Oxygen/Oxygen-Light.woff);
+}
+
+@font-face {
+  /* oxygen-bold font */
   font-family: oxygen-bold;
-  src: url(fonts/Oxygen/Oxygen-Bold.woff);}
-@font-face { /* anurati */
+  src: url(fonts/Oxygen/Oxygen-Bold.woff);
+}
+
+@font-face {
+  /* anurati */
   font-family: anurati;
-  src: url(fonts/Anurati-Regular.woff);}
-@font-face { /* B612 Mono */
+  src: url(fonts/Anurati-Regular.woff);
+}
+
+@font-face {
+  /* B612 Mono */
   font-family: B612-Mono;
-  src: url(fonts/B612Mono-Regular.woff)}
-@font-face { /* Ubuntu Regular */
+  src: url(fonts/B612Mono-Regular.woff)
+}
+
+@font-face {
+  /* Ubuntu Regular */
   font-family: Ubuntu-Regular;
-  src: url(fonts/Ubuntu-Regular.woff)}
-@font-face { /* Source Serif Pro */
+  src: url(fonts/Ubuntu-Regular.woff)
+}
+
+@font-face {
+  /* Source Serif Pro */
   font-family: Source-Serif-Pro;
-  src: url(fonts/SourceSerifPro-Regular.woff)}
-@font-face { /* Open-Sans (APACHE LICENSE - NO CHANGES MADE) */
+  src: url(fonts/SourceSerifPro-Regular.woff)
+}
+
+@font-face {
+  /* Open-Sans (APACHE LICENSE - NO CHANGES MADE) */
   font-family: Open-Sans;
-  src: url(fonts/OpenSans-Regular.ttf)}
+  src: url(fonts/OpenSans-Regular.ttf)
+}
+
 /* FONTS */
 
 #top-right {
@@ -53,28 +80,28 @@ body {
   font-family: Skyer;
 }
 
-.showcaseimage{
-  z-index: 0; 
+.showcaseimage {
+  z-index: 0;
   padding-top: 124px;
-  width: 50vw; 
+  width: 50vw;
   height: auto;
 }
 
-.showcaseimage2{
-  z-index: 0; 
-  padding-top: 10px; 
-  width: 50vw; 
+.showcaseimage2 {
+  z-index: 0;
+  padding-top: 10px;
+  width: 50vw;
   height: auto;
 }
 
-.bar{
+.bar {
   position: fixed;
   z-index: 0;
-  left: 0px; 
-  margin-top: -10px; 
-  width:100vw; 
+  left: 0px;
+  margin-top: -10px;
+  width: 100vw;
   height: 112px;
-  background-color:#222222
+  background-color: #222222
 }
 
 .orangebar {
@@ -153,99 +180,119 @@ body {
     margin-top: 28px;
   }
 }
+
 @media screen and (max-width: 2146px) {
   .navbar {
     font-size: 35px;
     margin-top: 31px;
   }
 }
+
 @media screen and (max-width: 1922px) {
   .navbar {
     font-size: 30px;
     margin-top: 34px;
-  }  
+  }
+
   .title {
     font-size: 46px;
     margin-top: 24px;
   }
 }
+
 @media screen and (max-width: 1662px) {
   .navbar {
     font-size: 25px;
     margin-top: 38px;
-  }  
+  }
 }
+
 @media screen and (max-width: 1524px) {
   .navbar {
     font-size: 23px;
     margin-top: 38px;
-  }  
+  }
 }
+
 @media screen and (max-width: 1418px) {
   .title {
     font-size: 42px;
     margin-top: 27px;
-  }  
+  }
 }
+
 @media screen and (max-width: 1375px) {
   .navbar {
     z-index: -10;
     opacity: 0;
   }
+
   #main {
     z-index: 10;
     opacity: 1;
     top: 26px;
   }
 }
+
 @media screen and (max-width: 537px) {
   .title {
-     font-size: 30px;
-     margin-top: 38px;
+    font-size: 30px;
+    margin-top: 38px;
   }
+
   .openbtn {
     width: 50px !important;
     height: auto;
-   }
+  }
+
   #main {
     top: 37px;
   }
 }
+
 @media screen and (max-width: 400px) {
   .bar {
     height: 73px;
   }
+
   .orangebar {
     margin-top: 57px;
   }
+
   #main {
     top: 72px;
   }
+
   .title {
     margin-top: 14px;
     font-size: 34px;
     left: 20px;
   }
-  .openbtn{
+
+  .openbtn {
     background-color: rgba(252, 110, 0, 1);
     padding: 5px 4px !important;
   }
 }
+
 @media screen and (max-width: 370px) {
   .title {
     font-size: 26px;
     margin-top: 18px;
   }
 }
+
 @media screen and (max-width: 288px) {
   .title {
     font-size: 19px;
     margin-top: 22px;
   }
+
   .openbtn {
     width: 40px !important;
   }
 }
+
 /* SCREEN SIZE ADAPTIONS */
 
 /* BLENDER PROJECTS */
@@ -253,90 +300,110 @@ body {
   max-width: 1000px;
   margin: auto;
 }
+
 h1 {
   font-size: 50px;
   word-break: break-all;
 }
+
 h4 {
   color: rgb(132, 174, 230);
   font-family: oxygen-light;
   font-size: 40px;
 }
+
 .imageLinks {
   text-decoration: none;
 }
+
 p {
   font-family: oxygen-light;
   font-size: 30px;
 }
+
 .row {
   margin: 10px -16px;
 }
+
 .row,
-.row > .column {
+.row>.column {
   padding: 8px;
 }
+
 .column {
   float: left;
   width: 33.33%;
   display: none;
 }
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+
 .content {
   background-color: rgb(241, 240, 240);
   padding: 10px;
 }
+
 .show {
   display: block;
 }
+
 .btn {
   border: none;
   outline: none;
   cursor: pointer;
   background-color: transparent;
 }
+
 .myBtnContainerCSS {
-    z-index: -1;
-    margin-top: 111px !important;
-    position: absolute;
-    right: 10px;
+  z-index: -1;
+  margin-top: 111px !important;
+  position: absolute;
+  right: 10px;
 }
+
 .tabImages {
-    z-index: -1;
-    height: auto;
-    width: 124px;
+  z-index: -1;
+  height: auto;
+  width: 124px;
 }
+
 .galleryWrapper {
-    margin-top: 150px !important;
-    position: absolute;
-    z-index: -1;
+  margin-top: 150px !important;
+  position: absolute;
+  z-index: -1;
 }
+
 @media screen and (max-width: 1331px) {
   .column {
     width: 50%;
   }
 }
+
 @media screen and (max-width: 840px) {
   .column {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 438px) {
   .galleryWrapper {
     margin-top: 150px;
   }
 }
+
 /* BLENDER PROJECTS */
 
 /* GITHUB IMAGE COLUMNS*/
 .githubrow {
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox;
+  /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap;
+  /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
 }
@@ -376,17 +443,21 @@ p {
     flex: 100%;
     max-width: 100%;
   }
+
   .trinketcolumn {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
+
   .wrapperformacose {
     margin-top: 20px;
   }
+
   .trinketcolumn {
     margin-top: 20px;
   }
+
   .wrapperforsc {
     margin-top: 20px;
   }
@@ -426,27 +497,39 @@ VIDEO COLUMNS */
 
 /* MODAL */
 .modaltext {
-      font-size: 25px;
-      color: #333333;
+  font-size: 25px;
+  color: #333333;
 }
+
 /* MODAL */
 
 
 /* MENU SIDEBAR CSS */
-.sidebar { /* The sidebar menu */
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 100; /* Stay on top */
-  background-color: rgba(252, 110, 0, 0.9); /* Black*/
-  overflow: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+.sidebar {
+  /* The sidebar menu */
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 100;
+  /* Stay on top */
+  background-color: rgba(252, 110, 0, 0.9);
+  /* Black*/
+  overflow: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
   left: 0px;
   top: 0px;
   bottom: 0px;
 }
-.sidebar a { /* The sidebar links */
+
+.sidebar a {
+  /* The sidebar links */
   padding: 8px 8px 8px 32px;
   font-family: skyer;
   text-decoration: none;
@@ -456,10 +539,14 @@ VIDEO COLUMNS */
   transition: 0.3s;
   overflow: hidden;
 }
-.sidebar a:hover { /* When you mouse over the navigation links, change their color */
+
+.sidebar a:hover {
+  /* When you mouse over the navigation links, change their color */
   color: #000000;
 }
-.sidebar .closebtn { /* Position and style the close button (top right corner) */
+
+.sidebar .closebtn {
+  /* Position and style the close button (top right corner) */
   position: absolute;
   top: 0;
   right: 25px;
@@ -467,7 +554,9 @@ VIDEO COLUMNS */
   margin-left: 50px;
   z-index: 100;
 }
-.openbtn { /* The button used to open the sidebar */
+
+.openbtn {
+  /* The button used to open the sidebar */
   cursor: pointer;
   padding: 5px 5px;
   z-index: 10;
@@ -476,14 +565,25 @@ VIDEO COLUMNS */
   border-radius: 2px;
   transition: 0.5s;
 }
-.openbtn:hover { /* Button color when hovering*/
+
+.openbtn:hover {
+  /* Button color when hovering*/
   background-color: rgba(252, 110, 0, 0.5);
   transition: 0.5s;
 }
-@media screen and (max-height: 450px) { /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+
+@media screen and (max-height: 450px) {
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
 }
+
 /* MENU SIDEBAR CSS */
 
 /* TECH BLOGS CSS */
@@ -493,58 +593,67 @@ VIDEO COLUMNS */
   margin-left: 35px;
   margin-right: 80px;
 }
+
 .blogtext {
-  font-size: 30px; 
-  font-family: Open-Sans; 
-  color: black; 
+  font-size: 30px;
+  font-family: Open-Sans;
+  color: black;
   margin-left: 60px;
   transition: 0.2s;
 }
+
 .code {
-  font-size: 30px; 
-  font-family: B612-Mono; 
+  font-size: 30px;
+  font-family: B612-Mono;
   color: white;
   background-color: rgba(30, 30, 30, 0.9);
-  border-radius: 8px; 
+  border-radius: 8px;
   margin-left: 60px;
   transition: 0.2s;
   padding: 10px;
 }
+
 .photocaption {
-  font-size: 20px; 
-  font-family: oxygen-light; 
-  color: gray; 
+  font-size: 20px;
+  font-family: oxygen-light;
+  color: gray;
   margin-left: 150px;
   margin-top: 10px;
   transition: 0.2s;
 }
+
 .blogdate {
-  font-size: 30px;  
-  font-family: Open-Sans; 
-  color: black; 
+  font-size: 30px;
+  font-family: Open-Sans;
+  color: black;
   margin-left: 60px;
 }
+
 .bloglink {
-  font-size: 30px;  
-  font-family: Open-Sans; 
-  color:rgb(106, 185, 255); 
+  font-size: 30px;
+  font-family: Open-Sans;
+  color: rgb(106, 185, 255);
   transition: 0.2s;
 }
+
 .bloglink-wrapper {
   margin-left: 60px;
 }
+
 .bloglink:hover {
   background-color: rgba(184, 184, 184, 0.25);
 }
+
 .blogtitle {
-  font-size: 50px;  
-  font-family: Open-Sans; 
-  color: black; 
+  font-size: 50px;
+  font-family: Open-Sans;
+  color: black;
   margin-left: 60px;
 }
+
 .blogimage {
-  width: 50%; 
-  height: auto; 
+  width: 50%;
+  height: auto;
   margin-left: 22px;
 }
 
@@ -552,18 +661,23 @@ VIDEO COLUMNS */
   .blogtext {
     font-size: 25px;
   }
-  .bloglink{
+
+  .bloglink {
     font-size: 20px;
   }
+
   .blogtitle {
     font-size: 40px;
   }
-  .blogdate{
+
+  .blogdate {
     font-size: 20px;
   }
+
   .code {
     font-size: 20px;
   }
+
   .photocaption {
     font-size: 15px;
   }
@@ -573,16 +687,20 @@ VIDEO COLUMNS */
   .blogtext {
     font-size: 20px;
   }
+
   .blogtitle {
     font-size: 30px;
   }
+
   .code {
     font-size: 13px;
   }
+
   .blogs {
     margin-left: 0px;
     margin-right: 30px;
   }
+
   .photocaption {
     font-size: 10px;
   }
@@ -597,13 +715,14 @@ VIDEO COLUMNS */
 
 /* Add padding BETWEEN each column (if you want) */
 .mainrow,
-.mainrow > .maincolumn {
+.mainrow>.maincolumn {
   padding: 8px;
 }
 
 .mainrow p {
   color: white;
 }
+
 .mainrow h3 {
   color: white;
 }
@@ -615,7 +734,7 @@ VIDEO COLUMNS */
   border-radius: 8px;
 }
 
-/* Clear floats after rows */ 
+/* Clear floats after rows */
 .mainrow:after {
   content: "";
   display: table;
@@ -659,16 +778,20 @@ VIDEO COLUMNS */
   .maincolumn {
     width: 100%;
   }
+
   .maincontent-wrapper {
     margin-left: 10px;
     margin-right: 10px;
   }
+
   .maincontent p {
     font-size: 30px;
   }
+
   .maincontent attr {
     font-size: 13px;
   }
+
   .maincontent more {
     font-size: 15px;
   }
@@ -678,20 +801,25 @@ VIDEO COLUMNS */
   .maincolumn {
     width: 100%;
   }
+
   .maincontent-wrapper {
     margin-left: 1px;
     margin-right: 1px;
   }
+
   .maincontent p {
     font-size: 25px;
   }
+
   .maincontent attr {
     font-size: 10px;
   }
+
   .maincontent more {
     font-size: 13px;
   }
 }
+
 @media screen and (max-width: 400px) {
   .maincontent p {
     font-size: 20px;
