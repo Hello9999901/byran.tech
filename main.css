@@ -652,7 +652,7 @@ VIDEO COLUMNS */
 }
 
 .blogimage {
-  width: 50%;
+  width: calc(50vw + 250px);
   height: auto;
   margin-left: 22px;
 }
