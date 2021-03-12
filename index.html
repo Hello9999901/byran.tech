@@ -1,7 +1,7 @@
 /* PORTIONS OF CODE (SOME MODIFIED) ARE FROM W3SCHOOLS */
 /* https://www.w3schools.com */
 <!DOCTYPE html>
-
+<html>
 <head>
 	<html lang="en-US">
 	<body style="background-color: black;">
@@ -30,6 +30,7 @@
     </script>
 </head>
 
+<body onload="onLoadFunction()">
 <div id="navbarwrapper">
 	<div class="bar"></div>
 
@@ -63,6 +64,12 @@
 		<a href="about.html">About</a>
 		<a href="anything.html">Anything</a>
 	</div>  
+</div>
+
+<div id="cookie-banner" style="visibility: hidden;">
+	<p>Hi! www.byran.tech uses cookies for the analysis of traffic. (only Google Analytics) By continuing to use
+		www.byran.tech, it is assumed that you agree to the <a href="cookiesPolicy.html">cookie policy. Thank you.</a></p>
+	<button id="close" onclick="closeCookieBanner()">&times;</button>
 </div>
 
 <div class="maincontent-wrapper">

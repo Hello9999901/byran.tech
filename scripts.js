@@ -24,3 +24,21 @@ if (prevScrollpos > currentScrollPos || $(window).scrollTop() <= 0) {
 }
   prevScrollpos = currentScrollPos;
 }
+
+/* COOKIE BANNER CODE */
+function onLoadFunction() {
+  console.log("function loaded")
+  if(localStorage.getItem('cookieSeen') != 'shown'){
+    console.log("notshown")
+    document.getElementById("cookie-banner").style.visibility = "visible";
+    localStorage.setItem('cookieSeen','shown')
+  }
+  else{
+    document.getElementById("cookie-banner").style.visibility = "hidden";
+  }
+}
+function closeCookieBanner() {
+  document.getElementById("cookie-banner").style.visibility = "hidden";
+  document.getElementById("cookie-banner").style.display = "none";
+}
+
