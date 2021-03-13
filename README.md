@@ -1,4 +1,4 @@
 # BYRAN.TECH
 My website
 
-### Licensed Under the MIT License
+### Licensed under the MIT License
