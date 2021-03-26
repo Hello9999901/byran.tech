@@ -3,7 +3,8 @@
 <!DOCTYPE html>
 
 <head>
-	<html lang="en-US">
+		<html lang="en-US">
+	<link href="../syntaxHighlight/prism.css" rel="stylesheet" />
 	<body style="background-color: white;">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<title>byran.tech | How to Hack</title>
@@ -78,7 +79,8 @@
         Simple in the sense its easy to use, and simple in the sense it can easily break your computer. Here are a few interesting (albiet scary) commands!
     </p>
     <p class="blogtitle">1. sudo rm -rf /</p>
-    <p class="code">&nbspsudo rm -rf /</p>
+    	<pre class="blogtext">
+		<code class="language-bash">&nbspsudo rm -rf /</code></pre>
     <p class="blogtext">The command "sudo rm -rf /" is an infamous command that erases EVERYTHING in a computer. It is very powerful.
         <br>
         Perhaps we should take a more detailed look into what this does. 
@@ -100,7 +102,8 @@
         to force delete files. It will override many protections. However, it will not override write-protected directories.
     </p>
     <p class="blogtitle">2. :(){ :|:& };:</p>
-    <p class="code">&nbsp:(){ :|:& };:</p>
+    	<pre class="blogtext">
+		<code class="language-bash">&nbsp:(){ :|:& };:</code></pre>
     <p class="blogtext">This command is called a fork bomb. After running it, it continually uses up system resources, causing the system is slowed
         or to crash. This command is harder to explain than sudo rm -rf /, so I'll skip explaining this one. In simple terms, it replicates itself until
         the system is filled with the bomb.
@@ -119,23 +122,29 @@
     </p>
     <p class="blogtitle">Person-in-the-Middle Attack</p>
     <p class="blogtext">A person-in-the-middle attack (I'll call it PITM for short) is where a hacker intercepts a user's connection 
-        to someplace. For example, Alex and Jack are talking to each other online. <br><p class="code">Alex -> Jack</p></p>
+        to someplace. For example, Alex and Jack are talking to each other online. <br>	<pre class="blogtext">
+		<code class="language-bash">Alex -> Jack</code></pre>
     <p class="blogtext">However, Alex and Jack don't know anything about online safety and decide to talk
         over HTTP (Hypertext Transfer Protocol). This means the data they send is not encrypted. <br>
-        <p class="code">Data (Non-Encrypted) -> (Non-encrypted) Data</p></p>
+        	<pre class="blogtext">
+		<code class="language-bash">Data (Non-Encrypted) -> (Non-encrypted) Data</code></pre>
     <p class="blogtext">Suddendly, a hacker decides to squeeze himself/herself into the converstation. The converstation has now become:<br>
-        <p class="code">Alex -> Hacker -> Jack</p></p>
+        	<pre class="blogtext">
+		<code class="language-bash">Alex -> Hacker -> Jack</code></pre>
     <p class="blogtext">With this, neither Alex nor Jack knows that every single thing they send to each other is being monitored and collected
         by the hacker. Scary, right?<br>
-        <p class="code">Alex (Sends: Hi, Jack!) -> Hacker (Relays: Hi, Jack!) -> Jack (Receives: Hi, Jack!)</p></p>
+        	<pre class="blogtext">
+		<code class="language-bash">Alex (Sends: Hi, Jack!) -> Hacker (Relays: Hi, Jack!) -> Jack (Receives: Hi, Jack!)</code></pre>
     <p class="blogtext">However, the hacker can now easily alter the texts Alex sends to Jack or vice versa.
-        <p class="code">Alex (Sends: Good Morning!) -> Hacker (Alters: Bad Morning!) -> Jack (Receives: Bad Morning!)</p></p>
+        	<pre class="blogtext">
+		<code class="language-bash">Alex (Sends: Good Morning!) -> Hacker (Alters: Bad Morning!) -> Jack (Receives: Bad Morning!)</code></pre>
     <p class="blogtext">PITM attacks are much more difficult to accomplish on HTTPS (Hypertext Transfer Protocol Secure), where the data sent 
         is all encrypted. The moral of the story is to use HTTPS to keep yourself safe online. The good thing is that almost every single 
         trusted website is using HTTPS, including this website!</p>
 </div>
 
 
+	<script src="../syntaxHighlight/prism.js"></script>
 </body>
 </html>
 

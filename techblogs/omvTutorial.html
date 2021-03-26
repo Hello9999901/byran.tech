@@ -3,7 +3,8 @@
 <!DOCTYPE html>
 
 <head>
-	<html lang="en-US">
+		<html lang="en-US">
+	<link href="../syntaxHighlight/prism.css" rel="stylesheet" />
 	<body style="background-color: white;">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<title>byran.tech | OMV5 on RPi</title>
@@ -113,7 +114,8 @@
 		2. Type these 4 commands. The upgrade might take a while. Start a Blender model or
 		something.
 	</p>
-	<p class="code">
+		<pre class="blogtext">
+		<code class="language-bash">
 		sudo apt-get update
 		<br>
 		sudo apt-get upgrade -y
@@ -121,20 +123,25 @@
 		sudo rm -f /etc/systemd/network/99-default.link
 		<br>
 		sudo reboot
-	</p>
+	</code></pre>
 	<p class="blogtext">1. Type (the script may take up to +30 min)</p>
-	<p class="code"> wget -O - https://github.com/OpenMediaVault-Plugin-Developers/
-		installScript/raw/master/install | sudo bash</p>
+		<pre class="blogtext">
+		<code class="language-bash"> wget -O - https://github.com/OpenMediaVault-Plugin-Developers/
+		installScript/raw/master/install | sudo bash</code></pre>
 	<p class="blogtext">After the install is done, on the Raspberry Pi, run</p>
-	<p class="code">hostname -I</p>
+		<pre class="blogtext">
+		<code class="language-bash">hostname -I</code></pre>
 	<p class="blogtext">
 		2. Enter the output IP address into a browser.
 		<br>
 		3. Enter admin login. By default,
 		<br>
+		<pre class="blogtext">
+			<code class="language-bash">
 		username: admin
 		<br>
 		password: openmediavault
+	</code></pre>
 	</p>
 	<img class="blogimage" src="../image/Tutorial Images/OmvTutorial/OMVLogin.png" style="margin-left: 60px;">
 	<p class="blogtext">4. You should be greeted with the web GUI:</p>
@@ -145,6 +152,7 @@
 </div>
 
 
+	<script src="../syntaxHighlight/prism.js"></script>
 </body>
 </html>
 
