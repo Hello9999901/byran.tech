@@ -198,6 +198,7 @@ body {
     font-size: 46px;
     margin-top: 24px;
   }
+
 }
 
 @media screen and (max-width: 1662px) {
@@ -225,8 +226,8 @@ body {
   .navbar {
     z-index: -10;
     opacity: 0;
+    visibility: hidden;
   }
-
   #main {
     z-index: 10;
     opacity: 1;
@@ -833,6 +834,7 @@ VIDEO COLUMNS */
 
 /* COOKIES */
 #cookie-banner {
+  z-index: 999999;
   transition: 1s;
 	position: fixed;
 	bottom: 40px;
