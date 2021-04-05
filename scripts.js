@@ -27,9 +27,7 @@ if (prevScrollpos > currentScrollPos || $(window).scrollTop() <= 0) {
 
 /* COOKIE BANNER CODE */
 function onLoadFunction() {
-  console.log("function loaded")
   if(localStorage.getItem('cookieSeen') != 'shown'){
-    console.log("notshown")
     document.getElementById("cookie-banner").style.visibility = "visible";
     localStorage.setItem('cookieSeen','shown')
   }

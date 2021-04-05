@@ -741,6 +741,11 @@ VIDEO COLUMNS */
   clear: both;
 }
 
+/* Spacing Wrapper */
+.spacing-wrapper {
+  margin-top: 10px;
+}
+
 /* Content */
 .maincontent-wrapper2 {
   padding: 10px;

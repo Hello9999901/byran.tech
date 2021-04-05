@@ -1,178 +1,216 @@
 /* PORTIONS OF CODE (SOME MODIFIED) ARE FROM W3SCHOOLS */
 /* https://www.w3schools.com */
 <!DOCTYPE html>
-<html>
+<html style="background-color: black;">
+
 <head>
-		<html lang="en-US">
+	<html lang="en-US">
 	<link href="./syntaxHighlight/prism.css" rel="stylesheet" />
-	<body style="background-color: rgb(0, 0, 0);">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<title>Home of Byran Technologies | byran.tech</title>
 	<meta name="title" content="Home of Byran Technologies | byran.tech">
-	<meta name="description" content="byran.tech, home of Byran Technologies. I provide information and resources from Blender to Terminal, and from macOS to Linux">
+	<meta name="description"
+		content="byran.tech, home of Byran Technologies. I provide information and resources from Blender to Terminal, and from macOS to Linux">
 	<meta name="keywords" content="byran, tech, blender, phone">
 	<meta name="author" content="Byran Technologies">
 	<meta name="image" content="https://www.byran.tech/image/logos/SquareLogo.png">
 	<meta property="og:title" content="Home of Byran Technologies | byran.tech">
-	<meta property="og:description" content="byran.tech, home of Byran Technologies. I provide information and resources from Blender to Terminal, and from macOS to Linux">
+	<meta property="og:description"
+		content="byran.tech, home of Byran Technologies. I provide information and resources from Blender to Terminal, and from macOS to Linux">
 	<meta property="og:image" content="https://www.byran.tech/image/logos/SquareLogo.png">
 	<link rel="icon" type="image/png" href="image/logos/SquareLogo.png">
 	<link rel="icon" type="image/png" href="https://www.byran.tech/image/logos/SquareLogo.png">
 	<link rel="stylesheet" href="main.css">
 	<script src="scripts.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-9TVWTTPKRX');
-    </script>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-9TVWTTPKRX');
+	</script>
 </head>
 
 <body onload="onLoadFunction()">
-<div id="navbarwrapper">
-	<div class="bar"></div>
+	<div id="navbarwrapper">
+		<div class="bar animate__animated animate__fadeInDown"></div>
 
-	<div class="orangebar"></div>
+		<div class="orangebar animate__animated animate__fadeInUp"></div>
 
-	<a href="index.html">
-		<h1 class="title">B Y R A N . T E C H</h1>
-	</a>
-	<div class="navbar">
-		<a style="color: white; text-decoration: none; padding-right: 13px;" href="blenderprojects.html";>Blender Models</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;" href="githubprojects.html";>Github Projects</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;" href="techblogs.html";>Tech Blogs</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;" href="about.html";>About</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;" href="anything.html";>Anything</a>
-	</div>
-
-	<div id="main">
-		<img src="image/menu1.png" class="openbtn" onclick="openNav()">
-	</div>
-
-	<div id="mySidebar" class="sidebar">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<div style="padding-top: 20px;"></div>
-		<a href="blenderprojects.html">Blender Projects</a>
-		<a href="githubprojects.html">Github Projects</a>
-		<a href="techblogs.html">Tech Blogs</a>
-		<a href="about.html">About</a>
-		<a href="anything.html">Anything</a>
-	</div>  
-</div>
-
-<div id="cookie-banner" style="visibility: hidden;">
-	<p>Hi! www.byran.tech uses cookies for the analysis of traffic. (only Google Analytics) By continuing to use
-		www.byran.tech, it is assumed that you agree to the <a href="https://www.byran.tech/cookiesPolicy.html">cookie policy.</a> Thank you.</p>
-	<button id="close" onclick="closeCookieBanner()">&times;</button>
-</div>
-
-<div class="maincontent-wrapper">
-	<a href="https://github.com/Hello9999901/Kyanite " target="_blank" style="text-decoration: none;">
-		<div class="maincontent" style="margin-bottom: 12px;">
-			<img src="image/githubprojects/Kyanite Banner.png" style="width: 100%;" alt="Kyanite Banner">
-			<div class="maincontent-wrapper2">	
-				<p>Kyanite - Inject Ubuntu With Charm</p>
-			</div>
+		<a href="index.html">
+			<h1 class="title animate__animated animate__fadeInLeft">B Y R A N . T E C H</h1>
+		</a>
+		<div class="navbar animate__animated animate__fadeInRight">
+			<a style="color: white; text-decoration: none; padding-right: 13px;" href="blenderprojects.html" ;>Blender
+				Models</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;" href="githubprojects.html" ;>Github
+				Projects</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;" href="techblogs.html" ;>Tech
+				Blogs</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;" href="about.html" ;>About</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;" href="anything.html" ;>Anything</a>
 		</div>
-	</a>
-	<div class="maincontent">
-		<picture>
-			<source type="image/jp2" srcset="image/jp2/Radio.jp2"; style="width:100%">
-			<source type="image/webp" srcset="image/webp/Radio.webp"; style="width:100%">
-			<img src="image/jpg/Radio.jpg"; alt="Radio"; style="width:100%">
-		</picture>
-		<div class="maincontent-wrapper2">
-			<p>Vintage Radio</p>
-			<more>A more vintage feel with a splash of modern from outside the window.
-				<br>
-				Done in record time, but that's not the important part - its the realism.
-				<br>
-			</more>
-			<attr>Some assets from https://www.poliigon.com. Radio made by me.</attr>
+
+		<div id="main">
+			<img src="image/menu1.png" class="openbtn" onclick="openNav()">
+		</div>
+
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div style="padding-top: 20px;"></div>
+			<a href="blenderprojects.html">Blender Projects</a>
+			<a href="githubprojects.html">Github Projects</a>
+			<a href="techblogs.html">Tech Blogs</a>
+			<a href="about.html">About</a>
+			<a href="anything.html">Anything</a>
 		</div>
 	</div>
-	<div class="mainrow">
-		<div class="maincolumn"> <!--LEFT COLUMN-->
-			<div class="maincontent" style="margin-bottom: 12px;">
-				<picture>
-					<source type="image/jp2" srcset="image/jp2/WinterCamoV2.jp2"; style="width:100%">
-					<source type="image/webp" srcset="image/webp/WinterCamoV2.webp"; style="width:100%">
-					<img src="image/jpg/WinterCamoV2.jpg"; alt="WinterCamoV2"; style="width:100%">
-				</picture>
-				<div class="maincontent-wrapper2">
-					<p>Lamborghini in Dirty Winter Camo</p>
-					<more>Cycles (400 samples) of the Huracán Performante model I made a few weeks back. Changed it up a bit.
-						<br>
-						I think the noise adds personality to the render.
-					</more>
-				</div>
-			</div>
-			<div class="maincontent" style="margin-bottom: 12px;">
-				<div class="maincontent-wrapper2">
-					<a href="blenderprojects.html" target="_blank" style="text-decoration: none;">
-						<p>Dirty Winter Camoflague Texture</p>
-						<picture>
-							<source type="image/jp2" srcset="image/jp2/WinterCamoSphere.jp2"; style="width:100%">
-							<source type="image/webp" srcset="image/webp/WinterCamoSphere.webp"; style="width:100%">
-							<img src="image/jpg/WinterCamoSphere.jpg"; alt="Winter Camo Sphere"; style="width:100%">
-						</picture>
-					</a>	
-				</div>
-			</div>
-			<div class="maincontent">
-				<div class="maincontent-wrapper2">
-					<a href="techblogs/MakeRosetta2Terminal.html" target="_blank" style="text-decoration: none;">	
-						<p>How to Make a x86 Emulated Terminal for Apple Silicon</p>
-						<img src="image/Tutorial Images/RosettaTerminalTutorial/Thumbnail.png" alt="Custom Rosetta Terminal Logo" style="width:100%">
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="maincolumn"> <!--RIGHT COLUMN-->
-			<div class="maincontent" style="margin-bottom: 12px;">
-				<video controls src="videos/ByranPhoneMKII.mp4" alt="Video of Byran Phone MK II" style="width:100%"></video>
-				<div class="maincontent-wrapper2">
-					<p>The BYRAN PHONE MK II</p>
-					<more>This is a line of phone commercials I am making using Blender 3D!</more>
+
+	<div id="cookie-banner" style="visibility: hidden;">
+		<p>Hi! www.byran.tech uses cookies for the analysis of traffic. (only Google Analytics) By continuing to use
+			www.byran.tech, it is assumed that you agree to the <a
+				href="https://www.byran.tech/cookiesPolicy.html">cookie policy.</a> Thank you.</p>
+		<button id="close" onclick="closeCookieBanner()">&times;</button>
+	</div>
+
+	<div class="maincontent-wrapper">
+		<div class="maincontent animate__animated animate__fadeInDown">
+			<picture>
+				<source type="image/jp2" srcset="image/jp2/DeLorean.jp2" ; style="width:100%">
+				<source type="image/webp" srcset="image/webp/DeLorean.webp" ; style="width:100%">
+				<img src="image/jpg/DeLorean.jpg" ; alt="DeLorean" ; style="width:100%">
+			</picture>
+			<div class="maincontent-wrapper2">
+				<p>DeLorean DMC-12</p>
+				<more>A cool, sci-fi-themed DeLorean from the famous movie <i>Back To the Future</i>
 					<br>
-					<attr>Song: Todd Helder - Never Stop [NCS Release] Music provided by NoCopyrightSounds Free Download/Stream: http://ncs.io/NeverStop Watch: http://youtu.be/KDtuZilDITs</attr>
+					It is the original version, not the customized one in the movie. This is mainly
+					topology and shading practice; if you do Blender, you know how important that is.
+					I did not do the interior; I focused on the exterior geometry. I thought it turned out pretty good.
+					<br>
+				</more>
+				<attr>Made by me, inspired by the DeLorean DMC-12. P.S.: It is meant to look fake/way to perfect to be in this world.</attr>
+			</div>
+		</div>
+		<div class="spacing-wrapper">
+			<a href="https://github.com/Hello9999901/Kyanite" target="_blank" style="text-decoration: none;">
+				<div class="maincontent animate__animated animate__fadeInDown" style="margin-bottom: 12px;">
+					<img src="image/githubprojects/Kyanite Banner.png" style="width: 100%;" alt="Kyanite Banner">
+					<div class="maincontent-wrapper2">
+						<p>Kyanite - Inject Ubuntu With Charm</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="maincontent animate__animated animate__fadeInDown">
+			<picture>
+				<source type="image/jp2" srcset="image/jp2/Radio.jp2" ; style="width:100%">
+				<source type="image/webp" srcset="image/webp/Radio.webp" ; style="width:100%">
+				<img src="image/jpg/Radio.jpg" ; alt="Radio" ; style="width:100%">
+			</picture>
+			<div class="maincontent-wrapper2">
+				<p>Vintage Radio</p>
+				<more>A more vintage feel with a splash of modern from outside the window.
+					<br>
+					Done in record time, but that's not the important part - its the realism.
+					<br>
+				</more>
+				<attr>Some assets from https://www.poliigon.com. Radio made by me.</attr>
+			</div>
+		</div>
+		<div class="mainrow">
+			<div class="maincolumn">
+				<!--LEFT COLUMN-->
+				<div class="maincontent" style="margin-bottom: 12px;">
+					<picture>
+						<source type="image/jp2" srcset="image/jp2/WinterCamoV2.jp2" ; style="width:100%">
+						<source type="image/webp" srcset="image/webp/WinterCamoV2.webp" ; style="width:100%">
+						<img src="image/jpg/WinterCamoV2.jpg" ; alt="WinterCamoV2" ; style="width:100%">
+					</picture>
+					<div class="maincontent-wrapper2">
+						<p>Lamborghini in Dirty Winter Camo</p>
+						<more>Cycles (400 samples) of the Huracán Performante model I made a few weeks back. Changed
+							it up a bit.
+							<br>
+							I think the noise adds personality to the render.
+						</more>
+					</div>
+				</div>
+				<div class="maincontent" style="margin-bottom: 12px;">
+					<div class="maincontent-wrapper2">
+						<a href="blenderprojects.html" target="_blank" style="text-decoration: none;">
+							<p>Dirty Winter Camoflague Texture</p>
+							<picture>
+								<source type="image/jp2" srcset="image/jp2/WinterCamoSphere.jp2" ; style="width:100%">
+								<source type="image/webp" srcset="image/webp/WinterCamoSphere.webp" ;
+									style="width:100%">
+								<img src="image/jpg/WinterCamoSphere.jpg" ; alt="Winter Camo Sphere" ;
+									style="width:100%">
+							</picture>
+						</a>
+					</div>
+				</div>
+				<div class="maincontent">
+					<div class="maincontent-wrapper2">
+						<a href="techblogs/MakeRosetta2Terminal.html" target="_blank" style="text-decoration: none;">
+							<p>How to Make a x86 Emulated Terminal for Apple Silicon</p>
+							<img src="image/Tutorial Images/RosettaTerminalTutorial/Thumbnail.png"
+								alt="Custom Rosetta Terminal Logo" style="width:100%">
+						</a>
+					</div>
 				</div>
 			</div>
-			<div class="maincontent" style="margin-bottom: 12px;">
-				<div class="maincontent-wrapper2">
-					<a href="techblogs/omvTutorial.html" target="_blank" style="text-decoration: none;">	
-						<p>How to Install OMV5 for Raspberry Pi</p>
+			<div class="maincolumn">
+				<!--RIGHT COLUMN-->
+				<div class="maincontent" style="margin-bottom: 12px;">
+					<video controls src="videos/ByranPhoneMKII.mp4" alt="Video of Byran Phone MK II"
+						style="width:100%"></video>
+					<div class="maincontent-wrapper2">
+						<p>The BYRAN PHONE MK II</p>
+						<more>This is a line of phone commercials I am making using Blender 3D!</more>
+						<br>
+						<attr>Song: Todd Helder - Never Stop [NCS Release] Music provided by NoCopyrightSounds Free
+							Download/Stream: http://ncs.io/NeverStop Watch: http://youtu.be/KDtuZilDITs</attr>
+					</div>
 				</div>
-			</div>
-			<div class="maincontent" style="margin-bottom: 12px;">
-				<div class="maincontent-wrapper2">
-					<a href="techblogs/ChangeMouseAccel.html" target="_blank" style="text-decoration: none;">	
-						<p>Change Mouse Acceleration for Mac</p>
-						<img src="image/Tutorial Images/ChangeMouseAccel/DPIslider.png" alt="DPI Slider" style="width:100%">
+				<div class="maincontent" style="margin-bottom: 12px;">
+					<div class="maincontent-wrapper2">
+						<a href="techblogs/omvTutorial.html" target="_blank" style="text-decoration: none;">
+							<p>How to Install OMV5 for Raspberry Pi</p>
+					</div>
 				</div>
-			</div>
-			<div class="maincontent" style="margin-bottom: 12px;">
-				<div class="maincontent-wrapper2">
-					<a href="techblogs/HowToHack.html" target="_blank" style="text-decoration: none;">	
-						<p>How to Hack (Work in Progress!)</p>
-						<img src="image/Tutorial Images/HowToHack/htop.png" alt="How To Hack - htop" style="width:100%">
+				<div class="maincontent" style="margin-bottom: 12px;">
+					<div class="maincontent-wrapper2">
+						<a href="techblogs/ChangeMouseAccel.html" target="_blank" style="text-decoration: none;">
+							<p>Change Mouse Acceleration for Mac</p>
+							<img src="image/Tutorial Images/ChangeMouseAccel/DPIslider.png" alt="DPI Slider"
+								style="width:100%">
+					</div>
+				</div>
+				<div class="maincontent" style="margin-bottom: 12px;">
+					<div class="maincontent-wrapper2">
+						<a href="techblogs/HowToHack.html" target="_blank" style="text-decoration: none;">
+							<p>How to Hack (Work in Progress!)</p>
+							<img src="image/Tutorial Images/HowToHack/htop.png" alt="How To Hack - htop"
+								style="width:100%">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div> 
-  
 
-	<script src="../syntaxHighlight/prism.js"></script>
+
+	<script src="./syntaxHighlight/prism.js"></script>
 </body>
+
 </html>
-
-
-
