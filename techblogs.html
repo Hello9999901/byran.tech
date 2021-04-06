@@ -3,190 +3,334 @@
 <!DOCTYPE html>
 
 <head>
-		<html lang="en-US">
-	<link href="../syntaxHighlight/prism.css" rel="stylesheet" />
-	<body style="background-color: white;">
+	<html lang="en-US">
+	<link href="./syntaxHighlight/prism.css" rel="stylesheet" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<title>byran.tech | Tech Blogs</title>
 	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<script src="scripts.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-9TVWTTPKRX');
-    </script>
-  </head>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
-<div id="navbarwrapper">
-	<div class="bar"></div>
+		gtag('config', 'G-9TVWTTPKRX');
+	</script>
+</head>
 
-	<div class="orangebar"></div>
+<body style="background-color: white;">
+	<div id="navbarwrapper">
+		<div class="bar"></div>
 
-	<a href="index.html">
-		<h1 class="title">B Y R A N . T E C H</h1>
-	</a>
-	<div class="navbar">
-		<a style="color: white; text-decoration: none; padding-right: 13px;" href="blenderprojects.html";>Blender Models</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;" href="githubprojects.html";>Github Projects</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;" href="techblogs.html";>Tech Blogs</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;" href="about.html";>About</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
-		<a style="color: white; text-decoration: none; padding-right: 13px;" href="anything.html";>Anything</a>
-	</div>
+		<div class="orangebar"></div>
 
-	<div id="main">
-		<img src="image/menu1.png" class="openbtn" onclick="openNav()">
-	</div>
-
-	<div id="mySidebar" class="sidebar">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<div style="padding-top: 20px;"></div>
-		<a href="blenderprojects.html">Blender Projects</a>
-		<a href="githubprojects.html">Github Projects</a>
-		<a href="techblogs.html">Tech Blogs</a>
-		<a href="about.html">About</a>
-		<a href="anything.html">Anything</a>
-	</div>  
-</div>
-
-<div class="blogs">
-	<br>
-	<h1 class="blogtitle"> Actual Tech Support and Stuff:</h1>
-	<div class="bloglink-wrapper">
-		<p class="blogtext">NEW TECH TUTORIALS!</p>
-		<a class="bloglink" href="techblogs/Amazing-Mac-Apps-To-Speed-Up-Any-Workflow.html">- Amazing Free macOS Apps To Speed Up Any Workflow - macOS</a>
-			<br>
-			<br>
-		<a class="bloglink" href="techblogs/3-Ways-To-Check-If-An-Application-Is-Apple-Silicon-Or-Intel.html">- 3 Ways to Check If An Application Is Apple Silicon or Intel - macOS</a>
-			<br>
-			<br>
-		<a class="bloglink" href="techblogs/AudioMidiSetupMultipleOuts.html">- Simultaneously Play Out of Multiple Audio Outputs - macOS</a>
-			<br>
-			<br>
-		<a class="bloglink" href="techblogs/ChangeMouseAccel.html">- Change Mouse Acceleration - macOS</a>
-			<br>
-			<br>
-		<a class="bloglink" href="techblogs/MakeRosetta2Terminal.html">- How to Make a Rosetta 2 Terminal for Apple Silicon Macs - macOS</a>
-			<br>
-			<br>
-		<p class="blogtext">OLDER TUTORIALS:</p>
-		<a class="bloglink" href="techblogs/omvTutorial.html">- Open Media Vault on Raspberry Pi - RPi</a>
-			<br>
-			<br>
-		<a class="bloglink" href="techblogs/HowToHack.html">- How To Hack</a>
-			<br>
-			<br>
-		<a class="bloglink" href="techblogs/XboxE100Error.html">- XBOX E100 ERROR - Consoles</a>
-			<br>
-			<br>
-		<a class="bloglink" href="techblogs/py2appfixes.html">- py2app FIXES - Python</a>
-			<br>
-			<br>
-		<a class="bloglink" href="techblogs/HowToMacOSFaster.pdf">- How to macOS Faster - macOS</a>
-			<br>
-			<br>
-		<p class="blogtext">IMPORTANT:</p>
-		<a class="bloglink" href="techblogs/Key-Tester/KeyTester.html" target="_blank">- Key Tester</a>
-			<br>
-			<br>
-		<a class="bloglink" href="techblogs/techsupport.txt" target="_blank">- Tech Support TXT File</a>
-	</div>
-	<!---->
-	<hr>
-	<!---->
-	<h1 class="blogtitle">Very Intriguing Tech Blogs:</h1>
-		<div class="bloglink-wrapper">
-			<a class="bloglink" href="techblogs/Intel-DG1.html">- Intel’s Unorthodox Approach at the GPU Market 20 Years After Their First Failed Attempt</a>
-				<br>
-				<br>
-			<a class="bloglink" href="techblogs/AppleSiliconM1.html">- My Thoughts on the Apple Silicon M1 Macs</a>
-				<br>
-				<br>
-			<a class="bloglink" href="techblogs/macOSBigSur.html">- macOS Big Sur</a>
-				<br>
-				<br>
-			<a class="bloglink" href="techblogs/MyThoughtsOnmacOSBigSur,iOS14andAppleSilicon.html">- My Thoughts on macOS Big Sur, iOS 14 and Apple Silicon</a>
-				<br>
-				<br>
-			<a class="bloglink" href="techblogs/TheReasonApple'sProductsAreSoExpensive.html">- The Reason Apple's Produces are so Expensive</a>
-				<br>
-				<br>
-			<a class="bloglink" href="techblogs/WhyAppleSiliconReallyMatters.html">- Why Apple Silicon Really Matters</a>
-				<br>
-				<br>
-			<a class="bloglink" href="techblogs/WhyAreMechanicalKeyboardsSoSoughtAfter.html">- Why are Mechanical Keyboards so Sought After?</a>
-				<br>
-				<br>
-			<a class="bloglink" href="techblogs/WhyUSBCIsJustPlainBetter.html">- Why USB-C is just Plain Better</a>
-				<br>
-				<br>
-			<a class="bloglink" href="techblogs/WhyRazerHasSuchALargeCultFollowing.html">- Why Razer has such a Large Cult Following</a>
+		<a href="index.html">
+			<h1 class="title">B Y R A N . T E C H</h1>
+		</a>
+		<div class="navbar">
+			<a style="color: white; text-decoration: none; padding-right: 13px;" href="blenderprojects.html" ;>Blender
+				Models</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;" href="githubprojects.html" ;>Github
+				Projects</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;" href="techblogs.html" ;>Tech Blogs</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;" href="about.html" ;>About</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;">|</a>
+			<a style="color: white; text-decoration: none; padding-right: 13px;" href="anything.html" ;>Anything</a>
 		</div>
-	<h5 class="blogdate" >Sunday, July 19, 2020</h5>
-	<h2 class="blogtitle" >Benefits to Gaming Gear</h2>
-	<p class="blogtext">Why would one want gaming gear? Well, there are many benefits to gaming gear other than gaming, which is probably what most people buy them for. First of all, they are much more comfortable than normal tech.</p>
-	<p class="blogtext">Just compare a your office mouse to a well kitted out gaming mouse. To this argument you might pose the following answer: “Well, an ergonomic mouse would do just fine.” To answer that, I would like to go on a tangent. First, gaming mice are probably the most responsive mice you’ll ever try. They also have the best sensors. These two are things that are almost oblivious to ergonomic mice or “office mice”.</p>
-	<p class="blogtext">I’ll pose another example: say you are buying a keyboard. Buy an office keyboard or a better keyboard? Oh, you just heard your friend say that he just bought a mechanical keyboard and it’s the BEST keyboard he’s ever tried? Well, say no more. For $40, you can get your hands on a very comparable mechanical keyboard. You try it, and it’s not as amazing as your friend said. Then, you try your laptop’s keyboard and you realize that it’s not just the longer travel, it’s the FEEL of the keyboard. There’s no turning back. I know I’m groundlessly saying this, but it’s really worth the more cash. What’s the biggest market for mechanical keyboard? Gaming and programming. Who uses and advocates for mechanical keyboards the most? Gamers. So, who sells them? Gaming gear brands. That basically forces you to buy mechanical keyboards from gaming brands. That doesn’t mean it’s gonna have sharp edges and the absolutely brightest RGB in the world. Buying from a reputable gaming brand can result in a keyboard that you can trust on for years to come.</p>
-	<p class="blogtext">There are so many things that many people have never tried but gamers use on a regular basis, such as high refresh rate, high resolution mouse sensors and mechanical keyboards. I’ve covered the last 2 already. High refresh rate is something that not many people have tried. Almost all high refresh rate monitors are branded as gaming. I have not tried one, but it sounds promising from literally every single tech enthusiast.</p>
-	<p class="blogtext">Lastly, and perhaps the thing I value most, is the SOFTWARE. Yes, it might be buggy, yes, it might be low-res. Yes, it may take up resources and RAM that can be used otherwise. However, it’s the ability to do WHATEVER you want with ALL THE EXTRA BUTTONS on the mice and keyboards. Without the software, your gaming mouse is basically just a glorified office mouse. The software is KEY to me. I use it 24/7. Logitech G Hub is very good considering the fact that Logitech doesn’t usually make software. It’s not as feature packed as many others, such as Razer Synapse, but it’s the ability to customize the 11 customizable buttons I have on my mouse. They are so useful if you installed the software, yet so useless if you didn’t. I use macros on my mouse for switching between desktops and tabs, mission control, DPI switching and many more.</p>
-	<p class="blogtext">Gaming gear is much more than just the RGB and the hype. It’s actually worthwhile if you don’t go for bad/sketchy brands at lower prices.</p>
-	<p class="blogtext">P.S. Yes it’s expensive, but it probably will outlast your office mouse.</p>
-	<!---->
-	<hr>
-	<!---->
-	<h5 class="blogdate">Saturday, June 26, 2020</h5>
-	<h2 class="blogtitle">Computer Setups</h2>
-	<p class="blogtext">Who has the better gaming setup? Who has the most productive setup? Those are questions that have been quarreled about for decades in Reddit and the like. You know, those people flexing their RTX 2080 Ti and the tons of RGB lighting. Nobody’s fingerprint is the same, just like someone’s setup. You might be a gamer and have tons of RGB and a cool gaming chair. Your neighbor, who might be a 3D animator, might have a super high end PC that’s not for gaming and probably a color accurate monitor. Your dog’s friend’s owner might have a 10 year old laptop that probably can’t do anything well today, but he/she insists that it is all he/she will ever need. Setups vary from person to person, and there’s NOTHING to say that your setup is bad. 
-	The only thing that is ever bad about one’s setup is if it cannot do what it is meant to do. I think that my setup is a great example of a super unique setup. I have what I call the “dual laptop mac/windows workstation”. Yes, I have 2 laptops that I use with a monitor, but that is taking into account how much better laptops have become now. My Razer Blade Stealth and my MacBook Pro 13 are the <em>perfect</em> combo. One is relatively high performance whilst being a 13 inch laptop, whilst the other one is slower but runs macOS, which I am highly accustomed to. I have a dock configured so that I can hot swap both laptops. All it needs is a USB-C port. That means I can accommodate ANY laptop that has a USB-C port (and 13 inch form factor). This is just me. It does everything I want it to do. Run Windows and macOS natively (yes I can boot-camp in Mac but bluetooth doesn’t work). OK, enough about me.</p>
-	<p class="blogtext">What do YOU need?<br>What do YOU want to do in your setup?<br>What OS do you want to run?</p>
-	<p class="blogtext">Using these 3 questions can give you a rough idea of how it should run and look like. My setup values portability, as I can unplug my computer at any time and bring it on the go. Also, the battery acts like a UPS that runs for 8+ hours. Combined that gives my 16 hours of computer use even if my power goes out (there won’t be wifi so there won’t be much point). I think that the performance sacrifices are worth it. You, however, might want a dedicated UPS and a full gaming rig. Your friend might simply want a MacBook for school. It varies from person to person, and it is up to YOU to determine what is best for YOU.</p>
-	<p class="blogtext">P.S. NOBODY should convince you to change your setup as long as YOU’RE happy with it.</p>
-	<!---->
-	<hr>
-	<!---->
-	<h5 class="blogdate">Monday, June 29, 2020</h5>
-	<h2 class="blogtitle">FPS and Hertz (Refresh Rate)</h2>
-	<p class="blogtext">FPS and refresh rate. It is so pervasive in the gaming community. However, many people don’t even know what it is - they just know that the higher the better.</p>
-	<p class="blogtext">FPS<br>FPS (frames per second) is how many images the GPU sends to the monitor per second. Each “frame” is an image, and the more the better. Why is that so? Well, they more FPS, the faster the keys register into the game. However, this doesn’t not always mean that you are seeing, say, 100 frames per second.</p>
-	<p class="blogtext">Hz<br>
-	Hertz (refresh rate) is how fast the display is refreshing per second. If the display is 60Hz (it is generally the standard for most monitors), it means it will show a new image every 1/60 of a second. If the display is at, say 300Hz, it will show a new image every 1/300 of a second. Now, obviously, the more images you see, they better you will game. It means that you will see things in the game faster than others might, as in a multiplayer game. When FPS is less than the refresh rate, the frame will not refresh, or just stay the same. However, when the FPS and the refresh rate are mostly the same, you will get, say 240 frames per second, and you will SEE it. If you buy a 2080 Ti and game on your 10 year old monitor, chances are that you will only see some of the frames the GPU spits out. However, if you pair it up with a 240Hz monitor, you will probably see all the frames. Simply, FPS measures how well the GPU performs and refresh rate measures how well the monitor is.</p>
-	<p class="blogtext">The common refresh rates for monitors are:<br>40Hz (not quite common)<br>60Hz (very common)<br>75Hz (not really common)<br>120Hz (quite common in gaming)<br>144Hz (quite common in gaming)<br>165Hz (rare)<br>240Hz (e-Sports pro level)<br>300Hz (e-Sports pro level+)<br>360Hz (e-Sports pro level ++)</p>
-	<p class="blogtext">FPS is different in every game and with every GPU. Obviously, the more powerful the GPU is, the more FPS. However, the game, (i.e. how detailed it is, how many things it needs to process) will also affect FPS.</p>
-	<!---->
-	<hr>
-	<!---->
-	<h5 class="blogdate">Monday, June 22, 2020</h5>
-	<h2 class="blogtitle">Gaming Laptops</h2>
-	<p class="blogtext">Gaming laptops. Such great hardware, so portable, right? Well, not really. There’s not much difference between a “gaming laptop” and a “normal laptop”. I have a gaming laptop, but it’s an actually just an ultrabook with a GTX 1650 Max-Q. The Razer Blade Stealth is a great computer, lightweight and compact coming in at just about the size of a MacBook Pro 13 inch, and a bit heavier. The build is amazing. There is no body flex or deck flex. The body is made out of anodized aluminum. Other than the fact the it’s a fingerprint magnet, it’s great. However, this is because Razer actually has the ability to manufacture such a product. Many companies advertise their “gaming laptops” as super fast and best graphics in the world. Yes. It is true. However, they never tell you about the dark side of getting a “gaming laptop”. Sure, it runs Fortnite at 120 FPS on high settings. But it weights heavier than a block of lead. Not to mention how thick the computer gets. My Razer Blade, you might say, is just around the same as a MacBook Pro 13 inch. That’s because it has only an i7-1065G7 and a GTX 1650 Max-Q. I can get around 8 hours of light use. But that’s because the CPU and GPU are low power consumption mobile parts. There isn’t a whole RTX 2080 Ti and a AMD Threadripper in there. It runs Fortnite at 90 FPS on medium. That is the tradeoff between portability and performance. It is necessary (hopefully Apple Silicon can break that chain) for the manufacturer to choose whether to prioritize performance or portability.</p>
-	<p class="blogtext">Honestly, don’t go for “gaming laptops” just because they are marketed as gaming. Look into CPU specs and GPU specs. Learn lots about laptops and desktops. I did not choose my Razer Blade because it is a “gaming laptop” from a “gaming company” (I did choose it because, you know, Razer). I chose it for its portability to performance ratio and its reputation for high build quality. I could have chosen a 15’’ Blade, but I never really liked 15’’ computers. If you want high performance, go for 17’’+. If you want portability, go for 13’’ or less. I’m not saying that 15’’ laptops are horrid by any means. I just feel that it is like the middle seat on an airplane (however you want to take that statement).</p>
-	<p class="blogtext">So, what do you do if you DON’T want a “gaming laptop”? Well, if you don’t care about the marketing, there’s whole galaxies of selections to choose from. For example, a Dell XPS 13 with an eGPU would do great. You get the battery life when you need it, and get the performance (extra oomph) when you need that. Cool, right? Yeah. I thought so. I have never had an eGPU, or build a PC (I have built my own phone). This is all views from tech YouTubers like LTT, MKBHD and Austin Evans. Like with every mature market (quote MKBHD), there’s a “go to” product. For eGPUS, that would the Razer’s offerings. They are priced well and is very compact/compatible.</p>
-	<p class="blogtext">I have talked a lot about the bad sides of getting a “gaming computer”, but let’s talk about the good side. Most gaming laptops have TONS of robust cooling to keep the laptop from thermal throttling. Manufacturers also throw in the best parts they can find with expensive systems. A couple even have full on RTX 2080s. These result in best-in-class performance. An example of this would the the ROG Zephyrus G14. Ryzen 9 4000 series means probably the best performance ever in a laptop in general. In LTT’s video, it even out ran the ludicrously large Acer Predator with an Intel i9 chip.</p>
-	<p class="blogtext">In conclusion, gaming laptops, like everything else in tech, is worth it if you know your parts and you know what you are looking for.</p>
-	<p class="blogtext">P.S. Please don’t game with a MacBook. Please.</p>
-	<!---->
-	<hr>
-	<!---->
-	<h5 class="blogdate">Wednesday, July 15, 2020</h5>
-	<h2 class="blogtitle">macOS Big Sur</h2>
-	<p class="blogtext">Well, it’s here. MacOS Big Sur. I’ve been using the public beta for a couple days, and it’s really been an interesting ride. First, I’ll go over how I got it, and later will be going into my experiences. There’s some really interesting stats that might surprise you.</p>
-	<p class="blogtext">I was watching TechLinked a couple days ago, and it said that the public betas for iOS 14 and iPadOS were out, so I assumed that the betas for Big Sur would be out as well. I checked on Apple’s site, and MAN it’s confusing. On Apple’s site, it says “Coming Soon”, even though it’s already out (it still says “Coming Soon”). I’ve never done a public beta install, and it was pretty eye opening. I enrolled my Mac, and did all the steps. AND ALL I GOT WAS THE CATALINA 10.15.6 BETA. WHO IN THE WORLD WANTS THAT?!?!?!?! So I looked on Apple forums, and I wasn’t the only one. Some said that following Mr. Macintosh’s tutorials allowed them to download the Big Sur beta, so I gave it a try. AND IT WORKED! YAY! So I got the “Install macOS Big Sur Beta Application”. I wanted to simply boot it off a USB stick. However, it just wouldn’t work. I don’t know why, but I really just wanted to try Big Sur for the first time. So, I made another APFS volume on my disk and I installed the beta on the volume. It booted and I was in Big Sur. So, in the end, it took 24h from finding out about the beta to actually seeing it. Yay.</p>
-	<p class="blogtext">Everything is much more rounded, but it doesn’t cut text off or anything. If anything, it makes macOS look more user-friendly and, for the Power-users, doesn’t do anything much. I’ve basically only been using Big Sur for around 3 days, and I’ve had almost 0 problems. EVERYTHING works. I’ve tried a couple apps, such as Blender and Cinebench, Discord and Spotify. THEY ALL WORK!</p>
-	<p class="blogtext">Looks are generally what Apple has been changing this time around. As a consumer, there’s nothing much that changed. Finder is still Finder, and Safari is still a good browser. However, under the hood, there has been MASSIVE changes. Here’s my stats: my Blender Render took 12 seconds less with Big Sur and in Cinebench, scored 25 points higher with Big Sur. I only tried it once per operating system. There might be some junk in Catalina that I didn’t clean out, but I’m not really sure. I did try to keep it the same, however. I quitted all other apps, and made sure that renders were on the same settings. So, I can say with quite a bit of confidence that Big Sur might make your computer run 2-6% faster.</p>
-	<p class="blogtext">So, that’s all I probably will say about Big Sur. It’s pretty awesome. Try it out for yourself, maybe.</p>
-	<p class="blogtext">P.S. Back up your computer, please.</p>
-</div>
+
+		<div id="main">
+			<img src="image/menu1.png" class="openbtn" onclick="openNav()">
+		</div>
+
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div style="padding-top: 20px;"></div>
+			<a href="blenderprojects.html">Blender Projects</a>
+			<a href="githubprojects.html">Github Projects</a>
+			<a href="techblogs.html">Tech Blogs</a>
+			<a href="about.html">About</a>
+			<a href="anything.html">Anything</a>
+		</div>
+	</div>
+
+	<div class="blogs">
+		<br>
+		<h1 class="blogtitle"> Actual Tech Support and Stuff:</h1>
+		<div class="bloglink-wrapper">
+			<p class="blogtext">NEW TECH TUTORIALS!</p>
+			<a class="bloglink" href="techblogs/Amazing-Mac-Apps-To-Speed-Up-Any-Workflow.html">- Amazing Free macOS
+				Apps To Speed Up Any Workflow - macOS</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/3-Ways-To-Check-If-An-Application-Is-Apple-Silicon-Or-Intel.html">- 3
+				Ways to Check If An Application Is Apple Silicon or Intel - macOS</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/AudioMidiSetupMultipleOuts.html">- Simultaneously Play Out of Multiple
+				Audio Outputs - macOS</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/ChangeMouseAccel.html">- Change Mouse Acceleration - macOS</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/MakeRosetta2Terminal.html">- How to Make a Rosetta 2 Terminal for Apple
+				Silicon Macs - macOS</a>
+			<br>
+			<br>
+			<p class="blogtext">OLDER TUTORIALS:</p>
+			<a class="bloglink" href="techblogs/omvTutorial.html">- Open Media Vault on Raspberry Pi - RPi</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/HowToHack.html">- How To Hack</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/XboxE100Error.html">- XBOX E100 ERROR - Consoles</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/py2appfixes.html">- py2app FIXES - Python</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/HowToMacOSFaster.pdf">- How to macOS Faster - macOS</a>
+			<br>
+			<br>
+			<p class="blogtext">IMPORTANT:</p>
+			<a class="bloglink" href="techblogs/Key-Tester/KeyTester.html" target="_blank">- Key Tester</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/techsupport.txt" target="_blank">- Tech Support TXT File</a>
+		</div>
+		<!---->
+		<hr>
+		<!---->
+		<h1 class="blogtitle">Very Intriguing Tech Blogs:</h1>
+		<div class="bloglink-wrapper">
+			<a class="bloglink" href="techblogs/Intel-DG1.html">- Intel’s Unorthodox Approach at the GPU Market 20 Years
+				After Their First Failed Attempt</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/AppleSiliconM1.html">- My Thoughts on the Apple Silicon M1 Macs</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/macOSBigSur.html">- macOS Big Sur</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/MyThoughtsOnmacOSBigSur,iOS14andAppleSilicon.html">- My Thoughts on
+				macOS Big Sur, iOS 14 and Apple Silicon</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/TheReasonApple'sProductsAreSoExpensive.html">- The Reason Apple's
+				Produces are so Expensive</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/WhyAppleSiliconReallyMatters.html">- Why Apple Silicon Really
+				Matters</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/WhyAreMechanicalKeyboardsSoSoughtAfter.html">- Why are Mechanical
+				Keyboards so Sought After?</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/WhyUSBCIsJustPlainBetter.html">- Why USB-C is just Plain Better</a>
+			<br>
+			<br>
+			<a class="bloglink" href="techblogs/WhyRazerHasSuchALargeCultFollowing.html">- Why Razer has such a Large
+				Cult Following</a>
+		</div>
+		<div class="blog-wrapper">
+			<h5 class="blogdate">Sunday, July 19, 2020</h5>
+			<h2 class="blogtitle">Benefits to Gaming Gear</h2>
+			<p class="blogtext">Why would one want gaming gear? Well, there are many benefits to gaming gear other than
+				gaming, which is probably what most people buy them for. First of all, they are much more comfortable
+				than normal tech.</p>
+			<p class="blogtext">Just compare a your office mouse to a well kitted out gaming mouse. To this argument you
+				might pose the following answer: “Well, an ergonomic mouse would do just fine.” To answer that, I would
+				like to go on a tangent. First, gaming mice are probably the most responsive mice you’ll ever try. They
+				also have the best sensors. These two are things that are almost oblivious to ergonomic mice or “office
+				mice”.</p>
+			<p class="blogtext">I’ll pose another example: say you are buying a keyboard. Buy an office keyboard or a
+				better keyboard? Oh, you just heard your friend say that he just bought a mechanical keyboard and it’s
+				the BEST keyboard he’s ever tried? Well, say no more. For $40, you can get your hands on a very
+				comparable mechanical keyboard. You try it, and it’s not as amazing as your friend said. Then, you try
+				your laptop’s keyboard and you realize that it’s not just the longer travel, it’s the FEEL of the
+				keyboard. There’s no turning back. I know I’m groundlessly saying this, but it’s really worth the more
+				cash. What’s the biggest market for mechanical keyboard? Gaming and programming. Who uses and advocates
+				for mechanical keyboards the most? Gamers. So, who sells them? Gaming gear brands. That basically forces
+				you to buy mechanical keyboards from gaming brands. That doesn’t mean it’s gonna have sharp edges and
+				the absolutely brightest RGB in the world. Buying from a reputable gaming brand can result in a keyboard
+				that you can trust on for years to come.</p>
+			<p class="blogtext">There are so many things that many people have never tried but gamers use on a regular
+				basis, such as high refresh rate, high resolution mouse sensors and mechanical keyboards. I’ve covered
+				the last 2 already. High refresh rate is something that not many people have tried. Almost all high
+				refresh rate monitors are branded as gaming. I have not tried one, but it sounds promising from
+				literally every single tech enthusiast.</p>
+			<p class="blogtext">Lastly, and perhaps the thing I value most, is the SOFTWARE. Yes, it might be buggy,
+				yes, it might be low-res. Yes, it may take up resources and RAM that can be used otherwise. However,
+				it’s the ability to do WHATEVER you want with ALL THE EXTRA BUTTONS on the mice and keyboards. Without
+				the software, your gaming mouse is basically just a glorified office mouse. The software is KEY to me. I
+				use it 24/7. Logitech G Hub is very good considering the fact that Logitech doesn’t usually make
+				software. It’s not as feature packed as many others, such as Razer Synapse, but it’s the ability to
+				customize the 11 customizable buttons I have on my mouse. They are so useful if you installed the
+				software, yet so useless if you didn’t. I use macros on my mouse for switching between desktops and
+				tabs, mission control, DPI switching and many more.</p>
+			<p class="blogtext">Gaming gear is much more than just the RGB and the hype. It’s actually worthwhile if you
+				don’t go for bad/sketchy brands at lower prices.</p>
+			<p class="blogtext">P.S. Yes it’s expensive, but it probably will outlast your office mouse.</p>
+			<!---->
+			<hr>
+			<!---->
+			<h5 class="blogdate">Saturday, June 26, 2020</h5>
+			<h2 class="blogtitle">Computer Setups</h2>
+			<p class="blogtext">Who has the better gaming setup? Who has the most productive setup? Those are questions
+				that have been quarreled about for decades in Reddit and the like. You know, those people flexing their
+				RTX 2080 Ti and the tons of RGB lighting. Nobody’s fingerprint is the same, just like someone’s setup.
+				You might be a gamer and have tons of RGB and a cool gaming chair. Your neighbor, who might be a 3D
+				animator, might have a super high end PC that’s not for gaming and probably a color accurate monitor.
+				Your dog’s friend’s owner might have a 10 year old laptop that probably can’t do anything well today,
+				but he/she insists that it is all he/she will ever need. Setups vary from person to person, and there’s
+				NOTHING to say that your setup is bad.
+				The only thing that is ever bad about one’s setup is if it cannot do what it is meant to do. I think
+				that my setup is a great example of a super unique setup. I have what I call the “dual laptop
+				mac/windows workstation”. Yes, I have 2 laptops that I use with a monitor, but that is taking into
+				account how much better laptops have become now. My Razer Blade Stealth and my MacBook Pro 13 are the
+				<em>perfect</em> combo. One is relatively high performance whilst being a 13 inch laptop, whilst the
+				other one is slower but runs macOS, which I am highly accustomed to. I have a dock configured so that I
+				can hot swap both laptops. All it needs is a USB-C port. That means I can accommodate ANY laptop that
+				has a USB-C port (and 13 inch form factor). This is just me. It does everything I want it to do. Run
+				Windows and macOS natively (yes I can boot-camp in Mac but bluetooth doesn’t work). OK, enough about me.
+			</p>
+			<p class="blogtext">What do YOU need?<br>What do YOU want to do in your setup?<br>What OS do you want to
+				run?</p>
+			<p class="blogtext">Using these 3 questions can give you a rough idea of how it should run and look like. My
+				setup values portability, as I can unplug my computer at any time and bring it on the go. Also, the
+				battery acts like a UPS that runs for 8+ hours. Combined that gives my 16 hours of computer use even if
+				my power goes out (there won’t be wifi so there won’t be much point). I think that the performance
+				sacrifices are worth it. You, however, might want a dedicated UPS and a full gaming rig. Your friend
+				might simply want a MacBook for school. It varies from person to person, and it is up to YOU to
+				determine what is best for YOU.</p>
+			<p class="blogtext">P.S. NOBODY should convince you to change your setup as long as YOU’RE happy with it.
+			</p>
+			<!---->
+			<hr>
+			<!---->
+			<h5 class="blogdate">Monday, June 29, 2020</h5>
+			<h2 class="blogtitle">FPS and Hertz (Refresh Rate)</h2>
+			<p class="blogtext">FPS and refresh rate. It is so pervasive in the gaming community. However, many people
+				don’t even know what it is - they just know that the higher the better.</p>
+			<p class="blogtext">FPS<br>FPS (frames per second) is how many images the GPU sends to the monitor per
+				second. Each “frame” is an image, and the more the better. Why is that so? Well, they more FPS, the
+				faster the keys register into the game. However, this doesn’t not always mean that you are seeing, say,
+				100 frames per second.</p>
+			<p class="blogtext">Hz<br>
+				Hertz (refresh rate) is how fast the display is refreshing per second. If the display is 60Hz (it is
+				generally the standard for most monitors), it means it will show a new image every 1/60 of a second. If
+				the display is at, say 300Hz, it will show a new image every 1/300 of a second. Now, obviously, the more
+				images you see, they better you will game. It means that you will see things in the game faster than
+				others might, as in a multiplayer game. When FPS is less than the refresh rate, the frame will not
+				refresh, or just stay the same. However, when the FPS and the refresh rate are mostly the same, you will
+				get, say 240 frames per second, and you will SEE it. If you buy a 2080 Ti and game on your 10 year old
+				monitor, chances are that you will only see some of the frames the GPU spits out. However, if you pair
+				it up with a 240Hz monitor, you will probably see all the frames. Simply, FPS measures how well the GPU
+				performs and refresh rate measures how well the monitor is.</p>
+			<p class="blogtext">The common refresh rates for monitors are:<br>40Hz (not quite common)<br>60Hz (very
+				common)<br>75Hz (not really common)<br>120Hz (quite common in gaming)<br>144Hz (quite common in
+				gaming)<br>165Hz (rare)<br>240Hz (e-Sports pro level)<br>300Hz (e-Sports pro level+)<br>360Hz (e-Sports
+				pro level ++)</p>
+			<p class="blogtext">FPS is different in every game and with every GPU. Obviously, the more powerful the GPU
+				is, the more FPS. However, the game, (i.e. how detailed it is, how many things it needs to process) will
+				also affect FPS.</p>
+			<!---->
+			<hr>
+			<!---->
+			<h5 class="blogdate">Monday, June 22, 2020</h5>
+			<h2 class="blogtitle">Gaming Laptops</h2>
+			<p class="blogtext">Gaming laptops. Such great hardware, so portable, right? Well, not really. There’s not
+				much difference between a “gaming laptop” and a “normal laptop”. I have a gaming laptop, but it’s an
+				actually just an ultrabook with a GTX 1650 Max-Q. The Razer Blade Stealth is a great computer,
+				lightweight and compact coming in at just about the size of a MacBook Pro 13 inch, and a bit heavier.
+				The build is amazing. There is no body flex or deck flex. The body is made out of anodized aluminum.
+				Other than the fact the it’s a fingerprint magnet, it’s great. However, this is because Razer actually
+				has the ability to manufacture such a product. Many companies advertise their “gaming laptops” as super
+				fast and best graphics in the world. Yes. It is true. However, they never tell you about the dark side
+				of getting a “gaming laptop”. Sure, it runs Fortnite at 120 FPS on high settings. But it weights heavier
+				than a block of lead. Not to mention how thick the computer gets. My Razer Blade, you might say, is just
+				around the same as a MacBook Pro 13 inch. That’s because it has only an i7-1065G7 and a GTX 1650 Max-Q.
+				I can get around 8 hours of light use. But that’s because the CPU and GPU are low power consumption
+				mobile parts. There isn’t a whole RTX 2080 Ti and a AMD Threadripper in there. It runs Fortnite at 90
+				FPS on medium. That is the tradeoff between portability and performance. It is necessary (hopefully
+				Apple Silicon can break that chain) for the manufacturer to choose whether to prioritize performance or
+				portability.</p>
+			<p class="blogtext">Honestly, don’t go for “gaming laptops” just because they are marketed as gaming. Look
+				into CPU specs and GPU specs. Learn lots about laptops and desktops. I did not choose my Razer Blade
+				because it is a “gaming laptop” from a “gaming company” (I did choose it because, you know, Razer). I
+				chose it for its portability to performance ratio and its reputation for high build quality. I could
+				have chosen a 15’’ Blade, but I never really liked 15’’ computers. If you want high performance, go for
+				17’’+. If you want portability, go for 13’’ or less. I’m not saying that 15’’ laptops are horrid by any
+				means. I just feel that it is like the middle seat on an airplane (however you want to take that
+				statement).</p>
+			<p class="blogtext">So, what do you do if you DON’T want a “gaming laptop”? Well, if you don’t care about
+				the marketing, there’s whole galaxies of selections to choose from. For example, a Dell XPS 13 with an
+				eGPU would do great. You get the battery life when you need it, and get the performance (extra oomph)
+				when you need that. Cool, right? Yeah. I thought so. I have never had an eGPU, or build a PC (I have
+				built my own phone). This is all views from tech YouTubers like LTT, MKBHD and Austin Evans. Like with
+				every mature market (quote MKBHD), there’s a “go to” product. For eGPUS, that would the Razer’s
+				offerings. They are priced well and is very compact/compatible.</p>
+			<p class="blogtext">I have talked a lot about the bad sides of getting a “gaming computer”, but let’s talk
+				about the good side. Most gaming laptops have TONS of robust cooling to keep the laptop from thermal
+				throttling. Manufacturers also throw in the best parts they can find with expensive systems. A couple
+				even have full on RTX 2080s. These result in best-in-class performance. An example of this would the the
+				ROG Zephyrus G14. Ryzen 9 4000 series means probably the best performance ever in a laptop in general.
+				In LTT’s video, it even out ran the ludicrously large Acer Predator with an Intel i9 chip.</p>
+			<p class="blogtext">In conclusion, gaming laptops, like everything else in tech, is worth it if you know
+				your parts and you know what you are looking for.</p>
+			<p class="blogtext">P.S. Please don’t game with a MacBook. Please.</p>
+			<!---->
+			<hr>
+			<!---->
+			<h5 class="blogdate">Wednesday, July 15, 2020</h5>
+			<h2 class="blogtitle">macOS Big Sur</h2>
+			<p class="blogtext">Well, it’s here. MacOS Big Sur. I’ve been using the public beta for a couple days, and
+				it’s really been an interesting ride. First, I’ll go over how I got it, and later will be going into my
+				experiences. There’s some really interesting stats that might surprise you.</p>
+			<p class="blogtext">I was watching TechLinked a couple days ago, and it said that the public betas for iOS
+				14 and iPadOS were out, so I assumed that the betas for Big Sur would be out as well. I checked on
+				Apple’s site, and MAN it’s confusing. On Apple’s site, it says “Coming Soon”, even though it’s already
+				out (it still says “Coming Soon”). I’ve never done a public beta install, and it was pretty eye opening.
+				I enrolled my Mac, and did all the steps. AND ALL I GOT WAS THE CATALINA 10.15.6 BETA. WHO IN THE WORLD
+				WANTS THAT?!?!?!?! So I looked on Apple forums, and I wasn’t the only one. Some said that following Mr.
+				Macintosh’s tutorials allowed them to download the Big Sur beta, so I gave it a try. AND IT WORKED! YAY!
+				So I got the “Install macOS Big Sur Beta Application”. I wanted to simply boot it off a USB stick.
+				However, it just wouldn’t work. I don’t know why, but I really just wanted to try Big Sur for the first
+				time. So, I made another APFS volume on my disk and I installed the beta on the volume. It booted and I
+				was in Big Sur. So, in the end, it took 24h from finding out about the beta to actually seeing it. Yay.
+			</p>
+			<p class="blogtext">Everything is much more rounded, but it doesn’t cut text off or anything. If anything,
+				it makes macOS look more user-friendly and, for the Power-users, doesn’t do anything much. I’ve
+				basically only been using Big Sur for around 3 days, and I’ve had almost 0 problems. EVERYTHING works.
+				I’ve tried a couple apps, such as Blender and Cinebench, Discord and Spotify. THEY ALL WORK!</p>
+			<p class="blogtext">Looks are generally what Apple has been changing this time around. As a consumer,
+				there’s nothing much that changed. Finder is still Finder, and Safari is still a good browser. However,
+				under the hood, there has been MASSIVE changes. Here’s my stats: my Blender Render took 12 seconds less
+				with Big Sur and in Cinebench, scored 25 points higher with Big Sur. I only tried it once per operating
+				system. There might be some junk in Catalina that I didn’t clean out, but I’m not really sure. I did try
+				to keep it the same, however. I quitted all other apps, and made sure that renders were on the same
+				settings. So, I can say with quite a bit of confidence that Big Sur might make your computer run 2-6%
+				faster.</p>
+			<p class="blogtext">So, that’s all I probably will say about Big Sur. It’s pretty awesome. Try it out for
+				yourself, maybe.</p>
+			<p class="blogtext">P.S. Back up your computer, please.</p>
+		</div>
+	</div>
 
 	<script src="../syntaxHighlight/prism.js"></script>
 </body>
+
 </html>
-
-
-

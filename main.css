@@ -1,6 +1,10 @@
 /* PORTIONS OF CODE (SOME MODIFIED) ARE FROM W3SCHOOLS */
 /* https://www.w3schools.com */
 
+:root {
+  --anim-dur: 0.9s;
+}
+
 * {
   box-sizing: border-box;
   overflow: auto;
@@ -66,6 +70,11 @@ body {
 }
 
 /* FONTS */
+
+.cookie-banner-class {
+  animation: pulse;
+  animation-duration: var(--anim-dur);
+}
 
 #top-right {
   color: white !important;
@@ -133,6 +142,8 @@ body {
   color: white;
   float: left;
   transition: 0.5s;
+  animation: fadeInLeft;
+  animation-duration: var(--anim-dur);
 }
 
 .navbar {
@@ -145,7 +156,7 @@ body {
   right: 20px;
   transition: 0.5s;
   animation: fadeInRight;
-  animation-duration: 2s;
+  animation-duration: var(--anim-dur)
 }
 
 .githublogo {
@@ -567,6 +578,8 @@ VIDEO COLUMNS */
   height: auto;
   border-radius: 2px;
   transition: 0.5s;
+  animation: fadeInLeft;
+  animation-duration: var(--anim-dur);
 }
 
 .openbtn:hover {
@@ -593,8 +606,9 @@ VIDEO COLUMNS */
 .blogs {
   position: relative;
   margin-top: 70px;
-  margin-left: 35px;
+  margin-left: -40px;
   margin-right: 80px;
+  animation-duration: var(--anim-dur);
 }
 
 .blogtext {
@@ -760,6 +774,8 @@ VIDEO COLUMNS */
   border-radius: 8px;
   font-family: oxygen-light;
   color: white;
+  animation: fadeInDown;
+  animation-duration: var(--anim-dur);
 }
 
 .maincontent p {
