@@ -144,6 +144,8 @@ body {
   margin-top: 22px;
   right: 20px;
   transition: 0.5s;
+  animation: fadeInRight;
+  animation-duration: 2s;
 }
 
 .githublogo {
