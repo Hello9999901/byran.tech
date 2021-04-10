@@ -359,6 +359,7 @@ p {
 .content {
   background-color: rgb(241, 240, 240);
   padding: 10px;
+  border-radius: 6px;
 }
 
 .show {
@@ -603,6 +604,21 @@ VIDEO COLUMNS */
 /* MENU SIDEBAR CSS */
 
 /* TECH BLOGS CSS */
+.fadeInLeft {
+  animation: fadeInLeft;
+  animation-duration: var(--anim-dur);
+}
+
+.fadeInRight {
+  animation: fadeInRight;
+  animation-duration: var(--anim-dur);
+}
+
+.flash {
+  animation: flash;
+  animation-duration: var(--anim-dur);
+}
+
 .blogs {
   position: relative;
   margin-top: 70px;
@@ -676,7 +692,7 @@ VIDEO COLUMNS */
 
 @media screen and (max-width: 900px) {
   .blogtext {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .bloglink {
@@ -702,7 +718,7 @@ VIDEO COLUMNS */
 
 @media screen and (max-width: 650px) {
   .blogtext {
-    font-size: 20px;
+    font-size: 13px;
   }
 
   .blogtitle {
