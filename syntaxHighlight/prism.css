@@ -1,12 +1,9 @@
 /* PrismJS 1.23.0
-https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+applescript+bash+c+csharp+cpp+git+http+hpkp+hsts+javadoclike+jolie+jsdoc+js-extras+markdown+markup-templating+powershell+python+sql+swift+typescript+yaml&plugins=line-numbers+normalize-whitespace+toolbar+copy-to-clipboard+download-button */
-/**
- * okaidia theme for JavaScript, CSS and HTML
- * Loosely based on Monokai textmate theme by http://www.monokai.nl/
- * @author ocodia, modified by Hello9999901
+ * Custom Dracula theme for JavaScript, CSS and HTML
+ * Hello9999901
  */
 
-@font-face {
+ @font-face {
 	/* skyer font */
 	font-family: FiraCode;
 	src: url(../fonts/FiraCode-Regular.woff);
