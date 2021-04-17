@@ -6,18 +6,18 @@ https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clik
  * @author ocodia, modified by Hello9999901
  */
 
- @font-face {
+@font-face {
 	/* skyer font */
-	font-family: SourceCodePro;
-	src: url(../fonts/SourceCodePro-Medium.woff);
-  }  
+	font-family: FiraCode;
+	src: url(../fonts/FiraCode-Regular.woff);
+}
 
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #f8f8f2;
 	background: none;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	font-family: SourceCodePro;
+	font-family: FiraCode;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -42,13 +42,13 @@ pre[class*="language-"] {
 	border-radius: 0.3em;
 }
 
-:not(pre) > code[class*="language-"],
+:not(pre)>code[class*="language-"],
 pre[class*="language-"] {
-	background: #272822;
+	background: #282a36;
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+:not(pre)>code[class*="language-"] {
 	padding: .1em;
 	border-radius: .3em;
 	white-space: normal;
@@ -84,11 +84,14 @@ pre[class*="language-"] {
 
 .token.selector,
 .token.attr-name,
-.token.string,
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #a6e22e;
+	color: #8be9fd;
+}
+
+.token.string {
+	color: #f1fa8c;
 }
 
 .token.operator,
@@ -97,18 +100,18 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-	color: #f8f8f2;
+	color: #ff79c6;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.function,
 .token.class-name {
-	color: #e6db74;
+	color: #50fa7b;
 }
 
 .token.keyword {
-	color: #66d9ef;
+	color: #ff79c6;
 }
 
 .token.regex,
@@ -120,6 +123,7 @@ pre[class*="language-"] {
 .token.bold {
 	font-weight: bold;
 }
+
 .token.italic {
 	font-style: italic;
 }
@@ -134,7 +138,7 @@ pre[class*="language-"].line-numbers {
 	counter-reset: linenumber;
 }
 
-pre[class*="language-"].line-numbers > code {
+pre[class*="language-"].line-numbers>code {
 	position: relative;
 	white-space: inherit;
 }
@@ -145,7 +149,8 @@ pre[class*="language-"].line-numbers > code {
 	top: 0;
 	font-size: 100%;
 	left: -3.8em;
-	width: 3em; /* works for line-numbers below 1000 lines */
+	width: 3em;
+	/* works for line-numbers below 1000 lines */
 	letter-spacing: -1px;
 	border-right: 1px solid #999;
 
@@ -156,24 +161,24 @@ pre[class*="language-"].line-numbers > code {
 
 }
 
-	.line-numbers-rows > span {
-		display: block;
-		counter-increment: linenumber;
-	}
+.line-numbers-rows>span {
+	display: block;
+	counter-increment: linenumber;
+}
 
-		.line-numbers-rows > span:before {
-			content: counter(linenumber);
-			color: #999;
-			display: block;
-			padding-right: 0.8em;
-			text-align: right;
-		}
+.line-numbers-rows>span:before {
+	content: counter(linenumber);
+	color: #999;
+	display: block;
+	padding-right: 0.8em;
+	text-align: right;
+}
 
 div.code-toolbar {
 	position: relative;
 }
 
-div.code-toolbar > .toolbar {
+div.code-toolbar>.toolbar {
 	position: absolute;
 	top: .3em;
 	right: .2em;
@@ -181,25 +186,25 @@ div.code-toolbar > .toolbar {
 	opacity: 0;
 }
 
-div.code-toolbar:hover > .toolbar {
+div.code-toolbar:hover>.toolbar {
 	opacity: 1;
 }
 
 /* Separate line b/c rules are thrown out if selector is invalid.
    IE11 and old Edge versions don't support :focus-within. */
-div.code-toolbar:focus-within > .toolbar {
+div.code-toolbar:focus-within>.toolbar {
 	opacity: 1;
 }
 
-div.code-toolbar > .toolbar .toolbar-item {
+div.code-toolbar>.toolbar .toolbar-item {
 	display: inline-block;
 }
 
-div.code-toolbar > .toolbar a {
+div.code-toolbar>.toolbar a {
 	cursor: pointer;
 }
 
-div.code-toolbar > .toolbar button {
+div.code-toolbar>.toolbar button {
 	background: none;
 	border: 0;
 	color: inherit;
@@ -207,30 +212,30 @@ div.code-toolbar > .toolbar button {
 	line-height: normal;
 	overflow: visible;
 	padding: 0;
-	-webkit-user-select: none; /* for button */
+	-webkit-user-select: none;
+	/* for button */
 	-moz-user-select: none;
 	-ms-user-select: none;
 }
 
-div.code-toolbar > .toolbar a,
-div.code-toolbar > .toolbar button,
-div.code-toolbar > .toolbar span {
+div.code-toolbar>.toolbar a,
+div.code-toolbar>.toolbar button,
+div.code-toolbar>.toolbar span {
 	color: #bbb;
 	font-size: .8em;
 	padding: 0 .5em;
 	background: #f5f2f0;
 	background: rgba(224, 224, 224, 0.2);
-	box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
 	border-radius: .5em;
 }
 
-div.code-toolbar > .toolbar a:hover,
-div.code-toolbar > .toolbar a:focus,
-div.code-toolbar > .toolbar button:hover,
-div.code-toolbar > .toolbar button:focus,
-div.code-toolbar > .toolbar span:hover,
-div.code-toolbar > .toolbar span:focus {
+div.code-toolbar>.toolbar a:hover,
+div.code-toolbar>.toolbar a:focus,
+div.code-toolbar>.toolbar button:hover,
+div.code-toolbar>.toolbar button:focus,
+div.code-toolbar>.toolbar span:hover,
+div.code-toolbar>.toolbar span:focus {
 	color: inherit;
 	text-decoration: none;
 }
-
