@@ -1,4 +1,4 @@
-.DS_Store
+*.DS_Store
 DS_Store
 .DS_Store?
 ._*
@@ -6,3 +6,4 @@ DS_Store
 .Trashes
 ehthumbs.db
 Thumbs.db
+.DS_Store
