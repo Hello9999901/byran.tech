@@ -3,7 +3,7 @@
     --anim-dur: 0.9s;
     --width: 100vw;
     --half-width: calc(var(--width) / 2);
-    font-size: 10.2px;
+    font-size: 10px;
     --typedFontSize: calc(2vw + 5px);
     --bkg-color: rgb(24, 24, 24);
 }
@@ -19,6 +19,33 @@ body {
     height: 100vh;
     width: var(--width);
     margin: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px 50px 5px 50px;
+    background-color: rgba(46, 46, 46, 0);
+    color: rgb(129, 129, 129);
+}
+
+footer span {
+    font-family: firaCode;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+footer span a {
+    text-decoration: none;
+    color: hsl(204, 38%, 45%);
+}
+
+footer span a b {
+    font-weight: 700;
+}
+
+footer span b {
+    font-weight: 500;
 }
 
 #topbarWrapper {
@@ -38,6 +65,7 @@ body {
 }
 
 #wrapper {
+    margin-bottom: 50px;
     /* border-width: 2px;
     border-color: rgb(180, 55, 55);
     border-style: solid; */
@@ -63,7 +91,6 @@ body {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    cursor: default;
 
 
     /* border-width: 1px;
@@ -112,7 +139,7 @@ body {
 #typedjsWrapper {
     display: flex;
     justify-content: center;
-    height: 45vw;
+    height: calc(200px + 35vw);
     width: var(--width);
     background-image: url("../images/testimage.png");
     background-size: cover;
@@ -122,6 +149,8 @@ body {
     border-color: rgb(150, 75, 211);
     border-style: solid; */
 }
+
+/* ANCHOR Body */
 
 #bodyWrapper {
     margin-top: 60px;
@@ -140,72 +169,112 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
 
-    /* border-width: 1px;
+    border-width: 1px;
     border-color: rgb(75, 211, 104);
-    border-style: solid; */
+    border-style: solid;
 }
 
-.block {
-    height: auto;
-    margin-top: 5px;
-    padding: 30px 30px 10px 30px;
-    background-color: var(--bkg-color);
-    border-radius: 20px;
+#bodyFlexWrapper>.block {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: gray;
 
-    /* border-width: 2px;
-    border-color: rgb(240, 91, 64);
-    border-style: solid; */
+
+    border-width: 1px;
+    border-color: rgb(255, 24, 24);
+    border-style: solid;
 }
 
-.block > img {
-    width: calc(var(--width) - 50px);
-    height: auto;
+#bodyFlexWrapper>.block>img {
+    width: 90vw;
 }
 
-.block > div {
-    padding-top: 10px;
-    color: white;
+#bodyFlexWrapper>.block>div>span {
+    font-size: 3em;
+    font-weight: 300;
     font-family: tiWeb;
-    font-weight: 400;
-    font-size: var(--typedFontSize);
+    color: white;
+    margin-left: 5px;
 }
 
-.blockRow {
+
+.bodyHalfWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+
+
+.bodyHalfWrapper>.blockHalf {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: gray;
+    min-width: 200px;
+
+
+    border-width: 1px;
+    border-color: rgb(255, 24, 24);
+    border-style: solid;
+}
+
+.bodyHalfWrapper>.blockHalf>img {
+    width: 43vw;
+    min-width: 200px;
+    height: auto;
+}
+
+.bodyHalfWrapper>.blockHalf>div>span {
+    font-size: 3em;
+    font-weight: 300;
+    font-family: tiWeb;
+    color: white;
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 666px) {
+    .bodyHalfWrapper>.blockHalf>img {
+        width: 90vw;
+    }
+
+    .bodyHalfWrapper {
+        flex-direction: column;
+    }
+}
+
+
+/* ANCHOR 3D Art */
+#artWrapper {
     display: flex;
     flex-direction: row;
-}
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    gap: 6em;
 
-.blockHalf {
-    margin-left: 7px;
-    margin-right: 7px;
-    height: auto;
-    margin-top: 2rem;
-    padding: 20px 20px 5px 20px;
-    background-color: var(--bkg-color);
-    border-radius: 20px;
 
-    /* border-width: 2px;
+    border-width: 1px;
     border-color: rgb(240, 91, 64);
-    border-style: solid; */
+    border-style: solid;
 }
 
-.blockHalf > img {
-    width: calc(var(--half-width) - 50px);
+#artWrapper>.block {
+    width: calc(27vw + 275px);
     height: auto;
+    min-height: 100px;
+    background-color: rgb(156, 156, 156);
+
+
+    border-width: 1px;
+    border-color: rgb(20, 255, 64);
+    border-style: solid;
 }
 
-.blockHalf > div {
-    padding-top: 10px;
-    color: white;
-    font-family: tiWeb;
-    font-weight: 400;
-    font-size: var(--typedFontSize);
-}
-
-#text > p {
-    color: white;
-    font-family: tiWeb;
-    font-weight: 400;
-    font-size: 25px;
-    margin: 5px;
+#artWrapper>.block>img {
+    padding: 5px;
+    width: 100%;
+    height: auto;
 }
