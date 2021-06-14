@@ -92,7 +92,6 @@ footer span b {
     -o-user-select: none;
     user-select: none;
 
-
     /* border-width: 1px;
     border-color: rgb(197, 228, 255);
     border-style: solid; */
@@ -256,9 +255,9 @@ footer span b {
     gap: 6em;
 
 
-    border-width: 1px;
+    /* border-width: 1px;
     border-color: rgb(240, 91, 64);
-    border-style: solid;
+    border-style: solid; */
 }
 
 #artWrapper>.block {
@@ -268,13 +267,90 @@ footer span b {
     background-color: rgb(156, 156, 156);
 
 
-    border-width: 1px;
+    /* border-width: 1px;
     border-color: rgb(20, 255, 64);
-    border-style: solid;
+    border-style: solid; */
 }
 
 #artWrapper>.block>img {
     padding: 5px;
     width: 100%;
     height: auto;
+}
+
+/* ANCHOR Coding */
+
+#codingWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#codingWrapper .codeRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 100%;
+    width: 95vw;
+    height: 25vw;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+
+
+
+    border-width: 1px;
+    border-color: rgba(20, 255, 63, 0.582);
+    border-style: solid;
+}
+
+#codingWrapper>.codeRow>.codePreviewWrapper {
+    display: flex;
+    align-items: center;
+    width: 24vw;
+    min-width: 200px;
+    height: auto;
+    margin-left: 0.5em;
+
+    border-width: 1px;
+    border-color: rgba(255, 87, 20, 0.582);
+    border-style: solid;
+}
+
+#codingWrapper>.codeRow>.codeImageWrapper {
+    display: flex;
+    align-items: center;
+    width: 24vw;
+    min-width: 200px;
+    height: auto;
+    margin-left: 0.5em;
+
+    border-width: 1px;
+    border-color: rgba(255, 87, 20, 0.582);
+    border-style: solid;
+}
+
+#codingWrapper>.codeRow>.codePreviewWrapper>pre {
+    height: 24vw;
+    width: 24vw;
+    min-width: 200px;
+}
+
+#codingWrapper>.codeRow>.codePreviewWrapper>pre>code {
+    font-size: 1.4em;
+}
+
+#codingWrapper>.codeRow>.codeDescriptionWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+
+    border-width: 1px;
+    border-color: rgba(255, 87, 20, 0.582);
+    border-style: solid;
 }
