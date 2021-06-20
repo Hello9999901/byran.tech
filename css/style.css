@@ -6,6 +6,7 @@
     font-size: 10px;
     --typedFontSize: calc(2vw + 5px);
     --bkg-color: rgb(24, 24, 24);
+    --overlay-dur: 0.5s;
 }
 
 * {
@@ -53,6 +54,7 @@ footer span b {
     width: var(--width);
     height: auto;
     background-color: rgba(19, 19, 19, 0.788);
+    z-index: 999;
 
 
     /* border-width: 1px;
@@ -262,95 +264,112 @@ footer span b {
 
 #artWrapper>.block {
     width: calc(27vw + 275px);
-    height: auto;
     min-height: 100px;
-    background-color: rgb(156, 156, 156);
-
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 
     /* border-width: 1px;
     border-color: rgb(20, 255, 64);
     border-style: solid; */
 }
 
-#artWrapper>.block>img {
-    padding: 5px;
+#artWrapper .block>img {
     width: 100%;
     height: auto;
 }
 
+#artWrapper .block .overlay {
+    position: absolute;
+    background-color: rgba(24, 24, 24, 0.562);
+    width: calc(27vw + 275px);
+    height: calc(calc(27vw + 275px) * 0.5625);
+    opacity: 0;
+    transition: var(--overlay-dur);
+}
+
+#artWrapper .block .text {
+    position: absolute;
+    padding-left: 20px;
+    transition: var(--overlay-dur);
+    overflow: visible;
+
+
+    color: white;
+    font-size: calc(2.778vw + 10px);
+    font-family: tiWeb;
+    font-weight: 500;
+}
+
+.overlay .text .description {
+    font-size: 27px;
+    font-family: tiWeb;
+    transform: translateX(-108px);
+    transition: var(--overlay-dur);
+}
+
+.overlay .download {
+    width: 50px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+hr {
+    color: white;
+    height: 5px;
+    margin-top: 0px;
+    background-color: white;
+    width: 50px;
+    transition: var(--overlay-dur);
+}
+
+#artWrapper .block .overlay:hover {
+    opacity: 1;
+}
+
+#artWrapper .block .overlay:hover .text hr {
+    width: 300px;
+}
+
+#artWrapper .block .overlay:hover .text .description {
+    transform: translateX(0px);
+}
+
 /* ANCHOR Coding */
 
+/* #codingWrapper {
+    display: flex;
+
+    border-width: 1px;
+    border-color: rgb(20, 255, 64);
+    border-style: solid;
+}
+
+#codingWrapper>#codingRow>#codingBlock>div {
+    color: white;
+    font-family: tiWeb;
+    background-color: blue;
+    flex-grow: 1;
+} */
+
 #codingWrapper {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-
+    display: grid;
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: 50% 200px auto;
 }
 
-#codingWrapper .codeRow {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-basis: 100%;
-    width: 95vw;
-    height: 25vw;
-    background-color: rgb(20, 20, 20);
-    border-radius: 10px;
-
-
-
-    border-width: 1px;
-    border-color: rgba(20, 255, 63, 0.582);
-    border-style: solid;
-}
-
-#codingWrapper>.codeRow>.codePreviewWrapper {
-    display: flex;
-    align-items: center;
-    width: 24vw;
-    min-width: 200px;
-    height: auto;
-    margin-left: 0.5em;
-
-    border-width: 1px;
-    border-color: rgba(255, 87, 20, 0.582);
-    border-style: solid;
-}
-
-#codingWrapper>.codeRow>.codeImageWrapper {
-    display: flex;
-    align-items: center;
-    width: 24vw;
-    min-width: 200px;
-    height: auto;
-    margin-left: 0.5em;
-
-    border-width: 1px;
-    border-color: rgba(255, 87, 20, 0.582);
-    border-style: solid;
-}
-
-#codingWrapper>.codeRow>.codePreviewWrapper>pre {
-    height: 24vw;
-    width: 24vw;
-    min-width: 200px;
-}
-
-#codingWrapper>.codeRow>.codePreviewWrapper>pre>code {
-    font-size: 1.4em;
-}
-
-#codingWrapper>.codeRow>.codeDescriptionWrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 10px;
-
-    border-width: 1px;
-    border-color: rgba(255, 87, 20, 0.582);
-    border-style: solid;
+.item-a {
+    background-color: red;
+    grid-column-start: line2;
+    grid-column-end: five;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
