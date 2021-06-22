@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
 
     <!-- JAVASCRIPT -->
@@ -56,7 +57,7 @@
             </div>
         </div>
         <div id="bodyWrapper">
-            <div id="artWrapper">
+            <div id="artWrapper" onclick="showOverlays()" ondblclick="hideOverlays()">
                 <div class="block">
                     <div class="overlay">
                         <div class="text">
@@ -109,6 +110,9 @@
                     </div>
                     <img src="./images/jpg/SportsCarImprovedCycles.jpg">
                 </div>
+            </div>
+            <div class="tip">
+                Hover or tap to see descriptions! (Double-tap to hide descriptions)
             </div>
         </div>
     </div>

@@ -331,6 +331,18 @@ hr {
     transition: var(--overlay-dur);
 }
 
+.showOverlay {
+    opacity: 1 !important;
+}
+
+.description.showOverlay {
+    transform: translateX(0px) !important;   
+}
+
+hr.showOverlay {
+    width: 300px !important;
+}
+
 #artWrapper .block .overlay:hover {
     opacity: 1;
 }
@@ -341,6 +353,21 @@ hr {
 
 #artWrapper .block .overlay:hover .text .description {
     transform: translateX(0px);
+}
+
+.tip {
+    font-family: tiWeb;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.925);
+    text-align: center;
+    position: fixed;
+    bottom: 3px;
+    height: auto;
+    width: 40vw;
+    left: 50%;
+    border-radius: 10px;
+    margin-left: calc(calc(40vw / 2) * -1); /* Half of the width */
+    background-color: rgba(17, 17, 17, 0.493);
 }
 
 /* ANCHOR Coding */
