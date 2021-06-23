@@ -7,6 +7,7 @@
     --typedFontSize: calc(2vw + 5px);
     --bkg-color: rgb(24, 24, 24);
     --overlay-dur: 0.5s;
+    --icon-color: #FD6C00;
 }
 
 * {
@@ -36,6 +37,14 @@ footer span {
     font-size: 2em;
 }
 
+@media only screen and (max-width: 728px) {
+    footer span {
+        font-family: firaCode;
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+}
+
 footer span a {
     text-decoration: none;
     color: hsl(204, 38%, 45%);
@@ -49,12 +58,29 @@ footer span b {
     font-weight: 500;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+pre {
+    font-family: firaCode;
+    overflow: scroll;
+    background-color: #252525;
+    padding: 30px;
+}
+
+nav {
+    opacity: 0;
+    visibility: hidden;
+}
+
 #topbarWrapper {
     position: fixed;
     width: var(--width);
     height: auto;
     background-color: rgba(19, 19, 19, 0.788);
-    z-index: 999;
+    z-index: 1;
 
 
     /* border-width: 1px;
@@ -68,6 +94,7 @@ footer span b {
 
 #wrapper {
     margin-bottom: 50px;
+    overflow: show;
     /* border-width: 2px;
     border-color: rgb(180, 55, 55);
     border-style: solid; */
@@ -77,6 +104,7 @@ footer span b {
     align-self: center;
     position: absolute;
     right: 20px;
+    transition: 0.1s;
 
     /* border-width: 1px;
     border-color: rgb(144, 67, 231);
@@ -107,12 +135,25 @@ footer span b {
     padding-left: 70px;
     text-decoration: none;
     margin-right: 3px;
+    transition: 0.3s;
 
     /* border-width: 1px;
     border-color: rgb(211, 75, 75);
     border-style: solid; */
 }
 
+/* Switch out navbar with hamburger menu */
+
+@media screen and (max-width: 611px) {
+    #navWrapper {
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav {
+        opacity: 1;
+        visibility: visible;
+    }
+}
 
 /* ANCHOR typedjs */
 .typed {
@@ -155,11 +196,6 @@ footer span b {
 
 #bodyWrapper {
     margin-top: 60px;
-
-
-    /* border-width: 1px;
-    border-color: rgb(75, 211, 104);
-    border-style: solid; */
 }
 
 #bodyFlexWrapper {
@@ -169,21 +205,12 @@ footer span b {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-
-    border-width: 1px;
-    border-color: rgb(75, 211, 104);
-    border-style: solid;
 }
 
 #bodyFlexWrapper>.block {
     margin-top: 30px;
     padding: 10px;
-    background-color: gray;
-
-
-    border-width: 1px;
-    border-color: rgb(255, 24, 24);
-    border-style: solid;
+    background-color: rgb(22, 22, 22);
 }
 
 #bodyFlexWrapper>.block>img {
@@ -212,13 +239,8 @@ footer span b {
 .bodyHalfWrapper>.blockHalf {
     margin-top: 30px;
     padding: 10px;
-    background-color: gray;
+    background-color: rgb(22, 22, 22);
     min-width: 200px;
-
-
-    border-width: 1px;
-    border-color: rgb(255, 24, 24);
-    border-style: solid;
 }
 
 .bodyHalfWrapper>.blockHalf>img {
@@ -307,7 +329,7 @@ footer span b {
 }
 
 .overlay .text .description {
-    font-size: 27px;
+    font-size: calc(1.528vw + 15px);
     font-family: tiWeb;
     transform: translateX(-108px);
     transition: var(--overlay-dur);
@@ -322,9 +344,13 @@ footer span b {
     padding-right: 10px;
 }
 
-hr {
+.overlay .artTitle {
+    font-size: calc(3.472vw + 20px);
+}
+
+.overlay hr {
     color: white;
-    height: 5px;
+    height: 0.386vw;
     margin-top: 0px;
     background-color: white;
     width: 50px;
@@ -336,7 +362,7 @@ hr {
 }
 
 .description.showOverlay {
-    transform: translateX(0px) !important;   
+    transform: translateX(0px) !important;
 }
 
 hr.showOverlay {
@@ -357,7 +383,8 @@ hr.showOverlay {
 
 .tip {
     font-family: tiWeb;
-    font-size: 15px;
+    font-size: calc(0.5vw + 8px);
+    padding: 5px;
     color: rgba(255, 255, 255, 0.925);
     text-align: center;
     position: fixed;
@@ -366,37 +393,180 @@ hr.showOverlay {
     width: 40vw;
     left: 50%;
     border-radius: 10px;
-    margin-left: calc(calc(40vw / 2) * -1); /* Half of the width */
+    margin-left: calc(calc(40vw / 2) * -1);
+    /* Half of the width */
     background-color: rgba(17, 17, 17, 0.493);
 }
 
 /* ANCHOR Coding */
 
-/* #codingWrapper {
-    display: flex;
-
-    border-width: 1px;
-    border-color: rgb(20, 255, 64);
-    border-style: solid;
-}
-
-#codingWrapper>#codingRow>#codingBlock>div {
-    color: white;
-    font-family: tiWeb;
-    background-color: blue;
-    flex-grow: 1;
-} */
-
-#codingWrapper {
+.codingWrapper {
     display: grid;
-    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
-    grid-template-rows: 50% 200px auto;
+    grid-template-columns: [col1] 40vw [col2] auto [col3] 27vw [end];
+    grid-template-rows: auto 50px;
+    overflow: hidden !important;
 }
 
-.item-a {
-    background-color: red;
-    grid-column-start: line2;
-    grid-column-end: five;
+.codingWrapper>.image {
+    grid-column-start: col1;
+    grid-column-end: col2;
     grid-row-start: 1;
     grid-row-end: 3;
+    overflow: hidden;
+}
+
+.codingWrapper>.description {
+    color: white;
+    font-family: firaCode;
+    padding: 0px 30px 0px 20px;
+}
+
+.codingWrapper>.description>.title {
+    color: white;
+    font-family: firaCode;
+    font-size: 5em;
+    font-weight: 400;
+}
+
+.codingWrapper>.description>.text {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.codingWrapper hr {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 4px;
+}
+
+.codingWrapper>.codePreview {
+    font-size: 1.3em;
+    font-family: firaCode !important;
+    height: calc(40vw * 0.5625);
+}
+
+@media only screen and (max-width: 728px) {
+    .codingWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+    .codingWrapper>.codePreview {
+        margin-bottom: 50px;
+        height: 50vh;
+    }
+}
+
+/* ANCHOR Tech */
+.techWrapper {
+    display: grid;
+    grid-template-columns: [space] 30px [col1] 65vw [col2] 200px [col3] auto [end];
+    grid-template-rows: auto;
+}
+
+.articleTopic {
+    grid-column-start: col2;
+    grid-column-end: col3;
+    background-color: rgb(34, 34, 34);
+    box-shadow: 0px 0px 15px #1d1d1d;
+    margin: 20px;
+    transition: 0.15s;
+    scale: 1;
+    max-height: 200px;
+    min-width: 200px;
+    border-radius: 30px;
+    text-decoration: none !important;
+    font: calc(1.389vw + 15px) tiWeb;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headlines {
+    background-color: rgb(34, 34, 34);
+    grid-column-start: col1;
+    grid-column-end: col2;
+    box-shadow: 0px 0px 15px #1d1d1d;
+    margin: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    transition: 0.15s;
+    scale: 1;
+    border-radius: 30px;
+    text-decoration: none !important;
+}
+
+.title {
+    font: calc(1.389vw + 15px) tiWeb;
+    color: white;
+}
+
+.preview {
+    font: calc(0.694vw + 12px) tiWeb;
+    color: rgb(195, 195, 195);
+}
+
+.previewPadding {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.headlines:hover {
+    scale: 1.02;
+}
+
+.articleTopic:hover {
+    animation: swing;
+    animation-duration: 0.6s;
+}
+
+@media only screen and (max-width: 728px) {
+    .techWrapper {
+        grid-template-columns: auto;
+    }
+
+    .articleTopic:hover {
+        animation: heartBeat;
+        animation-duration: 0.6s;
+    }
+    .articleTopic {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* ANCHOR About */
+#aboutWrapper {
+    display: flex;
+    color: white;
+    font: 20px tiWeb;
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+#aboutWrapper .largerFont {
+    font-size: 1.5em;
+}
+
+#aboutWrapper .semiLargerFont {
+    font-size: 1.35em;
+}
+
+#license {
+    padding-top: 50px;
+    border-radius: 10px;
+    font-size: 0.8em;
+}
+
+@media only screen and (max-width: 728px) {
+    #aboutWrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 15px;
+    }
 }
