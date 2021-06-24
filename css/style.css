@@ -75,6 +75,11 @@ nav {
     visibility: hidden;
 }
 
+video {
+    width: 100%;
+    height: auto;
+}
+
 #topbarWrapper {
     position: fixed;
     width: var(--width);
@@ -149,6 +154,7 @@ nav {
         opacity: 0;
         visibility: hidden;
     }
+
     nav {
         opacity: 1;
         visibility: visible;
@@ -452,6 +458,7 @@ hr.showOverlay {
         flex-wrap: wrap;
         gap: 60px;
     }
+
     .codingWrapper>.codePreview {
         margin-bottom: 50px;
         height: 50vh;
@@ -534,6 +541,7 @@ hr.showOverlay {
         animation: heartBeat;
         animation-duration: 0.6s;
     }
+
     .articleTopic {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -569,4 +577,36 @@ hr.showOverlay {
         padding-right: 30px;
         font-size: 15px;
     }
+}
+
+/* ANCHOR Articles */
+#articleWrapper {
+    display: grid;
+    grid-template-columns: [padding-start] 15vw [body-start] 65vw [body-end] auto [end];
+    grid-template-rows: [header-start] auto [header-end] 50px [body-start] auto [body-end];
+
+    border-width: 1px;
+    border-color: rgba(20, 255, 63, 0.548);
+    border-style: solid;
+}
+
+#articleWrapper header {
+    grid-column: body-start;
+    grid-row: header-star header-end;
+    height: 200px;
+    background-color: #ff8b33cc;
+}
+
+#articleWrapper #body {
+    grid-column: body-start;
+    grid-row: body-start;
+    height: 100vh;
+    background-color: #33ff88cc;
+}
+
+#articleWrapper #body {
+    grid-column: body-start;
+    grid-row: body-start;
+    height: 100vh;
+    background-color: #33ff88cc;
 }
