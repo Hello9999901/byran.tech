@@ -8,6 +8,7 @@
     --bkg-color: rgb(24, 24, 24);
     --overlay-dur: 0.5s;
     --icon-color: #FD6C00;
+    --white: #f8f8f2;
 }
 
 * {
@@ -16,7 +17,7 @@
 }
 
 body {
-    background-color: #131313;
+    background-color: #161616;
     scrollbar-width: none;
     height: 100vh;
     width: var(--width);
@@ -163,7 +164,7 @@ video {
 
 /* ANCHOR typedjs */
 .typed {
-    color: white;
+    color: var(--white);
     font-family: firaCode;
     font-weight: 300;
     font-size: var(--typedFontSize);
@@ -171,7 +172,7 @@ video {
 }
 
 .typed2 {
-    color: white;
+    color: var(--white);
     font-family: tiWeb;
     font-weight: 300;
     font-size: var(--typedFontSize);
@@ -179,7 +180,7 @@ video {
 }
 
 .typed-cursor {
-    color: white;
+    color: var(--white);
     font-size: calc(var(--typedFontSize) + 6px);
     align-self: center;
 }
@@ -227,7 +228,7 @@ video {
     font-size: 3em;
     font-weight: 300;
     font-family: tiWeb;
-    color: white;
+    color: var(--white);
     margin-left: 5px;
 }
 
@@ -259,7 +260,7 @@ video {
     font-size: 3em;
     font-weight: 300;
     font-family: tiWeb;
-    color: white;
+    color: var(--white);
     margin-left: 5px;
 }
 
@@ -328,7 +329,7 @@ video {
     overflow: visible;
 
 
-    color: white;
+    color: var(--white);
     font-size: calc(2.778vw + 10px);
     font-family: tiWeb;
     font-weight: 500;
@@ -355,10 +356,10 @@ video {
 }
 
 .overlay hr {
-    color: white;
+    color: var(--white);
     height: 0.386vw;
     margin-top: 0px;
-    background-color: white;
+    background-color: var(--white);
     width: 50px;
     transition: var(--overlay-dur);
 }
@@ -422,13 +423,13 @@ hr.showOverlay {
 }
 
 .codingWrapper>.description {
-    color: white;
+    color: var(--white);
     font-family: firaCode;
     padding: 0px 30px 0px 20px;
 }
 
 .codingWrapper>.description>.title {
-    color: white;
+    color: var(--white);
     font-family: firaCode;
     font-size: 5em;
     font-weight: 400;
@@ -442,7 +443,7 @@ hr.showOverlay {
 .codingWrapper hr {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: var(--white);
     height: 4px;
 }
 
@@ -485,7 +486,7 @@ hr.showOverlay {
     border-radius: 30px;
     text-decoration: none !important;
     font: calc(1.389vw + 15px) tiWeb;
-    color: white;
+    color: var(--white);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -509,7 +510,7 @@ hr.showOverlay {
 
 .title {
     font: calc(1.389vw + 15px) tiWeb;
-    color: white;
+    color: var(--white);
 }
 
 .preview {
@@ -551,7 +552,7 @@ hr.showOverlay {
 /* ANCHOR About */
 #aboutWrapper {
     display: flex;
-    color: white;
+    color: var(--white);
     font: 20px tiWeb;
     padding-left: 25vw;
     padding-right: 25vw;
@@ -584,29 +585,47 @@ hr.showOverlay {
     display: grid;
     grid-template-columns: [padding-start] 15vw [body-start] 65vw [body-end] auto [end];
     grid-template-rows: [header-start] auto [header-end] 50px [body-start] auto [body-end];
-
-    border-width: 1px;
-    border-color: rgba(20, 255, 63, 0.548);
-    border-style: solid;
 }
 
 #articleWrapper header {
     grid-column: body-start;
     grid-row: header-star header-end;
     height: 200px;
-    background-color: #ff8b33cc;
 }
 
 #articleWrapper #body {
     grid-column: body-start;
     grid-row: body-start;
     height: 100vh;
-    background-color: #33ff88cc;
 }
 
 #articleWrapper #body {
     grid-column: body-start;
     grid-row: body-start;
     height: 100vh;
-    background-color: #33ff88cc;
+    background-color: #ffffff1a;
+}
+
+#articleWrapper .title {
+    font: 500 calc(1.736vw + px) tiWeb;
+    text-align: center;
+    color: var(--white);
+}
+
+#articleWrapper hr {
+    width: 30vw;
+    height: 3px;
+    background-color: var(--white);
+    margin: 0;
+    margin-top: 20px !important;
+}
+
+#articleWrapper .date {}
+
+#articleWrapper #calendar {
+    filter: invert(1);
+    height: 30px;
+    width: auto !important;
+    margin: 15px 0 0 10px;
+    -webkit-filter: invert(1);
 }
