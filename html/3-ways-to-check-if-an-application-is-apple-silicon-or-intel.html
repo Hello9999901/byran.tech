@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- TITLE -->
+    <title>3 Ways to Check If An Application Is Apple Silicon or Intel | byran.tech</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/menu.css">
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/typedjs/typed.min.js"></script>
+
+    <!-- VIEWPORT OPTIMIZING -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+
+
+    <!-- META SEO DESCRIPTIONS -->
+    <meta name="title" content="FILL IN TITLE">
+    <meta name="description" content="FILL IN DESCRIPTION">
+    <meta name="keywords" content="FILL IN KEYWORDS">
+    <meta name="author" content="FILL IN AUTHOR">
+
+
+    <!-- SAFARI TOPBAR THEME COLOR -->
+    <meta name="theme-color" content="#131313">
+
+
+    <!-- ANCHOR: https://ogp.me (Open Graph Headers) -->
+    <meta property="og:title" content="FILL IN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.byran.tech" />
+    <meta property="og:image" content="FILL IN IMAGE" />
+    <meta property="og:description" content="FILL IN DESCRIPTION" />
+
+    <!-- TODO: ADD GOOGLE ANALYTICS? -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="topbarWrapper">
+            <div id="topbarFlexWrapper">
+                <a id="logoWrapper" href="../index.html">
+                    <img src="../svgs/logo.svg" id="logo">
+                </a>
+                <div id="navWrapper">
+                    <a class="navLinks" href="../art.html">3D Art</a>
+                    <a class="navLinks" href="../coding.html">Coding</a>
+                    <a class="navLinks" href="../tech.html">Tech</a>
+                    <a class="navLinks" href="../about.html">About</a>
+                </div>
+            </div>
+        </div>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <svg class="ham ham6" viewBox="0 0 100 100" width="80">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+                    <path class="line middle"
+                        d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+                    <path class="line bottom"
+                        d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+                </svg>
+
+                <ul id="menu">
+                    <a href="../art.html">
+                        <li>3D Art</li>
+                    </a>
+                    <a href="../coding.html">
+                        <li>Coding</li>
+                    </a>
+                    <a href="../tech.html">
+                        <li>Tech</li>
+                    </a>
+                    <a href="../about.html">
+                        <li>About</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <div id="bodyWrapper">
+            <div id="articleWrapper">
+                <header>
+                    <span class="title">3 Ways to Check If An Application Is Apple Silicon or Intel</span>
+                    <hr>
+                    <div class="dateWrapper">
+                        <img src="../svgs/calendar_dark.svg" id="calendar">
+                        <span id="date">Monday, February 15th, 2021 (Updated June 25th 2021)</span>
+                    </div>
+                </header>
+
+                <!-- TODO: Make a list of all the articles on the side with drop-downs separated by type of article -->
+                <!-- <div id="list">
+                </div> -->
+
+                <div id="body">
+                    <p>
+                        Imagine this: you just bought yourself a shiny new MacBook. All the reviews say it is the
+                        perfect mac to buy right now.
+                        You open it up, and you start using it immediately. You might notice that the mac is sluggish
+                        when
+                        running
+                        certain applications, such as Blender (UPDATE: Blender now supports Apple Silicon),
+                        yet is blazing fast when running iMovie or Final Cut Pro X. Why is that?
+                    </p>
+                    <p>
+                        The main reason is that some applications are built for Apple Silicon, while other applications
+                        are
+                        built
+                        for Intel.
+                        Apple Silicon applications run well on Apple Silicon computers. Intel applications run well on
+                        Intel
+                        computers.
+                    </p>
+
+                    <p>
+                        You can check
+                        which processor you have by clicking the Apple logo on the top left and clicking "About This
+                        Mac".
+                        If you
+                        are running a Apple Silicon mac,
+                        it will say "Chip: Apple ____" (right now it is only M1, but Apple will definitely add on to
+                        that).
+                        Otherwise, you are running an Intel processor.
+                    </p>
+
+                    <p>
+                        Again, Apple Silicon applications run fast on Apple Silicon computers, while Intel applications
+                        run
+                        well on
+                        Intel computers. However, there is a middle ground.
+                    </p>
+
+                    <p>
+                        Universal applications are built for both Apple Silicon and Intel macs. They run perfectly on
+                        both
+                        processors. Universal applications might seem "magical",
+                        but they are really just the 2 different versions (one for Apple Silicon, one for Intel) glued
+                        together.
+                        None the less here is how you can tell
+                        whether an application is Apple Silicon based or Intel based.
+                    </p>First, open the Applications folder in Finder
+                    <p>
+                        1. Checking through Activity Monitor
+                    </p>
+                    <p>
+                        Open Activity Monitor (Spotlight (Cmd + Space) search "Activity Monitor" and then press the
+                        Enter key).
+                        <img src="../images/tutorialImages/3WaysToCheckAppleSiliconOrIntel/Spotlight.png">
+                    </p>
+                    <p>
+                        Once opened, it should look something like this:
+                        <img
+                            src="../images/tutorialImages/3WaysToCheckAppleSiliconOrIntel/ActivityMonitorNO-ANNOTATION.png">
+                    </p>
+                    <p>
+                        On the "Kind" column (be sure to have the CPU tab selected on the top), match it up with the
+                        corresponding application! If it says Apple, it is Apple Silicon, and if it is Intel, it is
+                        Intel.
+                        <img src="../images/tutorialImages/3WaysToCheckAppleSiliconOrIntel/ActivityMonitorOpen.png">
+                    </p>
+                    <p>
+                        2. Get Info on a Certain Application
+                    </p>
+                    <p>
+                        First, open the Applications folder in Finder
+                        <img src="../images/tutorialImages/3WaysToCheckAppleSiliconOrIntel/ApplicationsFolder.png">
+                    </p>
+                    <p>Select an Application You Want to Check.</p>
+                    <img src="../images/tutorialImages/3WaysToCheckAppleSiliconOrIntel/SelectedApp.png">
+                    <p>Then, right click the selected app and press "Get Info"</p>
+                    <img src="../images/tutorialImages/3WaysToCheckAppleSiliconOrIntel/GetInfo.png">
+                    <p>An App Info window will open:</p>
+                    <img src="../images/tutorialImages/3WaysToCheckAppleSiliconOrIntel/InfoWindow.png">
+                    <p>Now, check the "Kind":
+                    </p>
+                    <p>It will either say "Apple Silicon", "Universal", or "Intel" in the parentheses (and
+                        identity the app accordingly).
+                    </p>
+                    <img src="../images/tutorialImages/3WaysToCheckAppleSiliconOrIntel/CheckKindInfoWindow.png">
+                    <p>3. Check through a info website </p>
+                    <p>Perhaps the easiest (or most complex) way of
+                        checking is by going to a "Does it work on Apple Silicon?" website.
+                        <br>For example, here is <a href="https://isapplesiliconready.com"
+                            target="_blank">isapplesiliconready.com</a></p>
+                    <img src="../images/tutorialImages/3WaysToCheckAppleSiliconOrIntel/isapplesiliconready.png">
+                    <p>Here is <a href="https://doesitarm.com" target="_blank">doesitarm.com</a></p>
+                    <img src="../images/tutorialImages/3WaysToCheckAppleSiliconOrIntel/doesitarm.png">
+                    <p>
+                        <br>
+                        PLEASE READ:
+                        <br>
+                        <br>
+                        Both websites are great for checking whether an application runs through Rosetta 2 (translation layer for
+                        Intel -> Apple Silicon), natively, or straight up doesn't work.
+                        <br>
+                        <br>
+                        That's it! 3 simple ways to check whether an application is "Apple Silicon", "Universal", or "Intel" based.
+                        Now, you may ask, what happens when I need to use an app that only supports Intel and is slow? Well, there
+                        is a way around that, but that's another story for another day.
+                        (Hint: you have to build it yourself, something most people either don't want to do or don't know how to)
+                    </p>
+                </div>
+            </div>
+            <footer>
+                <span>🧑‍💻 Created by <b>Byran H</b>. 📃 Copyleft under the <b>MIT License</b>. 📲 For more information,
+                    check
+                    out the <a href="https://www.byran.tech/about.html" target="_blank"><b>about page</b></a>.
+                    &lt;/&gt; Otherwise, check out <a href="https://github.com/Hello9999901/byran.tech"
+                        target="_blank"><b>my
+                            source
+                            code on GitHub!</b></a></span>
+            </footer>
+        </div>
+        <!-- JAVASCRIPT -->
+        <script src="../js/scripts.js"></script>
+</body>
+
+</html>

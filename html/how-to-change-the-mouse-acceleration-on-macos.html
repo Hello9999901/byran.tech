@@ -3,7 +3,7 @@
 
 <head>
     <!-- TITLE -->
-    <title>TITLE | byran.tech</title>
+    <title>How to Change the Mouse Acceleration on macOS | byran.tech</title>
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="../css/style.css">
@@ -88,11 +88,11 @@
         <div id="bodyWrapper">
             <div id="articleWrapper">
                 <header>
-                    <span class="title">ADD_TITLE</span>
+                    <span class="title">How to Change the Mouse Acceleration on macOS</span>
                     <hr>
                     <div class="dateWrapper">
                         <img src="../svgs/calendar_dark.svg" id="calendar">
-                        <span id="date">ADD_DATE</span>
+                        <span id="date">Thursday, Christmas Eve, 2020</span>
                     </div>
                 </header>
 
@@ -101,11 +101,62 @@
                 </div> -->
 
                 <div id="body">
+                    <p>Mouse acceleration is a setting that changes your mouse sensitivity (or DPI) based on how
+                        fast
+                        the mouse moves on the table. It is beneficial for some, and detrimental to others.
+                        In games, for example, it is important to turn it off to get consistent mouse movement.
+                        The same goes for creative/productive applications that need consistent and accurate mouse
+                        movement
+                        (Photoshop, Blender, Unity, GIMP, etc.)
+                    </p>
+                    <p>It is very simple to change or turn off the mouse acceleration. In Terminal (Spotlight
+                        search "Terminal"),
+                        run:
+                        <pre>
+                        <code class="language-bash">
+                            defaults read .GlobalPreferences com.apple.mouse.scaling
+                        </code>
+                        </pre>
+                    </p>
+                    <p>The output is the current mouse acceleration. I keep mine at 2.5.
+                        I keep it on for no reason other than because I'm used to it. Feel free to change it to whatever
+                        value you
+                        want :)
 
+                        It is important to remember output value, as if you want to change back to the particular value,
+                        you can.
+
+
+                        To turn it mouse acceleration off, run:
+                    </p>
+                    <pre>
+                        <code class="language-bash">
+                            defaults write .GlobalPreferences com.apple.mouse.scaling -1
+                        </code>
+                    </pre>
+                    <p>Lastly, to turn it to a specific value, run this, replacing "whatever number you want" to
+                        the
+                        specific value you want.
+                    </p>
+                    <pre>
+                        <code class="language-bash">
+                            defaults write .GlobalPreferences com.apple.mouse.scaling "whatever number you want"
+                        </code>
+                    </pre>
+                    <p>For example, it may look like this:
+                    </p>
+                    <pre>
+                        <code class="language-bash">
+                            defaults write .GlobalPreferences com.apple.mouse.scaling 2
+                        </code>
+                    </pre>
+                    <p>That's it! It's time to get on with that gaming/productivity you've been dreaming for!
+                    </p>
                 </div>
             </div>
             <footer>
-                <span>🧑‍💻 Created by <b>Byran H</b>. 📃 Copyleft under the <b>MIT License</b>. 📲 For more information,
+                <span>🧑‍💻 Created by <b>Byran H</b>. 📃 Copyleft under the <b>MIT License</b>. 📲 For more
+                    information,
                     check
                     out the <a href="https://www.byran.tech/about.html" target="_blank"><b>about page</b></a>.
                     &lt;/&gt; Otherwise, check out <a href="https://github.com/Hello9999901/byran.tech"

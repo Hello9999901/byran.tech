@@ -365,15 +365,15 @@ video {
 }
 
 .showOverlay {
-    opacity: 1 !important;
+    opacity: 1;
 }
 
 .description.showOverlay {
-    transform: translateX(0px) !important;
+    transform: translateX(0px);
 }
 
 hr.showOverlay {
-    width: 300px !important;
+    width: 300px;
 }
 
 #artWrapper .block .overlay:hover {
@@ -411,7 +411,7 @@ hr.showOverlay {
     display: grid;
     grid-template-columns: [col1] 40vw [col2] auto [col3] 27vw [end];
     grid-template-rows: auto 50px;
-    overflow: hidden !important;
+    overflow: hidden;
 }
 
 .codingWrapper>.image {
@@ -449,7 +449,7 @@ hr.showOverlay {
 
 .codingWrapper>.codePreview {
     font-size: 1.3em;
-    font-family: firaCode !important;
+    font-family: firaCode;
     height: calc(40vw * 0.5625);
 }
 
@@ -484,7 +484,7 @@ hr.showOverlay {
     max-height: 200px;
     min-width: 200px;
     border-radius: 30px;
-    text-decoration: none !important;
+    text-decoration: none;
     font: calc(1.389vw + 15px) tiWeb;
     color: var(--white);
     text-align: center;
@@ -505,7 +505,7 @@ hr.showOverlay {
     transition: 0.15s;
     scale: 1;
     border-radius: 30px;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 .title {
@@ -584,26 +584,20 @@ hr.showOverlay {
 #articleWrapper {
     display: grid;
     grid-template-columns: [padding-start] 15vw [body-start] 65vw [body-end] auto [end];
-    grid-template-rows: [header-start] auto [header-end] 50px [body-start] auto [body-end];
+    grid-template-rows: [header-start] auto [header-end] 0px [body-start] 100% [body-end];
 }
 
 #articleWrapper header {
     grid-column: body-start;
     grid-row: header-star header-end;
-    height: 200px;
+    height: fit-content;
+    padding-bottom: 40px;
 }
 
 #articleWrapper #body {
     grid-column: body-start;
     grid-row: body-start;
-    height: 100vh;
-}
-
-#articleWrapper #body {
-    grid-column: body-start;
-    grid-row: body-start;
-    height: 100vh;
-    background-color: #ffffff1a;
+    margin-bottom: 200px;
 }
 
 #articleWrapper .title {
@@ -617,15 +611,35 @@ hr.showOverlay {
     height: 3px;
     background-color: var(--white);
     margin: 0;
-    margin-top: 20px !important;
+    margin-top: 20px;
 }
 
-#articleWrapper .date {}
+#articleWrapper .dateWrapper {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-top: 15px;
+    padding-left: 6px;
+}
 
 #articleWrapper #calendar {
     filter: invert(1);
     height: 30px;
-    width: auto !important;
-    margin: 15px 0 0 10px;
-    -webkit-filter: invert(1);
+    width: auto;
+}
+
+#articleWrapper #date {
+    color: white;
+    font: 400 22px tiWeb;
+}
+
+#articleWrapper #body {
+    color: white;
+    font-family: tiWeb;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#articleWrapper p {
+    margin-top: 0;
 }

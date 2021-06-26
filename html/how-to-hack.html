@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- TITLE -->
+    <title>How to Hack | byran.tech</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/menu.css">
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/typedjs/typed.min.js"></script>
+
+    <!-- VIEWPORT OPTIMIZING -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+
+
+    <!-- META SEO DESCRIPTIONS -->
+    <meta name="title" content="FILL IN TITLE">
+    <meta name="description" content="FILL IN DESCRIPTION">
+    <meta name="keywords" content="FILL IN KEYWORDS">
+    <meta name="author" content="FILL IN AUTHOR">
+
+
+    <!-- SAFARI TOPBAR THEME COLOR -->
+    <meta name="theme-color" content="#131313">
+
+
+    <!-- ANCHOR: https://ogp.me (Open Graph Headers) -->
+    <meta property="og:title" content="FILL IN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.byran.tech" />
+    <meta property="og:image" content="FILL IN IMAGE" />
+    <meta property="og:description" content="FILL IN DESCRIPTION" />
+
+    <!-- TODO: ADD GOOGLE ANALYTICS? -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="topbarWrapper">
+            <div id="topbarFlexWrapper">
+                <a id="logoWrapper" href="../index.html">
+                    <img src="../svgs/logo.svg" id="logo">
+                </a>
+                <div id="navWrapper">
+                    <a class="navLinks" href="../art.html">3D Art</a>
+                    <a class="navLinks" href="../coding.html">Coding</a>
+                    <a class="navLinks" href="../tech.html">Tech</a>
+                    <a class="navLinks" href="../about.html">About</a>
+                </div>
+            </div>
+        </div>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <svg class="ham ham6" viewBox="0 0 100 100" width="80">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+                    <path class="line middle"
+                        d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+                    <path class="line bottom"
+                        d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+                </svg>
+
+                <ul id="menu">
+                    <a href="../art.html">
+                        <li>3D Art</li>
+                    </a>
+                    <a href="../coding.html">
+                        <li>Coding</li>
+                    </a>
+                    <a href="../tech.html">
+                        <li>Tech</li>
+                    </a>
+                    <a href="../about.html">
+                        <li>About</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <div id="bodyWrapper">
+            <div id="articleWrapper">
+                <header>
+                    <span class="title">How to Hack</span>
+                    <hr>
+                    <div class="dateWrapper">
+                        <img src="../svgs/calendar_dark.svg" id="calendar">
+                        <span id="date">Monday, December 14, 2020</span>
+                    </div>
+                </header>
+
+                <!-- TODO: Make a list of all the articles on the side with drop-downs separated by type of article -->
+                <!-- <div id="list">
+                </div> -->
+
+                <div id="body">
+                    <p>You've come to learn how to "hack". You'll probably be sad to find that there is not a secret to
+                        breaking into
+                        someone else's laptop or
+                        anything of that general vicinity. First, it's illegal except with explicit permission and it's
+                        rather
+                        difficult and tedious, especially for
+                        anyone who isn't a "hacker" already.
+
+
+                        DISCLAIMER: This is for educational purposes ONLY. I take NO responsibilities of your actions.
+                        (Sorry if I sound
+                        rude, just had to get that out of the way.)
+                    </p>
+                    <p>Onwards!</p>
+                    <p></p>
+                    <img src="../images/tutorialImages/HowToHack/top.png" style="margin-left: 60px;">
+                    <p class="photocaption">Terminal running top, a computer monitoring program.</p>
+                    <p>If you have seen any "hacker" in any movie ever, the screen is flashing with 0s and 1s, windows
+                        are popping up all
+                        the time, the green text is unreadable to the untrained.
+                        It might look something like this:
+                    </p>
+                    <img src="../images/tutorialImages/HowToHack/powermetrics.png" style="margin-left: 40px;">
+                    <p class="photocaption">Terminal running powermetrics, an advanced computer monitoring program.</p>
+                    <p>Movies actually get this right. Terminal is something every hacker uses. Though it may seem
+                        scary, it's actually
+                        very simple.
+                        Simple in the sense its easy to use, and simple in the sense it can easily break your computer.
+                        Here are a few
+                        interesting (albiet scary) commands!
+                    </p>
+                    <p>1. sudo rm -rf /</p>
+                    <pre>
+                        <code class="language-bash">&nbspsudo rm -rf /</code></pre>
+                    <p>The command "sudo rm -rf /" is an infamous command that erases EVERYTHING in a computer. It is
+                        very powerful.
+
+                        Perhaps we should take a more detailed look into what this does.
+
+
+                        "sudo" is a prefix that is put in front of
+                        any command that needs or should have superuser access. "Superuser" provides system administrator
+                        level access.
+
+
+                        "rm" is used to delete files. In this case, it is deleting everything. The reason it is deleting
+                        everything
+                        is because / is the main directory, and all files branch off "/". In the middle,
+
+
+                        "-rf" are the options.
+
+                        "r" is an option to delete everything under the directory and all sub-directories after.
+
+                        "f" is an option
+                        to force delete files. It will override many protections. However, it will not override
+                        write-protected
+                        directories.
+                    </p>
+                    <p>2. :(){ :|:& };:</p>
+                    <pre>
+                        <code class="language-bash">&nbsp:(){ :|:& };:</code></pre>
+                    <p>This command is called a fork bomb. After running it, it continually uses up system resources,
+                        causing the system
+                        is slowed
+                        or to crash. This command is harder to explain than sudo rm -rf /, so I'll skip explaining this
+                        one. In simple
+                        terms, it replicates itself until
+                        the system is filled with the bomb.
+                    </p>
+                    <p>DDoS Attacks</p>
+                    <p>DDoS attacks, also known as Distributed Denial of Service attacks are common and easy to execute.
+                        A DDoS attack is simply an attack to deny something of service. It is most commonly used on
+                        servers and
+                        websites.
+                        In a DDoS attack, the attacker continually "pings" the website until the website gets so many
+                        "pings" that it
+                        gets either overwhelmed or confused. A ping is a request to the website. It is commonly used to
+                        check if a
+                        website
+                        is up and working. However, a hacker can take advantage of it and flood the server with
+                        requests, ultimately
+                        breaking the server.
+
+                        Another type of DDoS attack is a ping that sends massive amounts of data. The data is too much
+                        for the server to
+                        handle at once and the server crashes. This type of DDoS attack is not common today as almost
+                        every single
+                        server
+                        has some type of guard to prevent such attacks.
+                    </p>
+                    <p>Person-in-the-Middle Attack</p>
+                    <p>A person-in-the-middle attack (I'll call it PITM for short) is where a hacker intercepts a user's
+                        connection
+                        to someplace. For example, Alex and Jack are talking to each other online.
+                        <pre>
+                        <code class="language-bash">Alex -> Jack</code></pre>
+                        <p>However, Alex and Jack don't know anything about online safety and decide to talk
+                            over HTTP (Hypertext Transfer Protocol). This means the data they send is not encrypted.
+                            <pre>
+                        <code class="language-bash">Data (Non-Encrypted) -> (Non-encrypted) Data</code></pre>
+                            <p>Suddenly, a hacker decides to squeeze himself/herself into the conversation. The
+                                conversation has now
+                                become:
+                                <pre>
+                        <code class="language-bash">Alex -> Hacker -> Jack</code></pre>
+                                <p>With this, neither Alex nor Jack knows that every single thing they send to each
+                                    other is being
+                                    monitored and collected
+                                    by the hacker. Scary, right?
+                                    <pre>
+                        <code class="language-bash">Alex (Sends: Hi, Jack!) -> Hacker (Relays: Hi, Jack!) -> Jack (Receives: Hi, Jack!)</code></pre>
+                                    <p>However, the hacker can now easily alter the texts Alex sends to Jack or vice
+                                        versa.
+                                        <pre>
+                        <code class="language-bash">Alex (Sends: Good Morning!) -> Hacker (Alters: Bad Morning!) -> Jack (Receives: Bad Morning!)</code></pre>
+                                        <p>PITM attacks are much more difficult to accomplish on HTTPS (Hypertext
+                                            Transfer Protocol
+                                            Secure), where the data sent
+                                            is all encrypted. The moral of the story is to use HTTPS to keep yourself
+                                            safe online. The
+                                            good thing is that almost every single
+                                            trusted website is using HTTPS, including this website!</p>
+                </div>
+
+
+            </div>
+        </div>
+        <footer>
+            <span>🧑‍💻 Created by <b>Byran H</b>. 📃 Copyleft under the <b>MIT License</b>. 📲 For more information,
+                check
+                out the <a href="https://www.byran.tech/about.html" target="_blank"><b>about page</b></a>.
+                &lt;/&gt; Otherwise, check out <a href="https://github.com/Hello9999901/byran.tech"
+                    target="_blank"><b>my
+                        source
+                        code on GitHub!</b></a></span>
+        </footer>
+    </div>
+    <!-- JAVASCRIPT -->
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>

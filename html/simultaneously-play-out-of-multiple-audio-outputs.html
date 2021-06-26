@@ -3,7 +3,7 @@
 
 <head>
     <!-- TITLE -->
-    <title>TITLE | byran.tech</title>
+    <title>Simultaneously Play Out of Multiple Audio Outputs | byran.tech</title>
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="../css/style.css">
@@ -88,11 +88,11 @@
         <div id="bodyWrapper">
             <div id="articleWrapper">
                 <header>
-                    <span class="title">ADD_TITLE</span>
+                    <span class="title">Simultaneously Play Out of Multiple Audio Outputs</span>
                     <hr>
                     <div class="dateWrapper">
                         <img src="../svgs/calendar_dark.svg" id="calendar">
-                        <span id="date">ADD_DATE</span>
+                        <span id="date">Friday, Christmas Day, 2020</span>
                     </div>
                 </header>
 
@@ -101,11 +101,61 @@
                 </div> -->
 
                 <div id="body">
+                    <p>Playing out of multiple audio outputs/speakers can be very useful in some applications.
+                        For one, it can provide a lot more sound than a single speaker. It can also be used to
+                        coordinate between
+                        headphones and a speaker.
+                    </p>
+                    <p>1. Open Audio MIDI Setup (Spotlight search "Audio MIDI Setup" and then press the Enter key). </p>
+                    <img src="../images/tutorialImages/AudioMidiSetupMultipleOuts/SpotlightSearch.png">
+                    <p>
+                    </p>
+                    <p>Once opened, it should look something like this:</p>
+                    <img src="../images/tutorialImages/AudioMidiSetupMultipleOuts/Opened.png">
+                    <p>Suppose I want to combine my MacBook speakers with my other speaker.
+                        Choose the ones that say speaker</p>
+                    <img src="../images/tutorialImages/AudioMidiSetupMultipleOuts/Ex.1.png">
+                    <p>The reason it is "Bose Mini II Soundlink 2" not "...Soundlink 1" is because "Soundlink 1" is the
+                        microphone
+                        in the speaker. To identify, see the gray-ish text below the name of the sources.
 
+
+                        If it says XX in / 0 outs, then its a microphone.
+                        If it says 0 in / XX outs, then its a speaker. If it has an "in", it means it has an input, in
+                        this case a
+                        microphone. "Out"
+                        means it has an output, in this case a speaker.
+                    </p>
+                    <img src="../images/tutorialImages/AudioMidiSetupMultipleOuts/In_OutDemo.png"
+                        style="margin-left: 70px">
+                    <p>To combine, press the "+" button in the bottom left-hand corner.</p>
+                    <img src="../images/tutorialImages/AudioMidiSetupMultipleOuts/Show+.png">
+                    <p>Then, click "Create Multi-Output Device"</p>
+                    <img src="../images/tutorialImages/AudioMidiSetupMultipleOuts/CreateMultiOutDevice.png">
+                    <p>A Multi-Output device has been created. It should look like this (without the highlights,
+                        of course):</p>
+                    <img src="../images/tutorialImages/AudioMidiSetupMultipleOuts/CreatedMultiOutDevice.png">
+                    <p>Now, select the outputs you want to join. In this case, it is the "Bose Mini II Soundlink" and
+                        "MacBook Pro Speakers"
+                    </p>
+                    <img src="../images/tutorialImages/AudioMidiSetupMultipleOuts/2OutsSelected.png">
+                    <p>If the speakers are not synchronized, enabling "Drift Correction" re-samples the data in both
+                        outputs
+                        and corrects their sound output.
+
+
+                        Now, choose as the "Sound Output"
+
+                        It is optional to click "Play Alerts and Sound Effects Through This Device" as well.
+                    </p>
+                    <img src="../images/tutorialImages/AudioMidiSetupMultipleOuts/ChooseAsOutput.png">
+                    <p>With that, you can play audio through multiple outputs simultaneously!</p>
+                    <img src="../images/tutorialImages/AudioMidiSetupMultipleOuts/FinalDemo.png">
                 </div>
             </div>
             <footer>
-                <span>🧑‍💻 Created by <b>Byran H</b>. 📃 Copyleft under the <b>MIT License</b>. 📲 For more information,
+                <span>🧑‍💻 Created by <b>Byran H</b>. 📃 Copyleft under the <b>MIT License</b>. 📲 For more
+                    information,
                     check
                     out the <a href="https://www.byran.tech/about.html" target="_blank"><b>about page</b></a>.
                     &lt;/&gt; Otherwise, check out <a href="https://github.com/Hello9999901/byran.tech"
