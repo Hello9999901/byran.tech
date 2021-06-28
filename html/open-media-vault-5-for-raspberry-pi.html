@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/prism.css">
 
 
     <!-- JAVASCRIPT -->
@@ -148,7 +148,7 @@
                         <img src="../images/tutorialImages/OmvTutorial/ImagerSuccessful.png">
                         <p>
                             9. Plug in all the cables. HDMI, keyboard and mouse, power. (Ethernet is optional but
-                            strongly recommanded).
+                            strongly recommended).
 
                             10. After booting, the terminal should show up. It will ask for your login info. It is
                             recommended
@@ -162,20 +162,17 @@
                             2. Type these 4 commands. The upgrade might take a while. Start a Blender model or
                             something.
                         </p>
-                        <pre>
-                        <code class="language-bash">
-                        sudo apt-get update
-                        
-                        sudo apt-get upgrade -y
-                        
-                        sudo rm -f /etc/systemd/network/99-default.link
-                        
-                        sudo reboot
-                    </code></pre>
+                        <pre><code class="language-bash">sudo apt-get update
+
+sudo apt-get upgrade -y
+
+sudo rm -f /etc/systemd/network/99-default.link
+
+sudo reboot
+</code></pre>
                         <p>1. Type (the script may take up to +30 min)</p>
                         <pre>
-                        <code class="language-bash"> wget -O - https://github.com/OpenMediaVault-Plugin-Developers/
-                        installScript/raw/master/install | sudo bash</code></pre>
+<code class="language-bash"> wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash</code></pre>
                         <p>After the install is done, on the Raspberry Pi, run</p>
                         <pre>
                         <code class="language-bash">hostname -I</code></pre>
@@ -184,16 +181,14 @@
 
                             3. Enter admin login. By default,
 
-                            <pre>
-                            <code class="language-bash">
-                        username: admin
-                        
-                        password: openmediavault
-                    </code></pre>
+<pre>
+<code class="language-bash">username: admin
+password: openmediavault</code>
+</pre>
                         </p>
-                        <img src="../images/tutorialImages/OmvTutorial/OMVLogin.png" style="margin-left: 60px;">
+                        <img src="../images/tutorialImages/OmvTutorial/OMVLogin.png">
                         <p>4. You should be greeted with the web GUI:</p>
-                        <img src="../images/tutorialImages/OmvTutorial/OMVgui.png" style="margin-left: 60px;">
+                        <img src="../images/tutorialImages/OmvTutorial/OMVgui.png">
                         <p>That's it! You have created your own server! However, setting up requires more work;
                             I hope to make a tutorial on that sometime!
                         </p>
@@ -212,6 +207,7 @@
         </div>
         <!-- JAVASCRIPT -->
         <script src="../js/scripts.js"></script>
+        <script src="../js/prism.js"></script>
 </body>
 
 </html>

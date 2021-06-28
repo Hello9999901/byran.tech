@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/prism.css">
 
 
     <!-- JAVASCRIPT -->
@@ -105,13 +105,19 @@
                     <p>It is a little bit confusing and the instructions are not for python3 code.</p>
                     <p>Here is the official readthedocs: https://py2app.readthedocs.io/en/latest</p>
                     <p>The biggest problem that I ran into was build errors.</p>
-                    <p>$ python setup.py py2app</p>
+
+<pre><code class="language-bash">$ python setup.py py2app</code></pre>
+
                     <p>That is what official py2app says. That is only for python2 code. Python3 code needs this:</p>
-                    <p>$ python3 setup.py py2app</p>
+
+<pre><code class="language-bash">$ python3 setup.py py2app</code></pre>
+
                     <p>The second error I ran into was “file not found”. This can be fixed by using cd to find the
                         folder. Say my python
                         file was in my documents folder. This is how:</p>
-                    <p>$ cd Documents</p>
+
+<pre><code class="language-bash">$ cd Documents</code></pre>
+
                     <p>The reason behind this error is due to incorrect file paths. Terminal goes into the root
                         directory, so you can either
                         move the file into the root directory or cd into the folder that contains your files. Then run
@@ -131,6 +137,7 @@
         </div>
         <!-- JAVASCRIPT -->
         <script src="../js/scripts.js"></script>
+        <script src="../js/prism.js"></script>
 </body>
 
 </html>

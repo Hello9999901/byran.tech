@@ -643,3 +643,33 @@ hr.showOverlay {
 #articleWrapper p {
     margin-top: 0;
 }
+
+#body a {
+    color: rgb(106, 185, 255);
+}
+
+#body .iframe {
+    width: 90%;
+    height: calc(90vh * 0.5625);
+}
+
+#body pre {
+    display: flex;
+    margin: 0;
+    font-size: 18px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#body .smallImg {
+    margin-left: 40px;
+    width: 20vw;
+    height: auto;
+}
+
+#body .marginImg {
+    margin-left: 40px;
+}
