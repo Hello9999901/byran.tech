@@ -24,6 +24,10 @@ body {
     margin: auto;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -190,7 +194,7 @@ video {
     justify-content: center;
     height: calc(200px + 35vw);
     width: var(--width);
-    background-image: url("../images/testimage.png");
+    background-image: url("../images/mainPageHero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -264,6 +268,83 @@ video {
     margin-left: 5px;
 }
 
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 20px 20vw 0 20vw;
+    background-color: rgb(42, 43, 57);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 10px 50px rgba(32, 32, 32, 0.849);
+    border-width: 1px;
+    border-color: rgb(80, 81, 93);
+    border-style: solid;
+}
+
+.windowHeader {
+    height: 30px;
+    width: 100%;
+    padding-top: 3px;
+    text-align: center;
+    background-color: rgb(56, 54, 60);
+}
+
+.terminalHeaderText {
+    color: #b6b6b6;
+    font: 16px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+}
+
+.terminalText {
+    color: #FFFFFF;
+    font: 20px firaCode;
+    white-space: pre-line;
+    line-height: 1.7;
+    text-shadow:
+    0 0 1px rgba(255, 255, 255, 0.794);
+}
+
+.validColor {
+    color: #50FA7B;
+    text-shadow:
+    0 0 3px #50FA7B,
+}
+
+.terminalText .cyan {
+    color: #8BE9FD;
+    font-weight: 600;
+}
+
+.terminalWindow {
+    padding: 10px;
+    width: 100%;
+    border-width: 1px;
+    border-top: solid;
+    border-color: #242424;
+}
+
+.terminalText .heavyWeight {
+    font-weight: 500;
+}
+.terminalText .heavyWeight a {
+    color: white;
+}
+
+.terminalText .note {
+    font-size: 12px;
+    text-align: right;
+    color: #b6b6b6;
+}
+
+.terminalText .note a {
+    font-size: 12px;
+    text-align: right;
+    color: #8BE9FD;
+}
 
 @media screen and (max-width: 666px) {
     .bodyHalfWrapper>.blockHalf>img {

@@ -15,3 +15,5 @@ function hideOverlays() {
     $(".description").removeClass("showOverlay");
     $("hr").removeClass("showOverlay");
 };
+
+document.getElementById("currentTimeAndDate").innerHTML = (Date().toLocaleString());
