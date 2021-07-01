@@ -218,17 +218,17 @@ video {
     flex-wrap: wrap;
 }
 
-#bodyFlexWrapper>.block {
+#bodyFlexWrapper .block {
     margin-top: 30px;
     padding: 10px;
     background-color: rgb(22, 22, 22);
 }
 
-#bodyFlexWrapper>.block>img {
+#bodyFlexWrapper .block img {
     width: 90vw;
 }
 
-#bodyFlexWrapper>.block>div>span {
+#bodyFlexWrapper .block div span {
     font-size: 3em;
     font-weight: 300;
     font-family: tiWeb;
@@ -246,21 +246,24 @@ video {
     flex-basis: 100%;
 }
 
+.bodyHalfWrapper a {
+    text-decoration: none !important;
+}
 
-.bodyHalfWrapper>.blockHalf {
+.bodyHalfWrapper .blockHalf {
     margin-top: 30px;
     padding: 10px;
     background-color: rgb(22, 22, 22);
     min-width: 200px;
 }
 
-.bodyHalfWrapper>.blockHalf>img {
+.bodyHalfWrapper .blockHalf img {
     width: 43vw;
     min-width: 200px;
     height: auto;
 }
 
-.bodyHalfWrapper>.blockHalf>div>span {
+.bodyHalfWrapper .blockHalf div span {
     font-size: 3em;
     font-weight: 300;
     font-family: tiWeb;
