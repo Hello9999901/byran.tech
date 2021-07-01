@@ -435,6 +435,12 @@ video {
     padding-right: 10px;
 }
 
+.overlay .unavailable {
+    opacity: 0.5;
+    filter: invert(0.5);
+    -webkit-filter: invert(0.5);
+}
+
 .overlay .artTitle {
     font-size: calc(3.472vw + 20px);
 }
