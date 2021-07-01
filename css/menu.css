@@ -1,0 +1,178 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+ * Made by Erik Terwan, Edited by Hello9999901 (Byran)
+ * 24th of November 2015, Edited 23rd of June 2021.
+ * MIT License
+*/
+
+/*  * CSS HAMBURGER MENU */
+
+/*
+ * Copyright (c) 2021 by Erik Terwan (https://codepen.io/erikterwan/pen/EVzeRP)
+
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+/*  * ANIMATED HAMBURGER MENU */
+
+/*
+ * Copyright (c) 2021 by Mikael Ainalem (https://codepen.io/ainalem/pen/LJYRxz)
+
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+#menuToggle {
+    display: flex;
+    position: fixed;
+    right: 100px;
+
+    z-index: 2;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #c5c5c5;
+
+    -webkit-transition: color 0.3s ease;
+
+    -o-transition: color 0.3s ease;
+
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: var(--icon-color);
+}
+
+
+#menuToggle input {
+    top: -10px;
+    right: 0px;
+    display: block;
+    width: 60px;
+    margin-top: 14px;
+    margin-left: 10px;
+    height: 50px;
+    position: fixed;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#menu {
+    z-index: 0;
+    position: fixed;
+    right: 0;
+    margin: 0;
+    width: calc(15.833vw + 150px);
+    padding: 50px;
+    padding-top: 125px;
+    height: 100vh;
+    background-color: rgba(24, 24, 24, 0.671);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    -webkit-transform-origin: 0% 0%;
+
+    -ms-transform-origin: 0% 0%;
+
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 26px;
+    font-family: tiWeb;
+}
+
+#menuToggle input:checked~#menu {
+    transform: translate(0px) !important;
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    -o-transition: transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: fixed;
+    z-index: 1;
+    top: -10px;
+    right: -5px;
+}
+
+.line {
+    fill: none;
+    -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    -o-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    transition: 0.6s;
+    stroke: rgb(231, 231, 231);
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham6 .top {
+    stroke-dasharray: 40 172;
+}
+
+.ham6 .middle {
+    stroke-dasharray: 40 111;
+}
+
+.ham6 .bottom {
+    stroke-dasharray: 40 172;
+}
+
+#menuToggle input:checked~.ham6 .top {
+    stroke-dashoffset: -132px;
+}
+
+#menuToggle input:checked~.ham6 .middle {
+    stroke-dashoffset: -71px;
+}
+
+#menuToggle input:checked~.ham6 .bottom {
+    stroke-dashoffset: -132px;
+}
+
+#menuToggle input:checked~svg path.line {
+    stroke: var(--icon-color);
+}

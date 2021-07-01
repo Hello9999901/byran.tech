@@ -1,0 +1,24 @@
+# How to turn off the power (PWR) and activity (ACT) lights on the Raspberry Pi
+# Run in Terminal:
+echo 0 | sudo tee /sys/class/leds/led1/brightness ; echo 0 | sudo tee /sys/class/leds/led0/brightness; echo done
+
+---------------------------------------------------------------------------------------------------------------------
+
+# Add 2560 x 1440 resolution in Ubuntu
+sudo xrandr --newmode "2560x1440_60.00"  312.25  2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync
+sudo xrandr --addmode Virtual-1 "2560x1440_60.00"
+
+# No "sudo" version for "gedit ~/.profile"
+xrandr --newmode "2560x1440_60.00"  312.25  2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync
+xrandr --addmode Virtual-1 "2560x1440_60.00"
+
+# More Info
+xrandr
+cvt (resolution) (resolution)
+sudo xrandr --newmode (modeline from cvt)
+sudo xrandr --addmode (xrandr display device name) (resolutionxresolution_refreshrate)
+# Add to gedit ~/.profile:
+xrandr --newmode "2560x1440_60.00"  312.25  2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync
+xrandr --addmode Virtual-1 "2560x1440_60.00"
+
+
