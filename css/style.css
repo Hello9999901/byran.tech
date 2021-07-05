@@ -90,6 +90,10 @@ footer span {
     display: inline-block;
 }
 
+.typedjsWrapper span {
+    display: inline-block;
+}
+
 span {
     display: flex;
 }
