@@ -1,6 +1,7 @@
 /* ANCHOR Variables */
 :root {
     --anim-dur: 0.9s;
+    --longer-anim-dur: 1.1s;
     --width: 100vw;
     --half-width: calc(var(--width) / 2);
     font-size: 10px;
@@ -85,6 +86,19 @@ video {
     height: auto;
 }
 
+footer span {
+    display: inline-block;
+}
+
+span {
+    display: flex;
+}
+
+.bounce {
+    animation: bounce;
+    animation-duration: var(--anim-dur);
+}
+
 #topbarWrapper {
     position: fixed;
     width: var(--width);
@@ -93,10 +107,10 @@ video {
     z-index: 1;
     overflow: hidden;
 
-
-    /* border-width: 1px;
+    /*border-width: 1px;
     border-color: rgb(79, 233, 92);
-    border-style: solid; */
+    border-style: solid;
+    */
 }
 
 #topbarFlexWrapper {
@@ -117,9 +131,15 @@ video {
     right: 20px;
     transition: 0.1s;
 
-    /* border-width: 1px;
+
+    animation: fadeInRight;
+    animation-duration: var(--anim-dur);
+
+
+    /*border-width: 1px;
     border-color: rgb(144, 67, 231);
-    border-style: solid; */
+    border-style: solid;
+    */
 }
 
 #logo {
@@ -132,6 +152,9 @@ video {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+
+    animation: fadeInLeft;
+    animation-duration: var(--anim-dur);
 
     /* border-width: 1px;
     border-color: rgb(197, 228, 255);
@@ -190,7 +213,14 @@ video {
     align-self: center;
 }
 
-#typedjsWrapper {
+.typedWordsWrapper {
+    display: flex;
+    animation: backInDown;
+    animation-delay: 0.6s;
+    animation-duration: var(--anim-dur);
+}
+
+.typedjsWrapper {
     display: flex;
     justify-content: center;
     height: calc(200px + 35vw);
@@ -198,6 +228,9 @@ video {
     background-image: url("../images/mainPageHero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
+    animation: pulse;
+    animation-duration: var(--anim-dur);
 
     /* border-width: 1px;
     border-color: rgb(150, 75, 211);
@@ -309,13 +342,13 @@ video {
     white-space: pre-line;
     line-height: 1.7;
     text-shadow:
-    0 0 1px rgba(255, 255, 255, 0.794);
+        0 0 1px rgba(255, 255, 255, 0.794);
 }
 
 .validColor {
     color: #50FA7B;
     text-shadow:
-    0 0 3px #50FA7B,
+        0 0 3px #50FA7B,
 }
 
 .terminalText .cyan {
@@ -334,6 +367,7 @@ video {
 .terminalText .heavyWeight {
     font-weight: 500;
 }
+
 .terminalText .heavyWeight a {
     color: white;
 }
@@ -364,6 +398,7 @@ video {
         justify-content: center;
         align-items: center;
     }
+
     .bodyHalfWrapper .blockHalf img {
         width: 90vw;
     }
@@ -377,18 +412,23 @@ video {
     .bodyHalfWrapper {
         flex-direction: column;
     }
+
     .aboutMe {
         margin: 20px 5vw 0 5vw;
     }
-    .terminalText{
+
+    .terminalText {
         font-size: 15px;
     }
+
     #bodyFlexWrapper .block div span {
         font-size: 20px;
     }
+
     .bodyHalfWrapper .blockHalf div span {
         font-size: 20px;
     }
+
     .text {
         font-size: 25px;
     }
@@ -403,7 +443,6 @@ video {
     flex-wrap: wrap;
     flex-basis: 100%;
     gap: 6em;
-
 
     /* border-width: 1px;
     border-color: rgb(240, 91, 64);
@@ -421,6 +460,9 @@ video {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+
+    animation: fadeInLeft;
+    animation-duration: var(--longer-anim-dur);
 
     /* border-width: 1px;
     border-color: rgb(20, 255, 64);
@@ -537,26 +579,35 @@ hr.showOverlay {
     grid-template-columns: [col1] 40vw [col2] auto [col3] 27vw [end];
     grid-template-rows: auto 50px;
     overflow: hidden;
+
+    animation: fadeIn;
+    animation-duration: var(--anim-dur);
 }
 
-.codingWrapper>.image {
+.codingWrapper .image {
     grid-column-start: col1;
     grid-column-end: col2;
     grid-row-start: 1;
     grid-row-end: 3;
     overflow: hidden;
+
+    animation: slideInLeft;
+    animation-duration: var(--anim-dur);
 }
 
 .codingWrapper>.description {
     color: var(--white);
     font-family: firaCode;
     padding: 0px 30px 0px 20px;
+
+    animation: zoomIn;
+    animation-duration: var(--anim-dur);
 }
 
 .codingWrapper>.description>.title {
     color: var(--white);
     font-family: firaCode;
-    font-size: 5em;
+    font-size: 40px;
     font-weight: 400;
 }
 
@@ -576,6 +627,9 @@ hr.showOverlay {
     font-size: 1.3em;
     font-family: firaCode;
     height: calc(40vw * 0.5625);
+
+    animation: slideInRight;
+    animation-duration: var(--anim-dur);
 }
 
 @media only screen and (max-width: 728px) {
@@ -596,6 +650,9 @@ hr.showOverlay {
     display: grid;
     grid-template-columns: [space] 30px [col1] 65vw [col2] 200px [col3] auto [end];
     grid-template-rows: auto;
+
+    animation: fadeIn;
+    animation-duration: var(--anim-dur);
 }
 
 .articleTopic {
@@ -616,6 +673,9 @@ hr.showOverlay {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation: fadeInRight;
+    animation-duration: var(--anim-dur);
 }
 
 .headlines {
@@ -631,6 +691,9 @@ hr.showOverlay {
     scale: 1;
     border-radius: 30px;
     text-decoration: none;
+
+    animation: zoomIn;
+    animation-duration: var(--anim-dur);
 }
 
 .title {
@@ -651,11 +714,6 @@ hr.showOverlay {
 
 .headlines:hover {
     scale: 1.02;
-}
-
-.articleTopic:hover {
-    animation: swing;
-    animation-duration: 0.6s;
 }
 
 @media only screen and (max-width: 728px) {
@@ -681,6 +739,9 @@ hr.showOverlay {
     font: 20px tiWeb;
     padding-left: 25vw;
     padding-right: 25vw;
+
+    animation: fadeIn;
+    animation-duration: var(--anim-dur);
 }
 
 #aboutWrapper .largerFont {
@@ -710,6 +771,9 @@ hr.showOverlay {
     display: grid;
     grid-template-columns: [padding-start] 15vw [body-start] 65vw [body-end] auto [end];
     grid-template-rows: [header-start] auto [header-end] 0px [body-start] 100% [body-end];
+
+    animation: fadeIn;
+    animation-duration: var(--longer-anim-dur);
 }
 
 #articleWrapper header {
@@ -717,18 +781,25 @@ hr.showOverlay {
     grid-row: header-star header-end;
     height: fit-content;
     padding-bottom: 40px;
+    overflow: hidden !important;
 }
 
 #articleWrapper #body {
     grid-column: body-start;
     grid-row: body-start;
     margin-bottom: 200px;
+
+    animation: fadeInUp;
+    animation-duration: var(--anim-dur);
 }
 
 #articleWrapper .title {
     font: 500 calc(1.736vw + px) tiWeb;
     text-align: center;
     color: var(--white);
+
+    animation: fadeInLeft;
+    animation-duration: var(--anim-dur);
 }
 
 #articleWrapper hr {
@@ -745,6 +816,9 @@ hr.showOverlay {
     gap: 7px;
     padding-top: 15px;
     padding-left: 6px;
+
+    animation: fadeInRight;
+    animation-duration: var(--anim-dur);
 }
 
 #articleWrapper #calendar {
@@ -771,6 +845,11 @@ hr.showOverlay {
 
 #body a {
     color: rgb(106, 185, 255);
+}
+
+.codingWrapper a {
+    color: rgb(106, 185, 255);
+    text-decoration: none;
 }
 
 #body .iframe {
