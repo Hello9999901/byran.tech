@@ -94,10 +94,6 @@ footer span {
     display: inline-block;
 }
 
-span {
-    display: flex;
-}
-
 .bounce {
     animation: bounce;
     animation-duration: var(--anim-dur);
@@ -234,7 +230,8 @@ span {
     background-repeat: no-repeat;
 
     animation: pulse;
-    animation-duration: var(--anim-dur);
+    animation-delay: 0.8s;
+    animation-duration: var(--longer-anim-dur);
 
     /* border-width: 1px;
     border-color: rgb(150, 75, 211);
@@ -700,7 +697,7 @@ hr.showOverlay {
     animation-duration: var(--anim-dur);
 }
 
-.title {
+.techWrapper .title {
     font: calc(1.389vw + 15px) tiWeb;
     color: var(--white);
 }
@@ -723,11 +720,6 @@ hr.showOverlay {
 @media only screen and (max-width: 728px) {
     .techWrapper {
         grid-template-columns: auto;
-    }
-
-    .articleTopic:hover {
-        animation: heartBeat;
-        animation-duration: 0.6s;
     }
 
     .articleTopic {
@@ -798,9 +790,10 @@ hr.showOverlay {
 }
 
 #articleWrapper .title {
-    font: 500 calc(1.736vw + px) tiWeb;
+    font: 500 calc(1.736vw + 10px) tiWeb;
     text-align: center;
     color: var(--white);
+    display: flex;
 
     animation: fadeInLeft;
     animation-duration: var(--anim-dur);
@@ -880,4 +873,37 @@ hr.showOverlay {
 
 #body .marginImg {
     margin-left: 40px;
+}
+
+/* ANCHOR Cookie Banner */
+.cookieBanner {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 20px;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    overflow: hidden;
+
+
+    border: solid #3f3f3e;
+    background-color: #505e53;
+    height: fit-content;
+    width: 70vw;
+    margin: 0 15vw 0 15vw !important;
+}
+
+.cookieBanner span {
+    color: white;
+    font: 18px firaCode;
+}
+
+.cookieBanner button {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font: 18px firaCode;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }

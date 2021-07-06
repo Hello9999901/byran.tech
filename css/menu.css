@@ -118,6 +118,8 @@
 
 #menuToggle input:checked~#menu {
     transform: translate(0px) !important;
+    animation: fadeIn;
+    animation-duration: 0.5s;
 }
 
 .ham {
@@ -149,27 +151,27 @@
     stroke-linecap: round;
 }
 
-.ham6 .top {
+.ham .top {
     stroke-dasharray: 40 172;
 }
 
-.ham6 .middle {
+.ham .middle {
     stroke-dasharray: 40 111;
 }
 
-.ham6 .bottom {
+.ham .bottom {
     stroke-dasharray: 40 172;
 }
 
-#menuToggle input:checked~.ham6 .top {
+#menuToggle input:checked~.ham .top {
     stroke-dashoffset: -132px;
 }
 
-#menuToggle input:checked~.ham6 .middle {
+#menuToggle input:checked~.ham .middle {
     stroke-dashoffset: -71px;
 }
 
-#menuToggle input:checked~.ham6 .bottom {
+#menuToggle input:checked~.ham .bottom {
     stroke-dashoffset: -132px;
 }
 
