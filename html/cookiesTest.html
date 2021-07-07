@@ -3,7 +3,7 @@
 
 <head>
     <!-- TITLE -->
-    <title>py2app Fixes | byran.tech</title>
+    <title>TITLE | byran.tech</title>
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="../css/style.css">
@@ -21,8 +21,8 @@
 
 
     <!-- META SEO DESCRIPTIONS -->
-    <meta name="title" content="py2app Fixes | byran.tech">
-    <meta name="description" content="Are you having issues building apps with py2app on macOS? Fix those issues with troubleshooting tips!">
+    <meta name="title" content="FILL_IN_TITLE">
+    <meta name="description" content="FILL_IN_DESCRIPTION">
     <meta name="keywords" content="FILL_IN KEYWORDS">
     <meta name="author" content="Byran H (Hello9999901)">
 
@@ -32,12 +32,41 @@
 
 
     <!-- ANCHOR: https://ogp.me (Open Graph Headers) -->
-    <meta property="og:title" content="py2app Fixes | byran.tech" />
+    <meta property="og:title" content="FILL_IN" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.byran.tech" />
-    <meta property="og:description" content="Are you having issues building apps with py2app on macOS? Fix those issues with troubleshooting tips!" />
+    <meta property="og:image" content="FILL_IN_IMAGE" />
+    <meta property="og:description" content="FILL_IN_DESCRIPTION" />
 
     <!-- TODO: ADD GOOGLE ANALYTICS? -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
+    <script>
+        console.log('default not consented to cookies')
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+        });
+
+        gtag('set', 'ads_data_redaction', true);
+
+        gtag('js', new Date());
+        gtag('config', 'G-9TVWTTPKRX');
+    </script>
+    <script>
+        function acceptCookies() {
+            console.log('now consented to cookies')
+            gtag('consent', 'update', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'granted',
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -84,59 +113,20 @@
                 </ul>
             </div>
         </nav>
-        <div id="bodyWrapper">
-            <div id="articleWrapper">
-                <header>
-                    <span class="title">py2app Fixes</span>
-                    <hr>
-                    <div class="dateWrapper">
-                        <img src="../svgs/calendar_dark.svg" id="calendar">
-                        <span id="date">October 25, 2020</span>
-                    </div>
-                </header>
-
-                <!-- TODO: Make a list of all the articles on the side with drop-downs separated by type of article -->
-                <!-- <div id="list">
-                </div> -->
-
-                <div id="body">
-                    <p>py2app is a Terminal based application that turns python code into macOS applications.</p>
-                    <p>It is a little bit confusing and the instructions are not for python3 code.</p>
-                    <p>Here is the official readthedocs: https://py2app.readthedocs.io/en/latest</p>
-                    <p>The biggest problem that I ran into was build errors.</p>
-
-<pre><code class="language-bash">$ python setup.py py2app</code></pre>
-
-                    <p>That is what official py2app says. That is only for python2 code. Python3 code needs this:</p>
-
-<pre><code class="language-bash">$ python3 setup.py py2app</code></pre>
-
-                    <p>The second error I ran into was “file not found”. This can be fixed by using cd to find the
-                        folder. Say my python
-                        file was in my documents folder. This is how:</p>
-
-<pre><code class="language-bash">$ cd Documents</code></pre>
-
-                    <p>The reason behind this error is due to incorrect file paths. Terminal goes into the root
-                        directory, so you can either
-                        move the file into the root directory or cd into the folder that contains your files. Then run
-                        it.</p>
-                </div>
-            </div>
-            <footer>
-                <span>🧑‍💻 Created by <b>Byran H</b>. 📃 Copyleft under the <b>MIT License</b>. 📲 For more
-                    information,
-                    check
-                    out the <a href="https://www.byran.tech/about.html" target="_blank"><b>about page</b></a>.
-                    &lt;/&gt; Otherwise, check out <a href="https://github.com/Hello9999901/byran.tech"
-                        target="_blank"><b>my
-                            source
-                            code on GitHub!</b></a></span>
-            </footer>
+        <div class="cookieBanner">
+            <span>
+                Hi! Do you allow <b>cookies</b>? <b>Ad cookies are ALWAYS off</b>, as I serve no ads and respect your
+                privacy. I use <b>Google Analytics</b> with minimal collected info to learn more about the website so I
+                can <i><b>refine byran.tech</b></i>!
+                <span style="display: flex; align-items: center; justify-content: center; padding-top: 10px; font-size: 1.2em;"><button
+                        onclick="acceptCookies()"><b>|YES|</b></button> --- <b>or</b> --- <button
+                        onclick="deniedCookies()"><b>|NO|</b></button></span>
+            </span>
         </div>
+        <div id="bodyWrapper">
+        </div>
+
         <!-- JAVASCRIPT -->
-        <script src="../js/scripts.js"></script>
-        <script src="../js/prism.js"></script>
 </body>
 
 </html>
