@@ -4,7 +4,7 @@ My website!
 Hi! This is my open source website! I hope you learn something!
 
 ## File Structure Tree:
-```bash
+```
 .
 ├── CNAME
 ├── README.md
