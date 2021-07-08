@@ -37,6 +37,24 @@
     <meta property="og:description" content="Will Intel's DG1 GPU be competitive with NVIDIA and AMD's offerings?" />
 
     <!-- TODO: ADD GOOGLE ANALYTICS? -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+        });
+
+        gtag('set', 'ads_data_redaction', true);
+
+        gtag('js', new Date());
+        gtag('config', 'G-9TVWTTPKRX');
+    </script>
 </head>
 
 <body>
@@ -82,7 +100,21 @@
                     </a>
                 </ul>
             </div>
-        </nav>
+        </nav>        
+        <div class="cookieBanner" id="cookieBanner">
+            <span>
+                Hi! Do you allow <b>cookies</b>? <b>Ad cookies are ALWAYS off</b>, as I serve no ads and respect your
+                privacy. I use <b>Google Analytics</b> with minimal analytical cookies to learn more about the website
+                so I
+                can <i><b>refine byran.tech</b></i>! You can also read the <a
+                    href="https://www.byran.tech/html/cookie-policy">cookie policy</a>.
+                <span
+                    style="display: flex; align-items: center; justify-content: center; padding-top: 10px; font-size: 1.2em;">
+                    <button onclick="acceptCookies()"><b>|YES|</b></button>
+                    >————🍪————< <button onclick="deniedCookies()"><b>|NO|</b></button>
+                </span>
+            </span>
+        </div>
         <div id="bodyWrapper">
             <div id="articleWrapper">
                 <header>

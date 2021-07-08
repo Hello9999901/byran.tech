@@ -885,10 +885,13 @@ hr.showOverlay {
     border-radius: 20px;
     padding: 5px 20px 5px 20px;
     overflow: hidden;
+    visibility: visible;
+    animation-duration: var(--anim-dur);
+    z-index: 2;
 
 
-    border: solid #3f3f3e;
-    background-color: #505e53;
+    border: solid hsl(60, 1%, 50%) 2px;
+    background-color: hsl(0, 0%, 11%);
     height: fit-content;
     width: 70vw;
     margin: 0 15vw 0 15vw !important;
@@ -896,14 +899,18 @@ hr.showOverlay {
 
 .cookieBanner span {
     color: white;
-    font: 18px firaCode;
+    font: calc(10px + 0.4vw) firaCode;
 }
 
 .cookieBanner button {
     padding: 0;
     margin: 0;
     color: white;
-    font: 18px firaCode;
+    font: calc(10px + 0.4vw) firaCode;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+}
+
+.cookieBanner a {
+    color: rgb(106, 185, 255);
 }

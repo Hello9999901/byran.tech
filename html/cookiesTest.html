@@ -41,7 +41,24 @@
     <!-- TODO: ADD GOOGLE ANALYTICS? -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
     <script>
-        console.log('default not consented to cookies')
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+        });
+
+        gtag('set', 'ads_data_redaction', true);
+
+        gtag('js', new Date());
+        gtag('config', 'G-9TVWTTPKRX');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -60,11 +77,16 @@
     </script>
     <script>
         function acceptCookies() {
-            console.log('now consented to cookies')
+            console.log('now consented to cookies');
+            document.getElementById("cookieBanner").style.visibility = 'hidden';
             gtag('consent', 'update', {
                 'ad_storage': 'denied',
                 'analytics_storage': 'granted',
             });
+        }
+        function deniedCookies() {
+            console.log('denied cookies')
+            document.getElementById("cookieBanner").style.visibility = 'hidden';
         }
     </script>
 </head>
@@ -113,14 +135,32 @@
                 </ul>
             </div>
         </nav>
-        <div class="cookieBanner">
+        <div class="cookieBanner" id="cookieBanner">
             <span>
                 Hi! Do you allow <b>cookies</b>? <b>Ad cookies are ALWAYS off</b>, as I serve no ads and respect your
-                privacy. I use <b>Google Analytics</b> with minimal collected info to learn more about the website so I
-                can <i><b>refine byran.tech</b></i>!
-                <span style="display: flex; align-items: center; justify-content: center; padding-top: 10px; font-size: 1.2em;"><button
-                        onclick="acceptCookies()"><b>|YES|</b></button> --- <b>or</b> --- <button
-                        onclick="deniedCookies()"><b>|NO|</b></button></span>
+                privacy. I use <b>Google Analytics</b> with minimal analytical cookies to learn more about the website
+                so I
+                can <i><b>refine byran.tech</b></i>! You can also read the <a
+                    href="https://www.byran.tech/html/cookie-policy">cookie policy</a>.
+                <span
+                    style="display: flex; align-items: center; justify-content: center; padding-top: 10px; font-size: 1.2em;">
+                    <button onclick="acceptCookies()"><b>|YES|</b></button>
+                    >————🍪————< <button onclick="deniedCookies()"><b>|NO|</b></button>
+                </span>
+            </span>
+        </div>
+        <div class="cookieBanner" id="cookieBanner">
+            <span>
+                Hi! Do you allow <b>cookies</b>? <b>Ad cookies are ALWAYS off</b>, as I serve no ads and respect your
+                privacy. I use <b>Google Analytics</b> with minimal analytical cookies to learn more about the website
+                so I
+                can <i><b>refine byran.tech</b></i>! You can also read the <a
+                    href="https://www.byran.tech/html/cookie-policy">cookie policy</a>.
+                <span
+                    style="display: flex; align-items: center; justify-content: center; padding-top: 10px; font-size: 1.2em;">
+                    <button onclick="acceptCookies()"><b>|YES|</b></button>
+                    >————🍪————< <button onclick="deniedCookies()"><b>|NO|</b></button>
+                </span>
             </span>
         </div>
         <div id="bodyWrapper">
