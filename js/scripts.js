@@ -34,10 +34,10 @@ function onloadFunction() {
     getCookieValue()
 }
 
-window.onload = onloadFunction();
+document.onload = onloadFunction();
 
 function acceptCookies() {
-    document.cookie = "cookieStatus=accepted; max-age=604800";
+    document.cookie = "cookieStatus=accepted; max-age=604800; path=/";
     document.getElementById("cookieBanner").style.visibility = 'hidden';
     gtag('consent', 'update', {
         'ad_storage': 'denied',
@@ -46,6 +46,6 @@ function acceptCookies() {
 }
 
 function deniedCookies() {
-    document.cookie = "cookieStatus=denied; max-age=604800";
+    document.cookie = "cookieStatus=denied; max-age=604800; path=/";
     document.getElementById("cookieBanner").style.visibility = 'hidden';
 }
