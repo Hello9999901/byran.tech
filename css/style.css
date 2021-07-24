@@ -649,7 +649,7 @@ hr.showOverlay {
 /* ANCHOR Tech */
 .techWrapper {
     display: grid;
-    grid-template-columns: [space] 30px [col1] 65vw [col2] 200px [col3] auto [end];
+    grid-template-columns: [space] 30px [col1] 65vw [col2] 300px [col3] auto [end];
     grid-template-rows: auto;
 
     animation: fadeIn;
