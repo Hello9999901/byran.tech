@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- TITLE -->
+    <title>Booting Linux OSes on the Razer Blade | byran.tech</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/prism.css">
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/typedjs/typed.min.js"></script>
+
+    <!-- VIEWPORT OPTIMIZING -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+
+
+    <!-- META SEO DESCRIPTIONS -->
+    <meta name="title" content="Booting Linux OSes on the Razer Blade">
+    <meta name="author" content="Byran H (Hello9999901)">
+
+
+    <!-- SAFARI TOPBAR THEME COLOR -->
+    <meta name="theme-color" content="#131313">
+
+
+    <!-- ANCHOR: https://ogp.me (Open Graph Headers) -->
+    <meta property="og:title" content="Booting Linux OSes on the Razer Blade" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.byran.tech/html/booting-linux-oses-on-the-razer-blade.html" />
+    <meta property="og:description" content="Booting a Linux OS can be hassle on a Razer Blade. Learn why here!" />
+
+    <!-- TODO: ADD GOOGLE ANALYTICS? -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+        });
+
+        gtag('set', 'ads_data_redaction', true);
+
+        gtag('js', new Date());
+        gtag('config', 'G-9TVWTTPKRX');
+    </script>
+</head>
+
+<body onload="onloadFunction()">
+    <div id="wrapper">
+        <div id="topbarWrapper">
+            <div id="topbarFlexWrapper">
+                <a id="logoWrapper" href="../index.html">
+                    <img src="../svgs/logo.svg" id="logo">
+                </a>
+                <div id="navWrapper">
+                    <a class="navLinks" href="../art.html">3D Art</a>
+                    <a class="navLinks" href="../coding.html">Coding</a>
+                    <a class="navLinks" href="../tech.html">Tech</a>
+                    <a class="navLinks" href="../about.html">About</a>
+                </div>
+            </div>
+        </div>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <svg class="ham" viewBox="0 0 100 100" width="80">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+                    <path class="line middle"
+                        d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+                    <path class="line bottom"
+                        d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+                </svg>
+
+                <ul id="menu">
+                    <a href="../art.html">
+                        <li>3D Art</li>
+                    </a>
+                    <a href="../coding.html">
+                        <li>Coding</li>
+                    </a>
+                    <a href="../tech.html">
+                        <li>Tech</li>
+                    </a>
+                    <a href="../about.html">
+                        <li>About</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <div class="cookieBanner" id="cookieBanner">
+            <span>
+                Hi! Do you allow <b>analytical cookies</b>? <b>Ad cookies are ALWAYS off</b>, as I serve no ads and
+                respect your
+                privacy. I use <b>Google Analytics</b> with minimal analytical cookies to learn more about the website
+                so I
+                can <i><b>refine byran.tech</b></i>! You can also read the <a
+                    href="https://www.byran.tech/html/cookie-policy">cookie policy</a>.
+                <span
+                    style="display: flex; align-items: center; justify-content: center; padding-top: 10px; font-size: 1.2em;">
+                    <button onclick="acceptCookies()"><b>|YES|</b></button>
+                    >————🍪————< <button onclick="deniedCookies()"><b>|NO|</b></button>
+                </span>
+            </span>
+        </div>
+        <div id="bodyWrapper">
+            <div id="articleWrapper">
+                <header>
+                    <span class="title">Booting Linux OSes on the Razer Blade</span>
+                    <hr>
+                    <div class="dateWrapper">
+                        <img src="../svgs/calendar_dark.svg" id="calendar">
+                        <span id="date">July 24th, 2021</span>
+                    </div>
+                </header>
+
+                <!-- TODO: Make a list of all the articles on the side with drop-downs separated by type of article -->
+                <!-- <div id="list">
+                </div> -->
+
+                <div id="body">
+                    <p>
+                        Ah yes. The Razer Blade. Though I cannot speak for every user out there, it is a beautiful machine.
+                        It is thin, <b>light and powerful</b>. Though I do not primarily game on it, it has amazing performance for
+                        the size and weight, though the trade off is the price. As a developer, running Linux can be crucial
+                        to a workflow. Or, you might just want to explore the world of Linux. I've used Linux for quite a
+                        long while, and I have <b>tried</b> to boot many Linux distros on the Razer Blade.
+                    </p>
+
+                    <img src="../images/tutorialImages/bootingLinuxonRazerBlade/razerBlade.jpg">
+                    <p>Photo by <a href="https://unsplash.com/@usualmorals?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Taylor R</a> on <a href="https://unsplash.com/s/photos/razer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+
+                    <br>
+
+                    <p>
+                        It is important to know that some quirks and issues may only apply to the Razer Blade 13, or even
+                        just my particular model. I may be just throwing things out here, but I truly hope this will help
+                        someone wracking their heads over an issue.
+                    </p>
+
+                    <p>
+                        Speaking of my particular model, here are the specs:
+                        <ol>
+                            <li>- Razer Blade <b>Stealth</b> 13" Late 2019 GTX Model</li>
+                            <li>- Intel Core <b>i7-1065G7</b></li>
+                            <li>- Nvidia GeForce GTX 1650 with Max-Q Design</li>
+                            <li>- 3840 x 2160 (4K) Touchscreen</li>
+                            <li>- 512 GB Liteon SSD (famous for its coil whine at times)</li>
+                        </ol>
+                    </p>
+
+                    <p>
+                    <h3>Disclaimer:</h3>
+                        Modifying your BIOS may void your warranty and <b>may corrupt the firmware</b>, leading to a "bricked"
+                        computer. Despite the risk of bricking your computer being very low, there is still a chance. <b>
+                            Do
+                            this at your own risk.
+                        </b> Thank you.
+                    </p>
+
+                    <h2>
+                        Note: this article is assuming you already know how to make a bootable Linux drive and the
+                        basics of what Linux is. It also assumes intermediate computer knowledge.
+                    </h2>
+
+                    <br>
+
+                    <h2>Setting Up the Environment for Linux</h2>
+                    <p>
+                        These steps will apply to almost every computer in the world that wants to boot Linux.
+                        <ol>
+                            <li>- <b>Secure Boot</b> is disabled</li>
+                            <li>- You want <b>CSM disabled</b> for most Linux OSes</li>
+                        </ol>
+                    </p>
+
+                    <p>
+                        Both of these settings are in the <a href="https://en.wikipedia.org/wiki/BIOS"><b>BIOS</b></a>. To get into the BIOS of a Razer computer,
+                        follow <a href="https://mysupport.razer.com/app/answers/detail/a_id/1541/~/how-to-access-the-bios-settings-on-the-razer-blade"><b>this</b></a>.
+                        <p>
+                            Once you are in there, you want to scroll around and find all three of them. Just click around with
+                            the "Enter" and arrow keys and find the settings. Secure Boot is usually under the "<b>security</b>" tab
+                            and the boot order is under the "<b>boot</b>" tab.
+                        </p>
+                    </p>
+
+
+                    <h2>Linux Distro Statuses</h2>
+                    <p>
+                        <ol>
+                            <li>- <b>Pop_OS!</b> by System76 -- neither Nvidia or normal install works</li>
+                            <li>- <b>Ubuntu</b> (20.04 and onward tested) -- works</li>
+                            <li>
+                                - <b>Arch-based OSes</b> -- Working (<b>Manjaro</b> is confirmed to be working, assumed that rest are also
+                                working)
+                            </li>
+                        </ol>
+                    </p>
+
+
+                    <h2>Quirks</h2>
+                    <p>
+                        Due to the fact that the Razer Blade has a <b>Nvidia GPU</b> (which infamously does not play well with
+                        Linux), installing certain OSes can be tricky. Along with another few quirks I have found, Linux can
+                        be hard to get along with (I apologize that I do not have a solution to most of these).
+
+                        <ol>
+                            <li>- Nvidia drivers <b>break the install</b>, using nouveau breaks the display drivers for seemingly no reason</li>
+                            <li>- Dual booting on a single drive can make the installer think that its <b>reading off a NTFS drive</b>,</li>
+                            <li>though the part designated to use is not NTFS. NTFS is what Windows uses.</li>
+                            <li>- GRUB is incredibly small (this is fixable inside the operating system, though)</li>
+                            <li>- Installing Nvidia drivers sometimes <b>bricks the install</b> (<b>NOT</b> the system, don't worry) after you installed it.</li>
+                            <li>
+                                - <b>Degrading performance</b> when running on a single GPU, you want to have it <b>
+                                    dynamically switch between
+                                    GPUs
+                                </b> to get good performance. This is in `nvidia-settings`. You'll have to install the Nvidia
+                                drivers for that. (differs for OSes, so it is best you Google a tutorial that fits your OS and
+                                needs)
+                            </li>
+                        </ol>
+                    </p>
+
+                    <h3>
+                        There is a chance that booting Linux may accidentally override the Windows install, so be careful :)
+                        <br>
+                        Happy Linuxing!
+                    </h3>
+                </div>
+            </div>
+            <footer>
+                <span>🧑‍💻 Created by <b>Byran H</b>. 📃 Copyleft under the <b>MIT License</b>. 📲 For more
+                    information,
+                    check
+                    out the <a href="https://www.byran.tech/about.html" target="_blank"><b>about page</b></a>.
+                    &lt;/&gt; Otherwise, check out <a href="https://github.com/Hello9999901/byran.tech"
+                        target="_blank"><b>my
+                            source
+                            code on GitHub!</b></a></span>
+            </footer>
+        </div>
+        <!-- JAVASCRIPT -->
+        <script src="../js/scripts.js"></script>
+        <script src="../js/prism.js"></script>
+</body>
+
+</html>
