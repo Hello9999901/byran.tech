@@ -1,0 +1,15 @@
+/* ANCHOR Theming */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: var(--dark-text);
+        --bg: var(--dark-bg);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text: var(--light-text);
+        --bg: var(--light-bg);
+    }
+}

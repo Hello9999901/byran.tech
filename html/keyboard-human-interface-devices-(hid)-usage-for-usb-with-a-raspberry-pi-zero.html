@@ -7,10 +7,12 @@
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theming.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/prism.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
     <!-- JAVASCRIPT -->
@@ -117,11 +119,12 @@
         </div>
         <div id="bodyWrapper">
             <div id="articleWrapper">
+                <div class="themeToggle material-icons" id="themeToggle" onclick="toggleTheme()"></div>
                 <header>
                     <span class="title">Keyboard Human Interface Devices (HID) Usage for USB with a Raspberry Pi Zero</span>
                     <hr>
                     <div class="dateWrapper">
-                        <img src="../svgs/calendar_dark.svg" id="calendar">
+                        <div class="material-icons" id="calendar">date_range</div>
                         <span id="date">March 2021, Updated July 2021</span>
                     </div>
                 </header>

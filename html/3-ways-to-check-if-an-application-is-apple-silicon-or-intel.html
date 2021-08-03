@@ -7,10 +7,12 @@
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theming.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/prism.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
     <!-- JAVASCRIPT -->
@@ -100,7 +102,7 @@
                     </a>
                 </ul>
             </div>
-        </nav>        
+        </nav>
         <div class="cookieBanner" id="cookieBanner">
             <span>
                 Hi! Do you allow <b>analytical cookies</b>? <b>Ad cookies are ALWAYS off</b>, as I serve no ads and respect your
@@ -117,11 +119,12 @@
         </div>
         <div id="bodyWrapper">
             <div id="articleWrapper">
+                <div class="themeToggle material-icons" id="themeToggle" onclick="toggleTheme()"></div>
                 <header>
                     <span class="title">3 Ways to Check If An Application Is Apple Silicon or Intel</span>
                     <hr>
                     <div class="dateWrapper">
-                        <img src="../svgs/calendar_dark.svg" id="calendar">
+                        <div class="material-icons" id="calendar">date_range</div>
                         <span id="date">Monday, February 15th, 2021 (Updated June 25th 2021)</span>
                     </div>
                 </header>

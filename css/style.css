@@ -1,15 +1,26 @@
 /* ANCHOR Variables */
 :root {
-    --anim-dur: 0.9s;
+    --anim-dur       : 0.9s;
     --longer-anim-dur: 1.1s;
-    --width: 100vw;
-    --half-width: calc(var(--width) / 2);
-    font-size: 10px;
-    --typedFontSize: calc(2vw + 5px);
-    --bkg-color: rgb(24, 24, 24);
-    --overlay-dur: 0.5s;
-    --icon-color: #FD6C00;
+    --width          : 100vw;
+    --half-width     : calc(var(--width) / 2);
+    font-size        : 10px;
+    --overlay-dur    : 0.5s;
+    --overlay-dur    : 0.5s;
+    --typedFontSize  : calc(2vw + 5px);
+
+    /* Colors */
+    --bg   : #161616;
+    --logo : #ff6f00;
     --white: #f8f8f2;
+    --blue : #6bbaff;
+    --text : #E5E9F0;
+
+    --light-bg  : #E5E9F0;
+    --light-text: #161616;
+
+    --dark-bg  : #161616;
+    --dark-text: #E5E9F0;
 }
 
 * {
@@ -18,11 +29,13 @@
 }
 
 body {
-    background-color: #161616;
+    background-color: var(--bg);
     scrollbar-width: none;
     height: 100vh;
     width: var(--width);
     margin: auto;
+    transition: 1s;
+
 }
 
 body::-webkit-scrollbar {
@@ -106,11 +119,6 @@ footer span {
     background-color: rgba(19, 19, 19, 0.788);
     z-index: 1;
     overflow: hidden;
-
-    /*border-width: 1px;
-    border-color: rgb(79, 233, 92);
-    border-style: solid;
-    */
 }
 
 #topbarFlexWrapper {
@@ -120,9 +128,6 @@ footer span {
 #wrapper {
     margin-bottom: 50px;
     overflow: show;
-    /* border-width: 2px;
-    border-color: rgb(180, 55, 55);
-    border-style: solid; */
 }
 
 #navWrapper {
@@ -134,12 +139,6 @@ footer span {
 
     animation: fadeInRight;
     animation-duration: var(--anim-dur);
-
-
-    /*border-width: 1px;
-    border-color: rgb(144, 67, 231);
-    border-style: solid;
-    */
 }
 
 #logo {
@@ -155,10 +154,6 @@ footer span {
 
     animation: fadeInLeft;
     animation-duration: var(--anim-dur);
-
-    /* border-width: 1px;
-    border-color: rgb(197, 228, 255);
-    border-style: solid; */
 }
 
 .navLinks {
@@ -170,10 +165,6 @@ footer span {
     text-decoration: none;
     margin-right: 3px;
     transition: 0.3s;
-
-    /* border-width: 1px;
-    border-color: rgb(211, 75, 75);
-    border-style: solid; */
 }
 
 /* Switch out navbar with hamburger menu */
@@ -232,10 +223,6 @@ footer span {
     animation: pulse;
     animation-delay: 0.8s;
     animation-duration: var(--longer-anim-dur);
-
-    /* border-width: 1px;
-    border-color: rgb(150, 75, 211);
-    border-style: solid; */
 }
 
 /* ANCHOR Body */
@@ -256,7 +243,7 @@ footer span {
 #bodyFlexWrapper .block {
     margin-top: 30px;
     padding: 10px;
-    background-color: rgb(22, 22, 22);
+    background-color: var(--bg);
 }
 
 #bodyFlexWrapper .block img {
@@ -288,7 +275,7 @@ footer span {
 .bodyHalfWrapper .blockHalf {
     margin-top: 30px;
     padding: 10px;
-    background-color: rgb(22, 22, 22);
+    background-color: var(--bg);
     min-width: 200px;
 }
 
@@ -338,7 +325,7 @@ footer span {
 }
 
 .terminalText {
-    color: #FFFFFF;
+    color: var(--white);
     font: 20px firaCode;
     white-space: pre-line;
     line-height: 1.7;
@@ -370,7 +357,7 @@ footer span {
 }
 
 .terminalText .heavyWeight a {
-    color: white;
+    color: var(--white);
 }
 
 .terminalText .note {
@@ -387,7 +374,7 @@ footer span {
 
 .text {
     font-size: 30px;
-    color: white;
+    color: var(--white);
     font-family: tiWeb;
     font-weight: 500;
     padding-left: 20px;
@@ -444,10 +431,6 @@ footer span {
     flex-wrap: wrap;
     flex-basis: 100%;
     gap: 6em;
-
-    /* border-width: 1px;
-    border-color: rgb(240, 91, 64);
-    border-style: solid; */
 }
 
 #artWrapper>.block {
@@ -464,10 +447,6 @@ footer span {
 
     animation: fadeInLeft;
     animation-duration: var(--longer-anim-dur);
-
-    /* border-width: 1px;
-    border-color: rgb(20, 255, 64);
-    border-style: solid; */
 }
 
 #artWrapper .block>img {
@@ -792,7 +771,7 @@ hr.showOverlay {
 #articleWrapper .title {
     font: 500 calc(1.736vw + 10px) tiWeb;
     text-align: center;
-    color: var(--white);
+    color: var(--text);
     display: flex;
 
     animation: fadeInLeft;
@@ -802,7 +781,7 @@ hr.showOverlay {
 #articleWrapper hr {
     width: 30vw;
     height: 3px;
-    background-color: var(--white);
+    background-color: var(--text);
     margin: 0;
     margin-top: 20px;
 }
@@ -819,18 +798,17 @@ hr.showOverlay {
 }
 
 #articleWrapper #calendar {
-    filter: invert(1);
-    height: 30px;
-    width: auto;
+    color: var(--text);
+    font-size: 26px !important;
 }
 
 #articleWrapper #date {
-    color: white;
+    color: var(--text);
     font: 400 22px tiWeb;
 }
 
 #articleWrapper #body {
-    color: white;
+    color: var(--text);
     font-family: tiWeb;
     font-weight: 300;
     font-size: 20px;
@@ -841,11 +819,11 @@ hr.showOverlay {
 }
 
 #body a {
-    color: rgb(106, 185, 255);
+    color: var(--blue);
 }
 
 .codingWrapper a {
-    color: rgb(106, 185, 255);
+    color: var(--blue);
     text-decoration: none;
 }
 
@@ -898,19 +876,29 @@ hr.showOverlay {
 }
 
 .cookieBanner span {
-    color: white;
+    color: var(--white);
     font: calc(10px + 0.4vw) firaCode;
 }
 
 .cookieBanner button {
     padding: 0;
     margin: 0;
-    color: white;
+    color: var(--white);
     font: calc(10px + 0.4vw) firaCode;
     background-color: rgba(0, 0, 0, 0);
     border: none;
 }
 
 .cookieBanner a {
-    color: rgb(106, 185, 255);
+    color: var(--blue);
+}
+
+/* ANCHOR Theme Toggle */
+.themeToggle {
+    font-size: 30px !important;
+    position: absolute;
+    padding: 20px;
+    right: 0px;
+    cursor: pointer;
+    color: var(--text);
 }
