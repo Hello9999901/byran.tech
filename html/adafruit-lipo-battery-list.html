@@ -25,9 +25,7 @@
 
 
     <!-- META SEO DESCRIPTIONS -->
-    <meta name="title" content="FILL_IN_TITLE">
-    <meta name="description" content="FILL_IN_DESCRIPTION">
-    <meta name="keywords" content="FILL_IN KEYWORDS">
+    <meta name="title" content="Adafruit Li-Po Battery Size, Capacity and Connector List">
     <meta name="author" content="Byran H (Hello9999901)">
 
 
@@ -36,11 +34,11 @@
 
 
     <!-- ANCHOR: https://ogp.me (Open Graph Headers) -->
-    <meta property="og:title" content="FILL_IN" />
+    <meta property="og:title" content="Adafruit Lithium Ion Polymer Battery List" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.byran.tech" />
-    <meta property="og:image" content="FILL_IN_IMAGE" />
-    <meta property="og:description" content="FILL_IN_DESCRIPTION" />
+    <meta property="og:url" content="https://www.byran.tech/html/adafruit-lipo-battery-list.html" />
+    <meta property="og:description"
+        content="I couldn't find a Adafruit Lithium Polymer (Li-Po) battery size/capacity/connector/weight list anywhere on the interwebs, so I decided to compile my own! " />
 
     <!-- TODO: ADD GOOGLE ANALYTICS? -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
@@ -126,11 +124,11 @@
             <div id="articleWrapper">
                 <div class="themeToggle material-icons" id="themeToggle" onclick="toggleTheme()"></div>
                 <header>
-                    <span class="title">ADD_TITLE</span>
+                    <span class="title">Adafruit Lithium Ion Polymer (Li-Po) Battery List</span>
                     <hr>
                     <div class="dateWrapper">
                         <div class="material-icons" id="calendar">date_range</div>
-                        <span id="date">ADD_DATE</span>
+                        <span id="date">August 24th, 2021</span>
                     </div>
                 </header>
 
@@ -139,24 +137,181 @@
                 </div> -->
 
                 <div id="body">
-                    <table id="table_id" class="display">
+                    <h1>Please read :)</h1>
+                    <h2>Hi!</h2>
+                    <h4>
+                        I couldn't find a <a href="https://www.adafruit.com/category/574">Adafruit Lithium Polymer
+                            (Li-Po) battery</a> size/capacity/connector/weight list
+                        anywhere on the
+                        interwebs, so I decided to compile my own!
+                        <br>
+                        Adafruit's batteries use a <a href="https://www.adafruit.com/product/1769">JST-PH 2 Pin</a> (and
+                        <a href="https://en.wikipedia.org/wiki/JST_connector">this</a>)
+                        connector and
+                        have a max <a href="https://en.wikipedia.org/wiki/Voltage">voltage</a> of 4.2 when fully charged
+                        (from the website).
+                    </h4>
+                    <p>
+                        This (unofficial) Adafruit <a
+                            href="https://en.wikipedia.org/wiki/Lithium_polymer_battery">Lithium Polymer Battery</a>
+                        comparison chart and size list has every
+                        single Li-po battery as of the current date of August 24, 2021 (08/24/2021),
+                        excluding the battery <i>packs</i>. Those are cylindrical, so I didn't think it would fit in
+                        this list.
+                    </p>
+                    <p>
+                        Note: It is important to keep in mind that the size/height are different in the website and the
+                        datasheet (located in the details section in the product pages). Also, clicking on the pictures
+                        lead to the product page. I took mine from the product pages. Also (quite a few notes I guess),
+                        the sorting might not work too well. Lastly, the table is using <a
+                            href="https://datatables.net">Datatables</a> (MIT) if you were
+                        wondering.
+                    </p>
+                    <table id="table" class="compact" style="font-weight: 600;">
                         <thead>
                             <tr>
-                                <th>Column 1</th>
-                                <th>Column 2</th>
+                                <th><a href="https://en.wikipedia.org/wiki/Photograph">Photo</a></th>
+                                <th><a href="https://en.wikipedia.org/wiki/Ampere_hour">Capacity (mAh)</a></th>
+                                <th><a href="https://en.wikipedia.org/wiki/Gram">Weight (g)</a></th>
+                                <th><a href="https://en.wikipedia.org/wiki/Millimetre">Size (mm)</a></th>
+                                <th><a href="https://en.wikipedia.org/wiki/Millimetre">Height (mm)</a></th>
+                                <th><a href="https://en.wikipedia.org/wiki/JST_connector">Connector (mm)</a></th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody style="text-align: center;">
                             <tr>
-                                <td>Row 1 Data 1</td>
-                                <td>Row 1 Data 2</td>
+                                <td>
+                                    <a href="https://www.adafruit.com/product/1570">
+                                        <img src="https://cdn-shop.adafruit.com/1200x900/1570-00.jpg"
+                                            alt="Adafruit Lipo 100mAh" class="tinyImg scaleOnHover">
+                                    </a>
+                                </td>
+                                <td>100</td>
+                                <td>3</td>
+                                <td>11.5 x 31</td>
+                                <td>3.8</td>
+                                <td>105</td>
                             </tr>
                             <tr>
-                                <td>Row 2 Data 1</td>
-                                <td>Row 2 Data 2</td>
+                                <td>
+                                    <a href="https://www.adafruit.com/product/1317">
+                                        <img src="https://cdn-shop.adafruit.com/970x728/1317-00.jpg"
+                                            alt="Adafruit Lipo 150mAh" class="tinyImg scaleOnHover">
+                                    </a>
+                                </td>
+                                <td>150</td>
+                                <td>4.65</td>
+                                <td>19.75 x 26.02</td>
+                                <td>3.8</td>
+                                <td>127.5</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.adafruit.com/product/2750">
+                                        <img src="https://cdn-shop.adafruit.com/970x728/2750-00.jpg"
+                                            alt="Adafruit Lipo 350mAh" class="tinyImg scaleOnHover">
+                                    </a>
+                                </td>
+                                <td>350</td>
+                                <td>7.9</td>
+                                <td>36 x 20</td>
+                                <td>5.6</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.adafruit.com/product/4237">
+                                        <img src="https://cdn-shop.adafruit.com/970x728/4237-01.jpg"
+                                            alt="Adafruit Lipo 350mAh (short)" class="tinyImg scaleOnHover">
+                                    </a>
+                                </td>
+                                <td>350 (short cable)</td>
+                                <td>7</td>
+                                <td>32.5 x 25</td>
+                                <td>5</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.adafruit.com/product/3898">
+                                        <img src="https://cdn-shop.adafruit.com/970x728/3898-00.jpg"
+                                            alt="Adafruit Lipo 400mAh" class="tinyImg scaleOnHover">
+                                    </a>
+                                </td>
+                                <td>400 (ideal for <a href="https://www.adafruit.com/category/943">feathers</a>)</td>
+                                <td>8.2</td>
+                                <td>35.5 x 16.6</td>
+                                <td>7.6</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.adafruit.com/product/4236">
+                                        <img src="https://cdn-shop.adafruit.com/970x728/4236-00.jpg"
+                                            alt="Adafruit Lipo 1420mAh" class="tinyImg scaleOnHover">
+                                    </a>
+                                </td>
+                                <td>420 (short cable)</td>
+                                <td>8.8</td>
+                                <td>35 x 24</td>
+                                <td>5.2</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.adafruit.com/product/1578">
+                                        <img src="https://cdn-shop.adafruit.com/970x728/1578-00.jpg"
+                                            alt="Adafruit Lipo 500mAh" class="tinyImg scaleOnHover">
+                                    </a>
+                                </td>
+                                <td>500</td>
+                                <td>10.5</td>
+                                <td>29 x 36</td>
+                                <td>4.75</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.adafruit.com/product/258">
+                                        <img src="https://cdn-shop.adafruit.com/970x728/258-00.jpg"
+                                            alt="Adafruit Lipo 1200mAh" class="tinyImg scaleOnHover">
+                                    </a>
+                                </td>
+                                <td>1200</td>
+                                <td>23</td>
+                                <td>34 x 62</td>
+                                <td>5</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.adafruit.com/product/2011">
+                                        <img src="https://cdn-shop.adafruit.com/970x728/2011-03.jpg"
+                                            alt="Adafruit Lipo 2000mAh" class="tinyImg scaleOnHover">
+                                    </a>
+                                </td>
+                                <td>2000</td>
+                                <td>34</td>
+                                <td>60 x 36</td>
+                                <td>7</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.adafruit.com/product/328">
+                                        <img src="https://cdn-shop.adafruit.com/970x728/328-02.jpg"
+                                            alt="Adafruit Lipo 2500mAh" class="tinyImg scaleOnHover">
+                                    </a>
+                                </td>
+                                <td>2500</td>
+                                <td>43</td>
+                                <td>47 x 61</td>
+                                <td>6.7</td>
+                                <td>100</td>
                             </tr>
                         </tbody>
                     </table>
+
                 </div>
             </div>
             <footer>
@@ -173,7 +328,7 @@
         <!-- JAVASCRIPT -->
         <script>
             $(document).ready(function () {
-                $('#myTable').DataTable();
+                $('#table').DataTable();
             });
         </script>
         <script src="../js/prism.js"></script>

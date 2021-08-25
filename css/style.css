@@ -1,25 +1,25 @@
 /* ANCHOR Variables */
 :root {
-    --anim-dur       : 0.9s;
+    --anim-dur: 0.9s;
     --longer-anim-dur: 1.1s;
-    --width          : 100vw;
-    --half-width     : calc(var(--width) / 2);
-    font-size        : 10px;
-    --overlay-dur    : 0.5s;
-    --overlay-dur    : 0.5s;
-    --typedFontSize  : calc(2vw + 5px);
+    --width: 100vw;
+    --half-width: calc(var(--width) / 2);
+    font-size: 10px;
+    --overlay-dur: 0.5s;
+    --overlay-dur: 0.5s;
+    --typedFontSize: calc(2vw + 5px);
 
     /* Colors */
-    --bg   : #161616;
-    --logo : #ff6f00;
+    --bg: #161616;
+    --logo: #ff6f00;
     --white: #f8f8f2;
-    --blue : #6bbaff;
-    --text : #E5E9F0;
+    --blue: #6bbaff;
+    --text: #E5E9F0;
 
-    --light-bg  : #E5E9F0;
+    --light-bg: #E5E9F0;
     --light-text: #161616;
 
-    --dark-bg  : #161616;
+    --dark-bg: #161616;
     --dark-text: #E5E9F0;
 }
 
@@ -843,6 +843,16 @@ hr.showOverlay {
     -o-border-radius: 10px;
 }
 
+#body .tinyImg {
+    width: 18vw;
+    height: auto;
+}
+
+#body .scaleOnHover:hover {
+    animation: pulse;
+    animation-duration: var(--anim-dur);
+}
+
 #body .smallImg {
     margin-left: 40px;
     width: 20vw;
@@ -901,4 +911,37 @@ hr.showOverlay {
     right: 0px;
     cursor: pointer;
     color: var(--text);
+}
+
+/* ANCHOR Datatables Styling */
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+    color: var(--text) !important;
+}
+
+.dataTables_paginate.paging_simple_numbers,
+.dataTables_filter,
+.dataTables_length {
+    display: none;
+}
+
+tr {
+    background-color: rgba(19, 19, 19, 0.671);
+}
+
+tbody * {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+table.dataTable.row-border tbody th,
+table.dataTable.row-border tbody td,
+table.dataTable.display tbody th,
+table.dataTable.display tbody td,
+table.dataTable thead th,
+table.dataTable thead td,
+table.dataTable.no-footer {
+    border-color: var(--text) !important;
 }
