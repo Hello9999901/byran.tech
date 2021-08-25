@@ -848,9 +848,12 @@ hr.showOverlay {
     height: auto;
 }
 
+#body .scaleOnHover {
+    transition: 0.2s;
+}
+
 #body .scaleOnHover:hover {
-    animation: pulse;
-    animation-duration: var(--anim-dur);
+    scale: 1.05;
 }
 
 #body .smallImg {
