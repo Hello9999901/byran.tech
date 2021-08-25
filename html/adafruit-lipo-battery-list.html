@@ -3,7 +3,7 @@
 
 <head>
     <!-- TITLE -->
-    <title>Xbox E100 Error (Startup Error) | byran.tech</title>
+    <title>Adafruit Lithium Ion Polymer Battery List | byran.tech</title>
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="../css/style.css">
@@ -13,17 +13,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/prism.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
 
     <!-- JAVASCRIPT -->
-
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
 
     <!-- VIEWPORT OPTIMIZING -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 
 
     <!-- META SEO DESCRIPTIONS -->
-    <meta name="title" content="Xbox E100 Error (Startup Error) | byran.tech">
+    <meta name="title" content="FILL_IN_TITLE">
+    <meta name="description" content="FILL_IN_DESCRIPTION">
+    <meta name="keywords" content="FILL_IN KEYWORDS">
     <meta name="author" content="Byran H (Hello9999901)">
 
 
@@ -32,10 +36,11 @@
 
 
     <!-- ANCHOR: https://ogp.me (Open Graph Headers) -->
-    <meta property="og:title" content="Xbox E100 Error (Startup Error) | byran.tech" />
+    <meta property="og:title" content="FILL_IN" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.byran.tech" />
-    <meta property="og:description" content="The Xbox E100 Error is a dreaded one. Learn how to fix it quickly and simply." />
+    <meta property="og:image" content="FILL_IN_IMAGE" />
+    <meta property="og:description" content="FILL_IN_DESCRIPTION" />
 
     <!-- TODO: ADD GOOGLE ANALYTICS? -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
@@ -104,7 +109,8 @@
         </nav>
         <div class="cookieBanner" id="cookieBanner">
             <span>
-                Hi! Do you allow <b>analytical cookies</b>? <b>Ad cookies are ALWAYS off</b>, as I serve no ads and respect your
+                Hi! Do you allow <b>analytical cookies</b>? <b>Ad cookies are ALWAYS off</b>, as I serve no ads and
+                respect your
                 privacy. I use <b>Google Analytics</b> with minimal analytical cookies to learn more about the website
                 so I
                 can <i><b>refine byran.tech</b></i>! You can also read the <a
@@ -120,11 +126,11 @@
             <div id="articleWrapper">
                 <div class="themeToggle material-icons" id="themeToggle" onclick="toggleTheme()"></div>
                 <header>
-                    <span class="title">Xbox E100 Error (Startup Error)</span>
+                    <span class="title">ADD_TITLE</span>
                     <hr>
                     <div class="dateWrapper">
                         <div class="material-icons" id="calendar">date_range</div>
-                        <span id="date">June 25th, 2020</span>
+                        <span id="date">ADD_DATE</span>
                     </div>
                 </header>
 
@@ -133,50 +139,24 @@
                 </div> -->
 
                 <div id="body">
-                    <p>There aren't many elegant solutions to this problem.</p>
-                    <p>Here are a few videos to watch for help:</p>
-                    <ul>
-                        <li>
-                            <iframe class="iframe" src="https://www.youtube.com/embed/b06y6ETNwcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </li>
-                        <li>
-                            <iframe class="iframe" src="https://www.youtube.com/embed/ei9PpZNX4dA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </li>
-                    </ul>
-                    <p>As XFiX said in the 2nd video, checking the system log helps. Plug the hard drive from the Xbox
-                        into a PC and check
-                        the system log. This starts at 6:40 in the video.</p>
-                    <p><b>Here is a short checklist of things to check when E100 Error occurs:</b></p>
-                    <ul>
-                        <li>
-                            <p>DVD drive (if there is one) should be attached to the Xbox and has not been tampered
-                                with/changed</p>
-                        </li>
-                        <li>
-                            <p>Make sure the HDD/SSD is not corrupt</p>
-                        </li>
-                    </ul>
-
-                    <p>From XFiX's video (DRIVE REFERS TO OPTICAL DRIVE):</p>
-
-                    <p>The drive itself has failed and is not responding due to a bad circuit board component</p>
-
-                    <p>&emsp;&emsp;Fixable? Maybe, as long as it's not the ARM chip containing the drive key</p>
-
-                    <p>The drive firmware is corrupt</p>
-
-                    <p>
-                        &emsp;&emsp;Fixable? Maybe, only if the OSU1 update is able to re-flash it (Original Xbox One may require OSU2
-                        and/or OSU3)
-                    </p>
-
-                    <p>The drive cables are damaged or not connected</p>
-
-                    <p>&emsp;&emsp;Fixable? Yes, replace or attach the cables</p>
-
-                    <p>The entire drive or just the circuit board was replaced with another that does not match the current system's motherboard</p>
-
-                    <p>&emsp;&emsp;Fixable? Maybe, only if you can get the matching original drive or circuit board re-installed</p>
+                    <table id="table_id" class="display">
+                        <thead>
+                            <tr>
+                                <th>Column 1</th>
+                                <th>Column 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Row 1 Data 1</td>
+                                <td>Row 1 Data 2</td>
+                            </tr>
+                            <tr>
+                                <td>Row 2 Data 1</td>
+                                <td>Row 2 Data 2</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <footer>
@@ -191,7 +171,11 @@
             </footer>
         </div>
         <!-- JAVASCRIPT -->
-
+        <script>
+            $(document).ready(function () {
+                $('#myTable').DataTable();
+            });
+        </script>
         <script src="../js/prism.js"></script>
         <script src="../js/scripts.js"></script>
 </body>

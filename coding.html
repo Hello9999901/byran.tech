@@ -15,7 +15,7 @@
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
     <!-- JAVASCRIPT -->
-    <script src="./js/typedjs/typed.min.js"></script>
+
 
     <!-- VIEWPORT OPTIMIZING -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
@@ -244,7 +244,7 @@ elif [ ${1:-pass} = "-nd" ]
 then
     installNvidiaDrivers=true
     normalInstall=true
-else 
+else
     normalInstall=true
 fi
 
@@ -264,7 +264,7 @@ elif [ ${2:-pass} = "-nd" ]
 then
     installNvidiaDrivers=true
     normalInstall=true
-else 
+else
     normalInstall=true
 fi
 
@@ -284,7 +284,7 @@ elif [ ${3:-pass} = "-nd" ]
 then
     installNvidiaDrivers=true
     normalInstall=true
-else 
+else
     normalInstall=true
 fi
 
@@ -304,7 +304,7 @@ elif [ ${4:-pass} = "-nd" ]
 then
     installNvidiaDrivers=true
     normalInstall=true
-else 
+else
     normalInstall=true
 fi
 
@@ -690,7 +690,7 @@ elif abmodelID == ("MacBookPro10,2"):
 elif abmodelID == ("MacBookPro10,2"):
     modelInfo = ("MacBook Pro (Retina, 13-inch, Late 2012)")
 elif abmodelID == ("MacBookPro10,1"):
-    modelInfo = ("MacBook Pro (Retina, 15-inch, Mid 2012)")       
+    modelInfo = ("MacBook Pro (Retina, 15-inch, Mid 2012)")
 elif abmodelID == ("MacBookPro9,1"):
     modelInfo = ("MacBook Pro (Retina, 15-inch, Mid 2012)")
 elif abmodelID == ("MacBookPro9,2"):
@@ -839,7 +839,7 @@ def ShowChoice():
     print(numtask.get())
     if numtask.get() == 6:
         exit()
-    
+
     elif numtask.get() == 0:
         tk.Label(action, text="""Application Opener:""",
          justify = tk.LEFT,
@@ -847,14 +847,14 @@ def ShowChoice():
         tk.Label(action, text="App Name:").pack(padx=0, pady=5, side=tk.LEFT)
         appnameentry.pack               (padx=5, pady=20, side=tk.LEFT)
         tk.Button(action, text='Run', command=OSrun).pack (padx=10, pady=30, side=tk.LEFT)
-    
+
     elif numtask.get() == 1:
         x = os.popen('diskutil list').read()
 
         tk.Label(action, text="""Disk Erase""",
          justify = tk.LEFT,
          pady = 20).pack(anchor=tk.N)
-        
+
         tk.Label(action, text="Disk Name").pack  (padx=0, pady=5, side=tk.LEFT)
         diskname.pack                            (padx=5, pady=20, side=tk.LEFT)
 
@@ -878,7 +878,7 @@ def ShowChoice():
         tk.Label(action, text="pip3 package name:").pack(padx=0, pady=5, side=tk.LEFT)
         pip3inst.pack               (padx=5, pady=20, side=tk.LEFT)
         tk.Button(action, text='Run', command=OSrun).pack (padx=10, pady=30, side=tk.LEFT)
-    
+
     elif numtask.get() == 3:
         tk.Label(action, text="""Homebrew Package Installer:""",
          justify = tk.LEFT,
@@ -886,11 +886,11 @@ def ShowChoice():
         tk.Label(action, text="Homebrew Package Name:").pack(padx=0, pady=5, side=tk.LEFT)
         brewapp.pack               (padx=5, pady=20, side=tk.LEFT)
         tk.Button(action, text='Run', command=OSrun).pack (padx=10, pady=30, side=tk.LEFT)
-    
+
     elif numtask.get() == 4:
         os.system('pmset sleepnow')
 
-    
+
 
 
 tk.Label(action, text="""Welcome to Terminal Tasks V0.2 - First GUI program by Hello9999901""",
@@ -908,12 +908,12 @@ tk.Label(action, text="""Choose Terminal Task:""",
          pady = 5).pack()
 
 for val, language in enumerate(tasks): #id framework
-    tk.Radiobutton(action, 
+    tk.Radiobutton(action,
                   text=language,
                   indicatoron = 0,
                   width = 50,
-                  pady = 20, 
-                  variable=numtask, 
+                  pady = 20,
+                  variable=numtask,
                   command=ShowChoice,
                   value=val).pack(anchor=tk.W)
 
@@ -973,7 +973,7 @@ tk.mainloop()
                     code on GitHub!</b></a></span>
     </footer>
     <!-- JAVASCRIPT -->
-    <script src="./js/scripts.js"></script>
+
     <script src="./js/prism.js"></script>
 </body>
 
