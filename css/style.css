@@ -743,12 +743,11 @@ hr.showOverlay {
 
 /* ANCHOR Articles */
 #articleWrapper {
-    display: grid;
-    grid-template-columns: [padding-start] 15vw [body-start] 65vw [body-end] auto [end];
-    grid-template-rows: [header-start] auto [header-end] 0px [body-start] 100% [body-end];
+    width: 80vw;
+    margin-left: 10vw;
 
-    animation: fadeIn;
-    animation-duration: var(--longer-anim-dur);
+    /* animation: fadeIn;
+    animation-duration: var(--longer-anim-dur); */
 }
 
 #articleWrapper header {
@@ -764,8 +763,8 @@ hr.showOverlay {
     grid-row: body-start;
     margin-bottom: 200px;
 
-    animation: fadeInUp;
-    animation-duration: var(--anim-dur);
+    /* animation: fadeInUp;
+    animation-duration: var(--anim-dur); */
 }
 
 #articleWrapper .title {
