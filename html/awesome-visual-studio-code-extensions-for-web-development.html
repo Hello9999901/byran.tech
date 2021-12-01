@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- TITLE -->
+    <title>Awesome Visual Studio Code Extensions for Web Development | byran.tech</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theming.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/prism.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- JAVASCRIPT -->
+
+
+    <!-- VIEWPORT OPTIMIZING -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+
+
+    <!-- META SEO DESCRIPTIONS -->
+    <meta name="title" content="Awesome Visual Studio Code Extensions for Web Development">
+    <meta name="author" content="Byran H (Hello9999901)">
+
+
+    <!-- SAFARI TOPBAR THEME COLOR -->
+    <meta name="theme-color" content="#131313">
+
+
+    <!-- ANCHOR: https://ogp.me (Open Graph Headers) -->
+    <meta property="og:title" content="Awesome Visual Studio Code Extensions for Web Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url"
+        content="https://www.byran.tech/html/awesome-visual-studio-code-extensions-for-web-development.html" />
+    <meta property="og:description"
+        content="There are some well known (and some less well known) extensions that will dramatically increase your web dev productivity." />
+
+    <!-- TODO: ADD GOOGLE ANALYTICS? -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TVWTTPKRX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+        });
+
+        gtag('set', 'ads_data_redaction', true);
+
+        gtag('js', new Date());
+        gtag('config', 'G-9TVWTTPKRX');
+    </script>
+</head>
+
+<body onload="onloadFunction()">
+    <div id="wrapper">
+        <div id="topbarWrapper">
+            <div id="topbarFlexWrapper">
+                <a id="logoWrapper" href="../index.html">
+                    <img src="../svgs/logo.svg" id="logo">
+                </a>
+                <div id="navWrapper">
+                    <a class="navLinks" href="../art.html">3D Art</a>
+                    <a class="navLinks" href="../coding.html">Coding</a>
+                    <a class="navLinks" href="../tech.html">Tech</a>
+                    <a class="navLinks" href="../about.html">About</a>
+                </div>
+            </div>
+        </div>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <svg class="ham" viewBox="0 0 100 100" width="80">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+                    <path class="line middle"
+                        d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+                    <path class="line bottom"
+                        d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+                </svg>
+
+                <ul id="menu">
+                    <a href="../art.html">
+                        <li>3D Art</li>
+                    </a>
+                    <a href="../coding.html">
+                        <li>Coding</li>
+                    </a>
+                    <a href="../tech.html">
+                        <li>Tech</li>
+                    </a>
+                    <a href="../about.html">
+                        <li>About</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <div class="cookieBanner" id="cookieBanner">
+            <span>
+                Hi! Do you allow <b>analytical cookies</b>? <b>Ad cookies are ALWAYS off</b>, as I serve no ads and
+                respect your
+                privacy. I use <b>Google Analytics</b> with minimal analytical cookies to learn more about the website
+                so I
+                can <i><b>refine byran.tech</b></i>! You can also read the <a
+                    href="https://www.byran.tech/html/cookie-policy">cookie policy</a>.
+                <span
+                    style="display: flex; align-items: center; justify-content: center; padding-top: 10px; font-size: 1.2em;">
+                    <button onclick="acceptCookies()"><b>|YES|</b></button>
+                    >————🍪————< <button onclick="deniedCookies()"><b>|NO|</b></button>
+                </span>
+            </span>
+        </div>
+        <div id="bodyWrapper">
+            <div id="articleWrapper">
+                <div class="themeToggle material-icons" id="themeToggle" onclick="toggleTheme()"></div>
+                <header>
+                    <span class="title">Awesome Visual Studio Code Extensions for Web Development</span>
+                    <hr>
+                    <div class="dateWrapper">
+                        <div class="material-icons" id="calendar">date_range</div>
+                        <span id="date">Wednesday, December 1st, 2021</span>
+                    </div>
+                </header>
+
+                <!-- TODO: Make a list of all the articles on the side with drop-downs separated by type of article -->
+                <!-- <div id="list">
+                </div> -->
+
+                <div id="body">
+                    <p>Customizing Visual Studio Code is part of it's culture and blood. There are hundreds, if not
+                        thousands of
+                        extensions and themes available to make Visual Studio Code truly yours.</p>
+                    <h2 id="super-cool">Super Cool</h2>
+                    <p><strong>better-comments</strong><br>
+                        Better Comments is an extension that makes beautiful (and therefore better) comments. The
+                        extension highlights types of comments, such as:</p>
+                    <ul>
+                        <li>Alerts</li>
+                        <li>Queries</li>
+                        <li>TODOs</li>
+                        <li>Highlights</li>
+                        <li>More types can be specified in settings</li>
+                    </ul>
+                    <p><strong>beautify</strong><br>
+                        Beautify might be the most useful extension for web development. It can automatically format JS,
+                        JSON, CSS, SASS,
+                        and HTML. By simply assigning the extension to a keyboard shortcut, it can instantly make any
+                        web dev file look
+                        better.</p>
+                    <p><strong>LiveServer</strong><br>
+                        LiveServer quote (from README.md): <strong>"Launch a local development server with live reload
+                            feature for
+                            static &amp; dynamic pages."</strong><br> Simply put, it hosts a website on your own
+                        computer,
+                        (usually to port
+                        5500). Every time you change something, it will automatically refresh the page! It is super
+                        useful and super simple
+                        to use.</p>
+                    <p><strong>bracket-pair-colorizer-2</strong><br>
+                        I think the name is pretty self-explanatory here; it highlights matching brackets, to make
+                        matching different
+                        bracket pairs a breeze.</p>
+                    <p><strong>comment-anchors</strong><br>
+                        Some features overlap with the better-comments extension, but Comment Anchors has a trick up its
+                        sleeve. You can set
+                        anchors in the comments, as markings to refer to later. On the sidebar, an anchor section will
+                        appear, with every
+                        "ANCHOR" you set appearing. You can jump to any of the anchors simply by pressing it.</p>
+                    <p><strong>subtle-brackets</strong><br>
+                        To enhance your bracket matching super-vision, you can use Subtle Match Brackets. This will
+                        <em>subtly</em> match
+                        your brackets by underlining them.</p>
+                    <p><strong>code-spell-checker</strong><br>
+                        With almost any type of standard casing (camelCase, snake_case, PascalCase, kebab-case) it will
+                        check the spelling
+                        of the text, comparing it against a dictionary. With many different languages, it will save you
+                        much time finding
+                        spelling errors in HTML, JS and CSS!</p>
+                    <p><strong>better-align</strong><br>
+                        Better Align allows variables (and code in general) to be aligned with a keyboard shortcut. CSS
+                        variables, rejoice!
+                        No more are the days of having misaligned variables. All variables will be perfectly aligned,
+                        easy to read on one
+                        line.</p>
+                    <p><strong>markdown-all-in-one</strong><br>
+                        Markdown All in One is too much to fit into a measly paragraph; with loads of keyboard shortcuts
+                        for bold, italic,
+                        bullets and more, TOC generation, auto preview, math and more, it is truly all you need for
+                        Markdown in Visual
+                        Studio Code. In my opinion, the preview feature is the most useful, as you can view processed
+                        Markdown on another
+                        window, so you know exactly how the Markdown will turn out.</p>
+                    <h2 id="working-with-git--github">Working with Git + Github</h2>
+                    <p><strong>gitlens</strong><br>
+                        GitLens allows Git features to be augmented. You can view blames, code authorship, and
+                        seamlessly see everything
+                        about your Git repositories. The magic of GitLens is only seen when you try it out.</p>
+                    <p><strong>vscode-pull-request-github</strong><br>
+                        This is a great way to work with GitHub. Normally, PRs and Issues are hard to manage with
+                        vanilla Visual Studio
+                        Code. Now, it is a piece of cake!</p>
+                    <h2 id="working-with-css">Working with CSS</h2>
+                    <p><strong>color-highlight</strong><br>
+                        This extension highlights colors in your CSS (and more)! It is super useful to see all the
+                        colors in a glance. It
+                        even works with color variables.</p>
+                    <p><strong>classnametocss</strong><br>
+                        This extension automatically syncs class names in CSS, so you always have your classes within
+                        autocomplete'sll
+                        reach.</p>
+                    <h2 id="working-with-html">Working with HTML</h2>
+                    <p><strong>path-intellisense</strong><br>
+                        Path Intellisense is a powerful auto-complete for Visual Studio Code. It is better than the
+                        included one, as this
+                        one has lots of ways to customize, and has support for <code>srcset</code>.</p>
+                    <p><strong>auto-rename-tag</strong><br>
+                        Need to rename a tag, but hate changing both? Auto Rename Tag has got you covered. By changing
+                        one tag, the other
+                        one automatically matches!</p>
+                    <p><strong>vscode-gutter-preview (Image preview)</strong><br>
+                        This extension previews a plethora of image types in the gutter (between the sidebar and code
+                        line numbers). The
+                        extension scans your code for image paths, and displays a small version right there on the
+                        gutter. This way, you can
+                        view your images right alongside your code.</p>
+                    <p><strong>rainbow-tags</strong><br>
+                        This extensions artfully colorizes your code, to make tags and brackets easier to read and
+                        associate!</p>
+                    <h2 id="working-with-js">Working with JS</h2>
+                    <p><strong>npm-intellisense</strong><br>
+                        If you work with NPM (node package manager), then this is a must-have. When you need a package,
+                        NPM intellisense
+                        automatically completes import boilerplate code.</p>
+                    <p><strong>vscode-language-babel</strong><br>
+                        Quite simple; parses and highlights Babel JS.</p>
+                    <p><strong>es6-string-html</strong><br>
+                        When you are writing React CSS in JSX, you will see that the syntax is not highlighted, as the
+                        syntax processor
+                        thinks it's all just a long string. This extension solves this by highlighting all sorts of code
+                        inside ES6
+                        strings.</p>
+                    <p><strong>vscodeintellicode</strong><br>
+                        TL;DR: AI Autocomplete by Microsoft.</p>
+                    <p><strong>JavaScriptSnippets</strong><br>
+                        No doubt that JS has lots of boilerplate. Nobody likes typing it all out. This extension solves
+                        this existential
+                        problem.</p>
+                    <h2 id="html--css">HTML + CSS</h2>
+                    <p><strong>vscode-css-peek</strong><br>
+                        Using this extension, you can see what styling each HTML class and id corresponds to, simply by
+                        hovering over it.
+                    </p>
+                    <p><strong>vscode-html-css</strong><br>
+                        Big web page with lots of selectors and lots of naming schemes? This extension helps with CSS
+                        class/id autocomplete,
+                        saving you more time for actual design and debugging.</p>
+                    <h2 id="honorable-mentions">Honorable Mentions</h2>
+                    <p>These are amazing extensions for many uses; check them out, you won't regret it! Perhaps you
+                        don't need them
+                        now, but installing them might just save you later on.
+                        xml
+                        vscode-xml
+                        php-intellisense
+                        trailing-spaces</p>
+                    <p><strong>polacode</strong><br>
+                        In a sea of coding tutorials of the interwebs, how you present your code is vital. Polacode
+                        generates beautiful code
+                        images inside Visual Studio Code. The only downside is that there is, as far as I know, no line
+                        numbering.</p>
+                    <p><strong>lorem-ipsum</strong><br>
+                        Super simple Lorem Ipsum generator. Lorem ipsum dolor?</p>
+                    <p><strong>vscode-quick-select</strong><br>
+                        Most times, double clicking will select things within a paragraph, line, quotes, or brackets.
+                        However, sometimes you
+                        want more granular control of what Visual Studio Code selects. This extensions does exactly
+                        that.</p>
+                    <h2 id="themes">Themes</h2>
+                    <p>These themes are my favorite for web development and just coding in general. Personally, I use
+                        Dracula Soft (included
+                        with Dracula) with a few custom edits.
+                        nord-visual-studio-code
+                        vscode-theme-onedark
+                        nord-wave
+                        theme-dracula
+                        theme-cobalt2
+                        github-vscode-theme</p>
+                    <h2 id="product-icon-themes">Product Icon Themes</h2>
+                    <p>Product icons themes are newly released themes that allow for users to customize icons in their
+                        Visual Studio Code
+                        environment.
+                        fluent-icons</p>
+                    <h2 id="icon-themes">Icon Themes</h2>
+                    <p>Lastly, icon themes. I use Material Icon themes with a blue folder color (changeable in
+                        settings), but feel free to
+                        explore.
+                        vscode-icons
+                        material-icon-theme</p>
+                </div>
+            </div>
+            <footer>
+                <span>🧑‍💻 Created by <b>Byran H</b>. 📃 Copyleft under the <b>MIT License</b>. 📲 For more
+                    information,
+                    check
+                    out the <a href="https://www.byran.tech/about.html" target="_blank"><b>about page</b></a>.
+                    &lt;/&gt; Otherwise, check out <a href="https://github.com/Hello9999901/byran.tech"
+                        target="_blank"><b>my
+                            source
+                            code on GitHub!</b></a></span>
+            </footer>
+        </div>
+        <!-- JAVASCRIPT -->
+
+        <script src="../js/prism.js"></script>
+        <script src="../js/scripts.js"></script>
+</body>
+
+</html>

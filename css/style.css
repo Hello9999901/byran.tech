@@ -16,11 +16,11 @@
     --blue: #6bbaff;
     --text: #E5E9F0;
 
-    --light-bg: #E5E9F0;
+    --light-bg: #f8f8f2;
     --light-text: #161616;
 
-    --dark-bg: #161616;
-    --dark-text: #E5E9F0;
+    --dark-bg: #1a1a1a;
+    --dark-text: #f8f8f2;
 }
 
 * {
