@@ -436,6 +436,7 @@ footer span {
 #artWrapper>.block {
     width: calc(27vw + 275px);
     min-height: 100px;
+    height: calc(calc(27vw + 275px) * 0.56);
     position: relative;
     overflow: hidden;
     -webkit-user-select: none;
