@@ -6,7 +6,9 @@ Hi! This is my open source website! I hope you learn something!
 ## File Structure Tree:
 ```
 .
+├── 404.html
 ├── CNAME
+├── LICENSE
 ├── README.md
 ├── _config.yml
 ├── about.html
@@ -20,10 +22,12 @@ Hi! This is my open source website! I hope you learn something!
 │   └── SUV.blend
 ├── coding.html
 ├── css
+│   ├── animate.min.css
 │   ├── fonts.css
 │   ├── menu.css
 │   ├── prism.css
-│   └── style.css
+│   ├── style.css
+│   └── theming.css
 ├── fonts
 │   ├── firaCode
 │   │   ├── LICENSE
@@ -67,28 +71,35 @@ Hi! This is my open source website! I hope you learn something!
 │           └── titilliumWeb-regular.woff2
 ├── html
 │   ├── 3-ways-to-check-if-an-application-is-apple-silicon-or-intel.html
+│   ├── adafruit-lipo-battery-list.html
 │   ├── amazing-free-macos-apps-to-speed-up-any-workflow.html
 │   ├── articleBase.html
+│   ├── awesome-visual-studio-code-extensions-for-web-development.html
 │   ├── base.html
 │   ├── benefits-to-gaming-gear.html
+│   ├── booting-linux-oses-on-the-razer-blade.html
 │   ├── computer-setups.html
+│   ├── cookie-policy.html
 │   ├── cookiesTest.html
 │   ├── fps-and-hertz-(refresh-rate).html
 │   ├── gaming-laptops.html
 │   ├── how-to-change-the-mouse-acceleration-on-macos.html
 │   ├── how-to-hack.html
 │   ├── how-to-make-a-rosetta-2-emulated-x86-terminal-on-arm-apple-silicon-chips.html
-│   ├── intel?\200\231s-unorthodox-approach-at-the-gpu-market-20-years-after-their-first-failed-attempt.html
+│   ├── intel’s-unorthodox-approach-at-the-gpu-market-20-years-after-their-first-failed-attempt.html
+│   ├── keyboard-human-interface-devices-(hid)-usage-for-usb-with-a-raspberry-pi-zero.html
 │   ├── macos-big-sur.html
 │   ├── my-thoughts-on-macos-big-sur,-ios-14-and-apple-silicon.html
 │   ├── my-thoughts-on-the-apple-silicon-m1-macs.html
 │   ├── open-media-vault-5-for-raspberry-pi.html
 │   ├── py2app-fixes.html
 │   ├── simultaneously-play-out-of-multiple-audio-outputs.html
+│   ├── speed-up-and-put-old-computers-to-good-use.html
+│   ├── stickies-files-location-in-macos-12-monterey.html
 │   ├── the-reason-apple's-products-are-so-expensive.html
 │   ├── why-apple-silicon-really-matters.html
 │   ├── why-are-mechanical-keyboards-so-sought-after.html
-│   ├── why-razer-has-a-such-a-large-?\200\234cult-following?\200\235---from-my-perspective.html
+│   ├── why-razer-has-a-such-a-large-“cult-following”---from-my-perspective.html
 │   ├── why-usb-c-is-just-plain-better..html
 │   └── xbox-e100-error-(startup-error).html
 ├── images
@@ -106,6 +117,8 @@ Hi! This is my open source website! I hope you learn something!
 │   │   │   ├── WinterCamoCar.jp2
 │   │   │   ├── amonguscut.jp2
 │   │   │   ├── amongusfull.jp2
+│   │   │   ├── hondansx_shanghai.jp2
+│   │   │   ├── isometric_room.jp2
 │   │   │   └── workinprogress.jp2
 │   │   ├── jpg
 │   │   │   ├── BlueLowPolySportsCar.jpg
@@ -121,6 +134,8 @@ Hi! This is my open source website! I hope you learn something!
 │   │   │   ├── WinterCamoCar.jpg
 │   │   │   ├── amonguscut.jpg
 │   │   │   ├── amongusfull.jpg
+│   │   │   ├── hondansx_shanghai.jpg
+│   │   │   ├── isometric_room.jpg
 │   │   │   └── workinprogress.jpg
 │   │   └── webp
 │   │       ├── BlueLowPolySportsCar.webp
@@ -138,14 +153,16 @@ Hi! This is my open source website! I hope you learn something!
 │   │       ├── amongusfull.webp
 │   │       ├── result.webp
 │   │       └── workinprogress.webp
+│   ├── 404.jpg
 │   ├── githubProjects
-│   │   ├── Kyanite\ Banner.png
+│   │   ├── Kyanite Banner.png
 │   │   ├── Kyanite-Logo.png
 │   │   ├── artstudio23.png
 │   │   ├── macosebanner.jpg
 │   │   ├── smartcomputer.png
 │   │   └── t2banner.jpg
 │   ├── logo.png
+│   ├── logoAlt.jpeg
 │   ├── logoAlt.jpg
 │   ├── logoAltClear.png
 │   ├── mainPageHero.jpg
@@ -167,7 +184,7 @@ Hi! This is my open source website! I hope you learn something!
 │       ├── Amazing-Mac-Apps-To-Speed-Up-Any-Workflow
 │       │   ├── Rectangle.png
 │       │   ├── RectangleDemo.gif
-│       │   └── Screen\ Shot\ 2021-03-06\ at\ 9.50.29\ PM.png
+│       │   └── Screen Shot 2021-03-06 at 9.50.29 PM.png
 │       ├── AudioMidiSetupMultipleOuts
 │       │   ├── 2OutsSelected.png
 │       │   ├── ChooseAsOutput.png
@@ -196,18 +213,28 @@ Hi! This is my open source website! I hope you learn something!
 │       │   ├── OMVLogin.png
 │       │   ├── OMVTutorial.pdf
 │       │   └── OMVgui.png
-│       └── RosettaTerminalTutorial
-│           ├── 2TerminalApplicationsSelected.png
-│           ├── CustomLogoRosettaTerminal.png
-│           ├── Homebrew.png
-│           ├── OpenWithRosetta.png
-│           ├── RosTerminalInfo.png
-│           ├── Rosetta\ Terminal.icns
-│           ├── RosettaTerminal.png
-│           ├── RosettaTutorial.gif
-│           ├── TerminalInfo.png
-│           ├── TerminalLocationinFinder.png
-│           └── Thumbnail.png
+│       ├── RosettaTerminalTutorial
+│       │   ├── 2TerminalApplicationsSelected.png
+│       │   ├── CustomLogoRosettaTerminal.png
+│       │   ├── Homebrew.png
+│       │   ├── OpenWithRosetta.png
+│       │   ├── RosTerminalInfo.png
+│       │   ├── Rosetta Terminal.icns
+│       │   ├── RosettaTerminal.png
+│       │   ├── RosettaTutorial.gif
+│       │   ├── TerminalInfo.png
+│       │   ├── TerminalLocationinFinder.png
+│       │   └── Thumbnail.png
+│       ├── SpeedUpOldComputers
+│       │   ├── code.jpeg
+│       │   ├── computerInside.jpeg
+│       │   ├── oldMac.jpeg
+│       │   ├── ramSticks.jpeg
+│       │   ├── ssd.jpeg
+│       │   ├── taylor-r-5Mw0JlOjtTc-unsplash.jpg
+│       │   └── technology-3406895_1920.png
+│       └── bootingLinuxonRazerBlade
+│           └── razerBlade.jpg
 ├── index.html
 ├── js
 │   ├── prism.js
@@ -222,13 +249,14 @@ Hi! This is my open source website! I hope you learn something!
 │   └── techsupport.txt
 ├── sitemap.xml
 ├── svgs
+│   ├── arrow_up.svg
 │   ├── calendar_dark.svg
 │   ├── calendar_light.svg
 │   ├── download.svg
 │   ├── logo.svg
 │   └── play.svg
 ├── tech.html
-└── techblogs
+└── techblogs (legacy)
     ├── ChangeMouseAccel.html
     ├── MakeRosetta2Terminal.html
     └── XboxE100Error.html
