@@ -866,46 +866,6 @@ hr.showOverlay {
     margin-left: 40px;
 }
 
-/* ANCHOR Cookie Banner */
-.cookieBanner {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    bottom: 20px;
-    border-radius: 20px;
-    padding: 5px 20px 5px 20px;
-    overflow: hidden;
-    visibility: hidden;
-    animation-duration: var(--anim-dur);
-    z-index: 2;
-
-
-    border: solid hsl(60, 1%, 50%) 2px;
-    background-color: hsl(0, 0%, 11%);
-    height: fit-content;
-    width: 70vw;
-    margin: 0 15vw 0 15vw !important;
-}
-
-.cookieBanner span {
-    color: var(--white);
-    font: calc(10px + 0.4vw) firaCode;
-}
-
-.cookieBanner button {
-    padding: 0;
-    margin: 0;
-    color: var(--white);
-    font: calc(10px + 0.4vw) firaCode;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-}
-
-.cookieBanner a {
-    color: var(--blue);
-}
-
 /* ANCHOR Theme Toggle */
 .themeToggle {
     font-size: 30px !important;

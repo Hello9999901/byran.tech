@@ -22,39 +22,6 @@ function hideOverlays() {
 // Get Current Time/Date
 document.getElementById("currentTimeAndDate").innerHTML = (Date().toLocaleString());
 
-
-// Cookie Banner
-function getCookieValue() {
-    if (document.cookie.split(';').some((item) => item.includes('cookieStatus=accepted'))) {
-        document.getElementById("cookieBanner").style.visibility = 'hidden';
-    } else if (document.cookie.split(';').some((item) => item.includes('cookieStatus=denied'))) {
-        document.getElementById("cookieBanner").style.visibility = 'hidden';
-    } else {
-        document.getElementById("cookieBanner").style.visibility = 'visible';
-    }
-}
-
-function onloadFunction() {
-    getCookieValue()
-}
-
-document.onload = onloadFunction();
-
-function acceptCookies() {
-    document.cookie = "cookieStatus=accepted; max-age=604800; path=/";
-    document.getElementById("cookieBanner").style.visibility = 'hidden';
-    gtag('consent', 'update', {
-        'ad_storage': 'denied',
-        'analytics_storage': 'granted',
-    });
-}
-
-function deniedCookies() {
-    document.cookie = "cookieStatus=denied; max-age=604800; path=/";
-    document.getElementById("cookieBanner").style.visibility = 'hidden';
-}
-
-
 // Light/Dark Mode Toggle
 // the script assumes that the user has dark mode, and adapts to light mode
 var isDark = new Boolean(true);
