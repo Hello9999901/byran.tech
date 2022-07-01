@@ -672,9 +672,6 @@ hr.showOverlay {
     scale: 1;
     border-radius: 30px;
     text-decoration: none;
-
-    animation: zoomIn;
-    animation-duration: var(--anim-dur);
 }
 
 .techWrapper .title {
