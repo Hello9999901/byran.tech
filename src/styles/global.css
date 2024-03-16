@@ -1,13 +1,13 @@
 :root {
 }
 @font-face {
-	font-family: 'Hubot';
-	src: url('/fonts/Mona-Sans.woff2') format('woff2');
+	font-family: "Hubot";
+	src: url("/fonts/Mona-Sans.woff2") format("woff2");
 	font-display: swap;
 }
 @font-face {
-	font-family: 'Mona';
-	src: url('/fonts/Hubot-Sans.woff2') format('woff2');
+	font-family: "Mona";
+	src: url("/fonts/Hubot-Sans.woff2") format("woff2");
 	font-display: swap;
 }
 
@@ -23,4 +23,45 @@ body {
 	overflow-wrap: break-word;
 	overflow-x: hidden;
 	line-height: 1.7;
+	cursor: none !important;
+}
+
+a {
+	cursor: none !important;
+}
+
+.invertedcursor {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border-radius: 50%;
+	z-index: 2;
+	mix-blend-mode: difference;
+	transition: width 0.2s ease, height 0.2s ease, opacity 0.5s ease-in;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.invertedcursor.hover {
+	width: 80px;
+	height: 80px;
+}
+
+html.lenis {
+	height: auto;
+}
+.lenis.lenis-smooth {
+	scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+	pointer-events: none;
 }

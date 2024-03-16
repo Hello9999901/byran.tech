@@ -1,61 +1,137 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
+<script>
+	import LocomotiveScroll from "locomotive-scroll";
+
+	const locomotiveScroll = new LocomotiveScroll();
+	const buttons = document.querySelectorAll("span.clickable");
+
+	// Handle clicks on each button.
+	buttons.forEach((button) => {
+		button.addEventListener("click", () => {
+			locomotiveScroll.scrollTo(
+				document.getElementById(button.id + "_target")
+			);
+		});
+	});
+
+	var cursor = document.getElementById("cursor");
+	document.body.addEventListener("mousemove", function (e) {
+		//storing cursor position as variables
+		var curX = e.clientX;
+		var curY = e.clientY;
+		cursor.style.opacity = 1;
+		if (cursor?.classList.contains("hover")) {
+			cursor.style.transform =
+				"translate(" + (curX - 30) + "px," + (curY - 30) + "px)";
+		} else {
+			cursor.style.transform =
+				"translate(" + (curX - 27) + "px," + (curY - 27) + "px)";
+		}
+	});
+
+	window.onblur = function () {
+		cursor.style.display = "none";
+	};
+	window.onfocus = function () {
+		cursor.style.display = "block";
+	};
+
+	const links = document.querySelectorAll("a, .clickable");
+
+	// Custom cursor change style on hover links
+	for (let x of links) {
+		x.addEventListener("mouseenter", () => {
+			cursor.classList.add("hover");
+		});
+
+		x.addEventListener("mouseleave", () => {
+			cursor.classList.remove("hover");
+		});
+	}
+</script>
+
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body class="bg-neutral-900">
 		<Header />
+		<div class="invertedcursor" id="cursor"></div>
 		<main class="flex items-center min-h-screen">
 			<div class="pl-12">
-				<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
+				<h1
+					class="text-slate-100 font-[Hubot] font-black text-9xl italic"
+				>
 					Hello, I'm Byran _
 				</h1>
-				<div class="flex gap-8 py-3 text-slate-100 font-[Mona] text-3xl font-normal subpixel-antialiased italic pl-2">
-					<a href="#electrical_engineering" class="group transition duration-300 ease-in-out">
+				<div
+					class="flex gap-8 py-3 text-slate-100 font-[Mona] text-3xl font-normal subpixel-antialiased italic pl-2"
+				>
+					<span
+						id="electrical_engineering"
+						class="group transition duration-300 ease-in-out clickable"
+					>
 						Electrical Engineering
-						<span class="block max-w-0 group-hover:max-w-full ease-in-out transition-all duration-300 h-0.5 bg-slate-100"></span>
-					</a>
-					<a href="#embedded_software" class="group transition duration-300 ease-in-out">
+						<span
+							class="block max-w-0 group-hover:max-w-full ease-in-out transition-all duration-300 h-[1px] bg-gradient-to-r from-slate-100 to-transparent"
+						></span>
+					</span>
+					<span
+						id="embedded_software"
+						class="group transition duration-300 ease-in-out clickable"
+					>
 						Embedded Software
-						<span class="block max-w-0 group-hover:max-w-full ease-in-out transition-all duration-300 h-0.5 bg-slate-100"></span>
-					</a>
-					<a href="#front-end_dev" class="group transition duration-300 ease-in-out">
+						<span
+							class="block max-w-0 group-hover:max-w-full ease-in-out transition-all duration-300 h-[1px] bg-gradient-to-r from-slate-100 to-transparent"
+						></span>
+					</span>
+					<span
+						id="front-end_dev"
+						class="group transition duration-300 ease-in-out clickable"
+					>
 						Front-End Dev
-						<span class="block max-w-0 group-hover:max-w-full ease-in-out transition-all duration-300 h-0.5 bg-slate-100"></span>
-					</a>
-					<a href="#3d_graphics" class="group transition duration-300 ease-in-out">
+						<span
+							class="block max-w-0 group-hover:max-w-full ease-in-out transition-all duration-300 h-[1px] bg-gradient-to-r from-slate-100 to-transparent"
+						></span>
+					</span>
+					<span
+						id="3d_graphics"
+						class="group transition duration-300 ease-in-out clickable"
+					>
 						3D Graphics
-						<span class="block max-w-0 group-hover:max-w-full ease-in-out transition-all duration-300 h-0.5 bg-slate-100"></span>
-					</a>
+						<span
+							class="block max-w-0 group-hover:max-w-full ease-in-out transition-all duration-300 h-[1px] bg-gradient-to-r from-slate-100 to-transparent"
+						></span>
+					</span>
 				</div>
 			</div>
 		</main>
-		<section class="min-h-screen" id="electrical_engineering">
+		<section
+			class="min-h-screen w-screen"
+			id="electrical_engineering_target"
+		>
 			<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
 				Electrical Engineering
 			</h1>
 		</section>
-		<section class="min-h-screen" id="embedded_software">
-
+		<section class="min-h-screen w-screen" id="embedded_software_target">
 			<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
 				Embedded Software
 			</h1>
 		</section>
-		<section class="min-h-screen" id="front-end_dev">
-
+		<section class="min-h-screen w-screen" id="front-end_dev_target">
 			<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
 				Front-End Development
 			</h1>
 		</section>
-		<section class="min-h-screen" id="3d_graphics">
-
+		<section class="min-h-screen w-screen" id="3d_graphics_target">
 			<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
 				3D Graphics
 			</h1>
