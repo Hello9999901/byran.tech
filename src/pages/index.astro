@@ -10,41 +10,56 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body class="bg-neutral-900">
 		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+		<main class="flex items-center min-h-screen">
+			<div class="pl-12">
+				<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
+					Hello, I'm Byran _
+				</h1>
+				<div class="flex gap-8 py-3 text-slate-100 font-[Mona] text-3xl font-normal subpixel-antialiased italic pl-2">
+					<a href="#electrical_engineering" class="group transition duration-300 ease-in-out">
+						Electrical Engineering
+						<span class="block max-w-0 group-hover:max-w-full ease-in-out transition-all duration-300 h-0.5 bg-slate-100"></span>
+					</a>
+					<a href="#embedded_software" class="group transition duration-300 ease-in-out">
+						Embedded Software
+						<span class="block max-w-0 group-hover:max-w-full ease-in-out transition-all duration-300 h-0.5 bg-slate-100"></span>
+					</a>
+					<a href="#front-end_dev" class="group transition duration-300 ease-in-out">
+						Front-End Dev
+						<span class="block max-w-0 group-hover:max-w-full ease-in-out transition-all duration-300 h-0.5 bg-slate-100"></span>
+					</a>
+					<a href="#3d_graphics" class="group transition duration-300 ease-in-out">
+						3D Graphics
+						<span class="block max-w-0 group-hover:max-w-full ease-in-out transition-all duration-300 h-0.5 bg-slate-100"></span>
+					</a>
+				</div>
+			</div>
 		</main>
+		<section class="min-h-screen" id="electrical_engineering">
+			<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
+				Electrical Engineering
+			</h1>
+		</section>
+		<section class="min-h-screen" id="embedded_software">
+
+			<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
+				Embedded Software
+			</h1>
+		</section>
+		<section class="min-h-screen" id="front-end_dev">
+
+			<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
+				Front-End Development
+			</h1>
+		</section>
+		<section class="min-h-screen" id="3d_graphics">
+
+			<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
+				3D Graphics
+			</h1>
+		</section>
 		<Footer />
 	</body>
 </html>

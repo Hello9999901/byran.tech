@@ -10,11 +10,27 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.5.6",
     "@astrojs/mdx": "^2.1.1",
+    "@astrojs/partytown": "^2.0.4",
+    "@astrojs/react": "^3.1.0",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
     "astro": "^4.4.6",
-    "@astrojs/check": "^0.5.6",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "cn": "^0.1.1",
+    "framer-motion": "^11.0.14",
+    "lucide-react": "^0.358.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "simplex-noise": "^4.0.1",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.3.3"
   }
 }
