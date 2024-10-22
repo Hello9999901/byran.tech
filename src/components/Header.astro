@@ -3,7 +3,7 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header class="w-screen fixed top-0 flex justify-center items-center">
+<header class="w-screen fixed top-0 flex justify-center items-center z-10">
 	<nav class="border-slate-700 border w-[400px] h-8 rounded-3xl backdrop-blur-sm bg-neutral-800 bg-opacity-50 my-5 px-3 flex items-center">
 		<a href="/" class="px-3"><img src={"/logo.svg"} alt="Logo" class="w-7" /></a>
 		<ul class="text-slate-100 w-full flex justify-between gap-8 italic text-sm px-5">

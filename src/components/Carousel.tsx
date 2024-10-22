@@ -32,7 +32,7 @@ const InteractiveCarousel: React.FC<InteractiveCarouselProps> = ({ imagePaths })
     }, [api])
 
     return (
-        <Carousel setApi={setApi} className="w-[600px] -z-20">
+        <Carousel setApi={setApi} className="w-[600px]">
             <CarouselContent>
             {imagePaths.map((path, index) => (
                 <CarouselItem key={index}>
