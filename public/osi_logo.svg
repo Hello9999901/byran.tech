@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg2" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" version="1.1" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3ea639;
+        stroke: #1e541e;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 19.2px;
+      }
+    </style>
+  </defs>
+  <sodipodi:namedview id="base" bordercolor="#666666" borderopacity="1.0" inkscape:current-layer="layer1" inkscape:cx="324.68747" inkscape:cy="560.39904" inkscape:document-units="px" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:snap-bbox="true" inkscape:window-height="836" inkscape:window-maximized="1" inkscape:window-width="1600" inkscape:window-x="0" inkscape:window-y="27" inkscape:zoom="1" pagecolor="#ffffff" showgrid="false"/>
+  <g id="layer1" inkscape:groupmode="layer" inkscape:label="Layer 1">
+    <path id="path3068" class="cls-1" d="M558,670.6c69.4-25.8,105.6-75.4,105.6-160.8s-72-160.7-161.9-160.8c-94.9-.2-166.5,75.1-165.3,160.8,1.1,85.7,42,142.7,107.4,163.4l-115.9,285.1C172.8,918.1,15,735.1,15,509.8S229.5,26.5,498.3,26.5s486.7,216.4,486.7,483.2-156.3,409.3-314.7,449.3l-112.2-288.5Z" inkscape:connector-curvature="0" sodipodi:nodetypes="czssccssscc"/>
+  </g>
+</svg>

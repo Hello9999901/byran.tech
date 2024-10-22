@@ -10,6 +10,44 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
+<!doctype html>
+<script>
+	var cursor = document.getElementById("cursor");
+	document.body.addEventListener("mousemove", function (e) {
+		//storing cursor position as variables
+		var curX = e.clientX;
+		var curY = e.clientY;
+		cursor.style.opacity = 1;
+		if (cursor?.classList.contains("hover")) {
+			cursor.style.transform =
+				"translate(" + (curX - 30) + "px," + (curY - 30) + "px)";
+		} else {
+			cursor.style.transform =
+				"translate(" + (curX - 27) + "px," + (curY - 27) + "px)";
+		}
+	});
+
+	window.onblur = function () {
+		cursor.style.display = "none";
+	};
+	window.onfocus = function () {
+		cursor.style.display = "block";
+	};
+
+	const links = document.querySelectorAll("a, .clickable");
+
+	// Custom cursor change style on hover links
+	for (let x of links) {
+		x.addEventListener("mouseenter", () => {
+			cursor.classList.add("hover");
+		});
+
+		x.addEventListener("mouseleave", () => {
+			cursor.classList.remove("hover");
+		});
+	}
+</script>
+
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
@@ -35,48 +73,33 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				padding: 1em;
 				color: rgb(var(--gray-dark));
 			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
 		</style>
 	</head>
 
-	<body>
+	<body class="bg-neutral-900">
+		<div class="invertedcursor" id="cursor"></div>
 		<Header />
 		<main>
-			<article>
+			<article class="mt-24">
 				<div class="hero-image">
 					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
 				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
+				<div class="prose prose-invert">
+					<h1 class="animate text-neutral-200 text-7xl font-[Hubot] italic m-0">{title}</h1>
+					<div class="date animate pt-5">
+						<FormattedDate date={pubDate} />
+						{
+							updatedDate && (
+								<div class="last-updated-on">
+									Last updated on <FormattedDate date={updatedDate} />
+								</div>
+							)
+						}
 					</div>
-					<slot />
+					<hr class="animate border-neutral-700 my-5" />
+					<div class="animate">
+						<slot />
+					</div>
 				</div>
 			</article>
 		</main>

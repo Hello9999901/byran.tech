@@ -7,104 +7,77 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 
 <!doctype html>
+
+<script>
+	var cursor = document.getElementById("cursor");
+	document.body.addEventListener("mousemove", function (e) {
+		//storing cursor position as variables
+		var curX = e.clientX;
+		var curY = e.clientY;
+		cursor.style.opacity = 1;
+		if (cursor?.classList.contains("hover")) {
+			cursor.style.transform =
+				"translate(" + (curX - 30) + "px," + (curY - 30) + "px)";
+		} else {
+			cursor.style.transform =
+				"translate(" + (curX - 27) + "px," + (curY - 27) + "px)";
+		}
+	});
+
+	window.onblur = function () {
+		cursor.style.display = "none";
+	};
+	window.onfocus = function () {
+		cursor.style.display = "block";
+	};
+
+	const links = document.querySelectorAll("a, .clickable");
+
+	// Custom cursor change style on hover links
+	for (let x of links) {
+		x.addEventListener("mouseenter", () => {
+			cursor.classList.add("hover");
+		});
+
+		x.addEventListener("mouseleave", () => {
+			cursor.classList.remove("hover");
+		});
+	}
+</script>
+
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
-				}
-			}
-		</style>
 	</head>
-	<body>
+	<body class="bg-neutral-900">
+		<div class="invertedcursor" id="cursor"></div>
 		<Header />
-		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
+		<main class="flex justify-center mt-24">
+			<div class="flex flex-col">
+				<h1 class="text-9xl font-[Hubot] italic font-extrabold text-neutral-200 my-5">Blog</h1>
+				<section class="max-w-[960px]">
+					<div class="flex flex-col gap-5">
+						{
+							posts.map((post) => (
+								<div class="border border-neutral-700 text-neutral-200 w-[550px] font-[Hubot] p-4 hover:bg-white/10 hover:border-white/20 duration-500 rounded-lg">
+									<a href={`/blog/${post.slug}/`}>
+										<p class="date text-md pb-2 text-neutral-400 font-[Mona] font-extrathin">
+											<FormattedDate date={post.data.pubDate} />
+										</p>
+										<h4 class="text-xl font-medium">{post.data.title}</h4>
+										<h4 class="text-md text-neutral-400">{post.data.description}</h4>
+									</a>
+								</div>
+							))
+						}
+					</div>
+				</section>
+			</div>
 		</main>
 		<Footer />
 	</body>

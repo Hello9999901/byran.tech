@@ -1,8 +1,262 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
+import MeteorShower from "@/components/MeteorShower.astro";
+import StackCard from "@/components/StackCard.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
+import InteractiveCarousel from "@components/Carousel";
+
+const stack = [
+	{
+		text: "Open-Source Hardware",
+		icon: "oshw_logo",
+		href: "https://www.oshwa.org",
+	},
+	{
+		text: "Open-Source Software",
+		icon: "osi_logo",
+		href: "https://www.oshwa.org",
+	},
+	{
+		text: "KiCAD EDA",
+		icon: "kicad_logo",
+		href: "https://kicad.org",
+	},
+	{
+		text: "GNU/Linux",
+		icon: "linux_logo",
+		href: "https://kernel.org",
+	},
+	{
+		text: "ZMK Project",
+		icon: "zmk_logo",
+		href: "https://zmk.dev",
+	},
+	{
+		text: "PTC Onshape",
+		icon: "onshape_logo",
+		href: "https://onshape.com",
+	},
+	{
+		text: "Visual Studio Code",
+		icon: "vscode_logo",
+		href: "https://code.visualstudio.com",
+	},
+];
+
+const electricalEngineeringProjects = [
+	{
+		title: "anyon_e laptop",
+		text: "A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		highlights:
+			"RK3588-based, 4K AMOLED 13.3 display, GHz-level high-speed signaling...",
+		starCount: "5",
+		icon: "kicad_logo",
+		href: "https://byran.ee",
+	},
+	{
+		title: "Keychron Enginering",
+		text: "GNU/Linux",
+		icon: "linux_logo",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://kernel.org",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "ZMK Project",
+		icon: "zmk_logo",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://zmk.dev",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "PTC Onshape",
+		icon: "onshape_logo",
+		starCount: "5",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://onshape.com",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "Visual Studio Code",
+		icon: "vscode_logo",
+		starCount: "5",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://code.visualstudio.com",
+	},
+];
+
+const electricalEngineeringImages = [
+	"/blog-placeholder-1.jpg",
+	"/blog-placeholder-1.jpg",
+];
+
+const embeddedSoftwareProjects = [
+	{
+		title: "anyon_e laptop",
+		text: "A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		starCount: "5",
+		icon: "kicad_logo",
+		href: "https://kicad.org",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "GNU/Linux",
+		icon: "linux_logo",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://kernel.org",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "ZMK Project",
+		icon: "zmk_logo",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://zmk.dev",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "PTC Onshape",
+		icon: "onshape_logo",
+		starCount: "5",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://onshape.com",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "Visual Studio Code",
+		icon: "vscode_logo",
+		starCount: "5",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://code.visualstudio.com",
+	},
+];
+
+const embeddedSoftwareImages = [
+	"/blog-placeholder-1.jpg",
+	"/blog-placeholder-1.jpg",
+];
+
+const frontEndProjects = [
+	{
+		title: "anyon_e laptop",
+		text: "A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		starCount: "5",
+		icon: "kicad_logo",
+		href: "https://kicad.org",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "GNU/Linux",
+		icon: "linux_logo",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://kernel.org",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "ZMK Project",
+		icon: "zmk_logo",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://zmk.dev",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "PTC Onshape",
+		icon: "onshape_logo",
+		starCount: "5",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://onshape.com",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "Visual Studio Code",
+		icon: "vscode_logo",
+		starCount: "5",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://code.visualstudio.com",
+	},
+];
+
+const frontEndImages = [
+	"/blog-placeholder-1.jpg",
+	"/blog-placeholder-1.jpg",
+];
+
+const graphicsProjects = [
+	{
+		title: "anyon_e laptop",
+		text: "A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		starCount: "5",
+		icon: "kicad_logo",
+		href: "https://kicad.org",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "GNU/Linux",
+		icon: "linux_logo",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://kernel.org",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "ZMK Project",
+		icon: "zmk_logo",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://zmk.dev",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "PTC Onshape",
+		icon: "onshape_logo",
+		starCount: "5",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://onshape.com",
+	},
+	{
+		title: "anyon_e laptop",
+		text: "Visual Studio Code",
+		icon: "vscode_logo",
+		starCount: "5",
+		highlights:
+			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
+		href: "https://code.visualstudio.com",
+	},
+];
+
+const graphicsImages = [
+	"/blog-placeholder-1.jpg",
+	"/blog-placeholder-1.jpg",
+];
 ---
 
 <!doctype html>
@@ -62,17 +316,31 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body class="bg-neutral-900">
+		<div class="-z-10 absolute">
+			<!-- Dark Theme: Twinkling Stars / Metors -->
+			<div id="galaxy" class="fixed inset-0">
+				<div class="invert dark:invert-0">
+					<MeteorShower />
+				</div>
+			</div>
+			<div class="absolute inset-0 block dark:invert">
+				<div id="particles1" class="fixed inset-0"></div>
+				<div id="particles2" class="fixed inset-0"></div>
+				<div id="particles3" class="fixed inset-0"></div>
+			</div>
+			<script is:inline src="/js/bg.js"></script>
+		</div>
 		<Header />
 		<div class="invertedcursor" id="cursor"></div>
 		<main class="flex items-center min-h-screen">
 			<div class="pl-12">
 				<h1
-					class="text-slate-100 font-[Hubot] font-black text-9xl italic"
+					class="animate text-slate-100 font-[Hubot] font-black text-9xl italic"
 				>
 					Hello, I'm Byran _
 				</h1>
 				<div
-					class="flex gap-8 py-3 text-slate-100 font-[Mona] text-3xl font-normal subpixel-antialiased italic pl-2"
+					class="animate flex gap-8 py-3 text-slate-100 font-[Mona] text-3xl font-normal subpixel-antialiased italic pl-2"
 				>
 					<span
 						id="electrical_engineering"
@@ -111,30 +379,148 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 						></span>
 					</span>
 				</div>
+				<div class="pl-3 mt-3 animate">
+					<section>
+						<p class="font-semibold font-[Hubot] text-white">
+							Engineering with
+						</p>
+						<div class="flex flex-wrap items-center gap-2 mt-2">
+							{
+								stack.map((item) => (
+									<StackCard
+										text={item.text}
+										icon={item.icon}
+										href={item.href}
+									/>
+								))
+							}
+						</div>
+					</section>
+				</div>
 			</div>
 		</main>
 		<section
-			class="min-h-screen w-screen"
+			class="min-h-screen w-screen flex flex-col"
 			id="electrical_engineering_target"
 		>
-			<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
-				Electrical Engineering
-			</h1>
+			<div>
+				<h1
+					class="text-slate-100 font-[Hubot] font-black text-9xl italic"
+				>
+					Electrical Engineering
+				</h1>
+			</div>
+			<div class="flex flex-row p-12 self-center">
+				<section>
+					<div class="flex flex-wrap flex-col items-left gap-2 pt-1">
+						{
+							electricalEngineeringProjects.map((item) => (
+								<ProjectCard
+									title={item.title}
+									text={item.text}
+									starCount={item.starCount}
+									highlights={item.highlights}
+									icon={item.icon}
+									href={item.href}
+								/>
+							))
+						}
+					</div>
+				</section>
+				<div class="px-5">
+					<InteractiveCarousel imagePaths={electricalEngineeringImages} client:load />
+				</div>
+			</div>
 		</section>
-		<section class="min-h-screen w-screen" id="embedded_software_target">
-			<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
-				Embedded Software
-			</h1>
+		<section class="min-h-screen w-screen flex flex-col" id="embedded_software_target">
+			<div>
+				<h1
+					class="text-slate-100 font-[Hubot] font-black text-9xl italic"
+				>
+					Embedded Software
+				</h1>
+			</div>
+			<div class="flex flex-row p-12 self-center">
+				<section>
+					<div class="flex flex-wrap flex-col items-left gap-2 pt-1">
+						{
+							embeddedSoftwareProjects.map((item) => (
+								<ProjectCard
+									title={item.title}
+									text={item.text}
+									starCount={item.starCount}
+									highlights={item.highlights}
+									icon={item.icon}
+									href={item.href}
+								/>
+							))
+						}
+					</div>
+				</section>
+				<div class="px-5">
+					<InteractiveCarousel imagePaths={embeddedSoftwareImages} client:load />
+				</div>
+			</div>
 		</section>
-		<section class="min-h-screen w-screen" id="front-end_dev_target">
-			<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
-				Front-End Development
-			</h1>
+		<section class="min-h-screen w-screen flex flex-col" id="front-end_dev_target">
+			<div>
+				<h1
+					class="text-slate-100 font-[Hubot] font-black text-9xl italic"
+				>
+					Front-End Development
+				</h1>
+			</div>
+			<div class="flex flex-row p-12 self-center">
+				<section>
+					<div class="flex flex-wrap flex-col items-left gap-2 pt-1">
+						{
+							frontEndProjects.map((item) => (
+								<ProjectCard
+									title={item.title}
+									text={item.text}
+									starCount={item.starCount}
+									highlights={item.highlights}
+									icon={item.icon}
+									href={item.href}
+								/>
+							))
+						}
+					</div>
+				</section>
+				<div class="px-5">
+					<InteractiveCarousel imagePaths={frontEndImages} client:load />
+				</div>
+			</div>
 		</section>
-		<section class="min-h-screen w-screen" id="3d_graphics_target">
-			<h1 class="text-slate-100 font-[Hubot] font-black text-9xl italic">
-				3D Graphics
-			</h1>
+		<section class="min-h-screen w-screen flex flex-col" id="3d_graphics_target">
+			<div>
+				<h1
+					class="text-slate-100 font-[Hubot] font-black text-9xl italic"
+				>
+					3D Graphics
+				</h1>
+			</div>
+			<div class="flex flex-row p-12 self-center">
+				<section>
+					<div class="flex flex-wrap flex-col items-left gap-2 pt-1">
+						{
+							graphicsProjects.map((item) => (
+								<ProjectCard
+									title={item.title}
+									text={item.text}
+									starCount={item.starCount}
+									highlights={item.highlights}
+									icon={item.icon}
+									href={item.href}
+								/>
+							))
+						}
+					</div>
+				</section>
+				<div class="px-5">
+					<InteractiveCarousel imagePaths={graphicsImages} client:load />
+				</div>
+			</div>
 		</section>
 		<Footer />
 	</body>
