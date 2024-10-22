@@ -7,7 +7,7 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+	(a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
 );
 ---
 
@@ -19,21 +19,27 @@ const posts = (await getCollection('blog')).sort(
 		//storing cursor position as variables
 		var curX = e.clientX;
 		var curY = e.clientY;
-		cursor.style.opacity = 1;
-		if (cursor?.classList.contains("hover")) {
-			cursor.style.transform =
-				"translate(" + (curX - 30) + "px," + (curY - 30) + "px)";
-		} else {
-			cursor.style.transform =
-				"translate(" + (curX - 27) + "px," + (curY - 27) + "px)";
+		if (cursor) {
+			cursor.style.opacity = "1";
+			if (cursor.classList.contains("hover")) {
+				cursor.style.transform =
+					"translate(" + (curX - 30) + "px," + (curY - 30) + "px)";
+			} else {
+				cursor.style.transform =
+					"translate(" + (curX - 27) + "px," + (curY - 27) + "px)";
+			}
 		}
 	});
 
 	window.onblur = function () {
-		cursor.style.display = "none";
+		if (cursor) {
+			cursor.style.display = "none";
+		}
 	};
 	window.onfocus = function () {
-		cursor.style.display = "block";
+		if (cursor) {
+			cursor.style.display = "block";
+		}
 	};
 
 	const links = document.querySelectorAll("a, .clickable");
@@ -41,11 +47,15 @@ const posts = (await getCollection('blog')).sort(
 	// Custom cursor change style on hover links
 	for (let x of links) {
 		x.addEventListener("mouseenter", () => {
-			cursor.classList.add("hover");
+			if (cursor) {
+				cursor.classList.add("hover");
+			}
 		});
 
 		x.addEventListener("mouseleave", () => {
-			cursor.classList.remove("hover");
+			if (cursor) {
+				cursor.classList.remove("hover");
+			}
 		});
 	}
 </script>

@@ -66,11 +66,11 @@ const electricalEngineeringProjects = [
 	},
 	{
 		title: "Keychron Enginering",
-		text: "GNU/Linux",
+		text: "Developing new keyboard products for Keychron. Coming soon!",
 		icon: "linux_logo",
 		highlights:
-			"A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
-		href: "https://kernel.org",
+			"",
+		href: "https://keychron.com",
 	},
 	{
 		title: "anyon_e laptop",
@@ -269,9 +269,10 @@ const graphicsImages = [
 	// Handle clicks on each button.
 	buttons.forEach((button) => {
 		button.addEventListener("click", () => {
-			locomotiveScroll.scrollTo(
-				document.getElementById(button.id + "_target")
-			);
+			const targetElement = document.getElementById(button.id + "_target");
+			if (targetElement) {
+				locomotiveScroll.scrollTo(targetElement);
+			}
 		});
 	});
 
@@ -280,21 +281,27 @@ const graphicsImages = [
 		//storing cursor position as variables
 		var curX = e.clientX;
 		var curY = e.clientY;
-		cursor.style.opacity = 1;
-		if (cursor?.classList.contains("hover")) {
-			cursor.style.transform =
-				"translate(" + (curX - 30) + "px," + (curY - 30) + "px)";
-		} else {
-			cursor.style.transform =
-				"translate(" + (curX - 27) + "px," + (curY - 27) + "px)";
+		if (cursor) {
+			cursor.style.opacity = "1";
+			if (cursor.classList.contains("hover")) {
+				cursor.style.transform =
+					"translate(" + (curX - 30) + "px," + (curY - 30) + "px)";
+			} else {
+				cursor.style.transform =
+					"translate(" + (curX - 27) + "px," + (curY - 27) + "px)";
+			}
 		}
 	});
 
 	window.onblur = function () {
-		cursor.style.display = "none";
+		if (cursor) {
+			cursor.style.display = "none";
+		}
 	};
 	window.onfocus = function () {
-		cursor.style.display = "block";
+		if (cursor) {
+			cursor.style.display = "block";
+		}
 	};
 
 	const links = document.querySelectorAll("a, .clickable");
@@ -302,11 +309,15 @@ const graphicsImages = [
 	// Custom cursor change style on hover links
 	for (let x of links) {
 		x.addEventListener("mouseenter", () => {
-			cursor.classList.add("hover");
+			if (cursor) {
+				cursor.classList.add("hover");
+			}
 		});
 
 		x.addEventListener("mouseleave", () => {
-			cursor.classList.remove("hover");
+			if (cursor) {
+				cursor.classList.remove("hover");
+			}
 		});
 	}
 </script>
