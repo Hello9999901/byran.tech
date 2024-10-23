@@ -11,6 +11,7 @@ export default defineConfig({
   site: 'https://byran.tech',
   integrations: [mdx(), sitemap(), tailwind(), react(), partytown()],
   redirects: {
-    "/html/[...slug]": "/blog/[...slug]"
+    "/html/[...slug]": "/blog/[...slug]",
+    "/techblogs/MakeRosetta2Terminal": "/blog/how-to-make-a-rosetta-2-emulated-x86-terminal-on-arm-apple-silicon-chips"
   },
 });
