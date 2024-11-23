@@ -16,6 +16,34 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import InteractiveCarousel from "@components/Carousel";
 
+async function getStarCount(organization: string, repository: string) {
+  const apiUrl = `https://api.github.com/repos/${organization}/${repository}`;
+
+  try {
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return formatStarCount(data.stargazers_count);
+  } catch (error) {
+    console.error('Error fetching star count:', error);
+    return 'N/A';
+  }
+}
+
+function formatStarCount(count: number) {
+  if (count < 1000) {
+    return count.toString();
+  } else if (count < 10000) {
+    return (count / 1000).toFixed(1) + 'k';
+  } else if (count < 1000000) {
+    return Math.floor(count / 1000) + 'k';
+  } else {
+    return (count / 1000000).toFixed(1) + 'm';
+  }
+}
+
 const stack = [
 	{
 		text: "Open-Source Hardware",
@@ -60,7 +88,7 @@ const electricalEngineeringProjects = [
 		text: "A highly integrated, high end, open source laptop. Mission: to disprove the idea that technology is either repairable and open or integrated and closed.",
 		highlights:
 			"RK3588-based, 4K AMOLED 13.3 display, GHz-level high-speed signaling...",
-		starCount: "5",
+		starCount: "6",
 		icon: "anyon_e_logo",
 		href: "https://byran.ee",
 	},
@@ -68,12 +96,13 @@ const electricalEngineeringProjects = [
 		title: "MUREX Robotics",
 		text: "Electrical and Robotics systems with +15 world records",
 		icon: "murex_logo",
+		starCount: "149",
 		highlights:
 			"Underwater robotics, high-reliability systems, BLDCs, control theory, vision...",
 		href: "https://murexrobotics.com",
 	},
 	{
-		title: "Keychron Enginering",
+		title: "Keychron Engineering",
 		text: "Developing new keyboard products for Keychron. Coming soon!",
 		icon: "keychron_logo",
 		highlights:
@@ -96,10 +125,10 @@ const embeddedSoftwareProjects = [
 	{
 		title: "ZMK",
 		text: "Working on User Experience (ZMK Studio) for the open-source keyboard firmware project",
-		highlights:
-			"C/C++, Zephyr RTOS, embedded system design, etc.",
+		starCount: "2.8k",
+		highlights: "C/C++, Zephyr RTOS, embedded system design, etc.",
 		icon: "zmk_logo",
-		href: "https://kicad.org",
+		href: "https://zmk.dev",
 	},
 	{
 		title: "anyon_e Linux",
@@ -120,8 +149,7 @@ const frontEndProjects = [
 	{
 		title: "byran.tech",
 		text: "Kind of circular, but I developed this website with the Astro framework and modern web technologies.",
-		highlights:
-			"Astro, Tailwind CSS, React injection...",
+		highlights: "Astro, Tailwind CSS, React injection...",
 		icon: "logo",
 		href: "https://github.com/Hello9999901/byran.tech",
 	},
@@ -185,7 +213,9 @@ const graphicsImages = [
 	// Handle clicks on each button.
 	buttons.forEach((button) => {
 		button.addEventListener("click", () => {
-			const targetElement = document.getElementById(button.id + "_target");
+			const targetElement = document.getElementById(
+				button.id + "_target"
+			);
 			if (targetElement) {
 				locomotiveScroll.scrollTo(targetElement);
 			}
@@ -262,12 +292,12 @@ const graphicsImages = [
 		<main class="flex items-center min-h-screen">
 			<div class="pl-12">
 				<h1
-					class="animate text-slate-100 font-[Hubot] font-black text-9xl italic"
+					class="animate text-slate-100 font-[Hubot] font-black xl:text-9xl text-8xl italic"
 				>
 					Hello, I'm Byran _
 				</h1>
 				<div
-					class="animate flex gap-8 py-3 text-slate-100 font-[Mona] text-3xl font-normal subpixel-antialiased italic pl-2"
+					class="animate md:max-w-max max-w-[400px] flex md:flex-row flex-col gap-2 md:gap-8 py-10 md:py-3 text-slate-100 font-[Mona] text-2xl font-normal subpixel-antialiased italic pl-2"
 				>
 					<span
 						id="electrical_engineering"
@@ -332,12 +362,12 @@ const graphicsImages = [
 		>
 			<div>
 				<h1
-					class="text-slate-100 font-[Hubot] font-black text-9xl italic"
+					class="text-slate-100 font-[Hubot] font-black text-7xl md:text-9xl italic"
 				>
 					Electrical Engineering
 				</h1>
 			</div>
-			<div class="flex flex-row p-12 self-center">
+			<div class="flex flex-col items-center md:items-start md:flex-row p-12 self-center">
 				<section>
 					<div class="flex flex-wrap flex-col items-left gap-2 pt-1">
 						{
@@ -354,20 +384,26 @@ const graphicsImages = [
 						}
 					</div>
 				</section>
-				<div class="px-5">
-					<InteractiveCarousel imagePaths={electricalEngineeringImages} client:load />
+				<div class="md:px-5 p-5">
+					<InteractiveCarousel
+						imagePaths={electricalEngineeringImages}
+						client:load
+					/>
 				</div>
 			</div>
 		</section>
-		<section class="min-h-screen w-screen flex flex-col" id="embedded_software_target">
+		<section
+			class="min-h-screen w-screen flex flex-col"
+			id="embedded_software_target"
+		>
 			<div>
 				<h1
-					class="text-slate-100 font-[Hubot] font-black text-9xl italic"
+					class="text-slate-100 font-[Hubot] font-black text-7xl md:text-9xl italic"
 				>
 					Embedded Software
 				</h1>
 			</div>
-			<div class="flex flex-row p-12 self-center">
+			<div class="flex flex-col items-center md:items-start md:flex-row p-12 self-center">
 				<section>
 					<div class="flex flex-wrap flex-col items-left gap-2 pt-1">
 						{
@@ -375,6 +411,7 @@ const graphicsImages = [
 								<ProjectCard
 									title={item.title}
 									text={item.text}
+									starCount={item.starCount}
 									highlights={item.highlights}
 									icon={item.icon}
 									href={item.href}
@@ -383,20 +420,26 @@ const graphicsImages = [
 						}
 					</div>
 				</section>
-				<div class="px-5">
-					<InteractiveCarousel imagePaths={embeddedSoftwareImages} client:load />
+				<div class="md:px-5 p-5">
+					<InteractiveCarousel
+						imagePaths={embeddedSoftwareImages}
+						client:load
+					/>
 				</div>
 			</div>
 		</section>
-		<section class="min-h-screen w-screen flex flex-col" id="front-end_dev_target">
+		<section
+			class="min-h-screen w-screen flex flex-col"
+			id="front-end_dev_target"
+		>
 			<div>
 				<h1
-					class="text-slate-100 font-[Hubot] font-black text-9xl italic"
+					class="text-slate-100 font-[Hubot] font-black text-7xl md:text-9xl italic"
 				>
 					Front-End Development
 				</h1>
 			</div>
-			<div class="flex flex-row p-12 self-center">
+			<div class="flex flex-col items-center md:items-start md:flex-row p-12 self-center">
 				<section>
 					<div class="flex flex-wrap flex-col items-left gap-2 pt-1">
 						{
@@ -412,20 +455,26 @@ const graphicsImages = [
 						}
 					</div>
 				</section>
-				<div class="px-5">
-					<InteractiveCarousel imagePaths={frontEndImages} client:load />
+				<div class="md:px-5 p-5">
+					<InteractiveCarousel
+						imagePaths={frontEndImages}
+						client:load
+					/>
 				</div>
 			</div>
 		</section>
-		<section class="min-h-screen w-screen flex flex-col" id="3d_graphics_target">
+		<section
+			class="min-h-screen w-screen flex flex-col"
+			id="3d_graphics_target"
+		>
 			<div>
 				<h1
-					class="text-slate-100 font-[Hubot] font-black text-9xl italic"
+					class="text-slate-100 font-[Hubot] font-black text-7xl md:text-9xl italic"
 				>
 					3D Graphics
 				</h1>
 			</div>
-			<div class="flex flex-row p-12 self-center">
+			<div class="flex flex-col items-center md:items-start md:flex-row p-12 self-center">
 				<section>
 					<div class="flex flex-wrap flex-col items-left gap-2 pt-1">
 						{
@@ -440,8 +489,11 @@ const graphicsImages = [
 						}
 					</div>
 				</section>
-				<div class="px-5">
-					<InteractiveCarousel imagePaths={graphicsImages} client:load />
+				<div class="md:px-5 p-5">
+					<InteractiveCarousel
+						imagePaths={graphicsImages}
+						client:load
+					/>
 				</div>
 			</div>
 		</section>

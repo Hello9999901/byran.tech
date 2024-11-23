@@ -16,26 +16,26 @@ const { title, text, icon, href, highlights, starCount } = Astro.props
 <a href={href} target="_blank" class="w-fit max-w-96 px-3 py-2 group rounded border flex flex-col gap-2 items-left border-neutral-700 hover:bg-neutral-800 blend">
   <div class="flex flex-row gap-2 items-center">
     <img src={`/${icon}.svg`} height="20" width="20" />
-    <span class="text-lg font-bold font-[Hubot] text-neutral-100 group-hover:text-white blend">
+    <span class="text-md md:text-lg font-bold font-[Hubot] text-neutral-100 group-hover:text-white blend">
       {title}
     </span>
     {starCount && (
-      <div class="text-neutral-400 items-center flex flex-row gap-1 font-[Mona]">
+      <div class="text-neutral-400 text-sm md:text-lg items-center flex flex-row gap-1 font-[Mona]">
         <TiStarOutline />
         {starCount}
       </div>
     )}
   </div>
   <div class="flex">
-    <span class="text-sm text-neutral-300 group-hover:text-white blend">
+    <span class="text-xs md:text-sm text-neutral-300 group-hover:text-white blend">
       {text}
     </span>
   </div>
   <div class="flex flex-col">
-    <span class="text-md text-neutral-300 font-[Hubot] font-medium">
+    <span class="text-sm md:text-md text-neutral-300 font-[Hubot] font-medium">
       Highlights:
     </span>
-    <span class="text-sm text-neutral-400 group-hover:text-white blend">
+    <span class="text-xs md:text-sm text-neutral-400 group-hover:text-white blend">
       {highlights}
     </span>
   </div>
