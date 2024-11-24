@@ -16,34 +16,6 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import InteractiveCarousel from "@components/Carousel";
 
-async function getStarCount(organization: string, repository: string) {
-  const apiUrl = `https://api.github.com/repos/${organization}/${repository}`;
-
-  try {
-    const response = await fetch(apiUrl);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-    return formatStarCount(data.stargazers_count);
-  } catch (error) {
-    console.error('Error fetching star count:', error);
-    return 'N/A';
-  }
-}
-
-function formatStarCount(count: number) {
-  if (count < 1000) {
-    return count.toString();
-  } else if (count < 10000) {
-    return (count / 1000).toFixed(1) + 'k';
-  } else if (count < 1000000) {
-    return Math.floor(count / 1000) + 'k';
-  } else {
-    return (count / 1000000).toFixed(1) + 'm';
-  }
-}
-
 const stack = [
 	{
 		text: "Open-Source Hardware",
@@ -270,7 +242,7 @@ const graphicsImages = [
 
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead />
 	</head>
 	<body class="bg-neutral-900">
 		<div class="-z-10 absolute">
