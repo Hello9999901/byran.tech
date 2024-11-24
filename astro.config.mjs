@@ -8,7 +8,7 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://byran.tech',
+  site: 'https://www.byran.tech',
   integrations: [mdx(), sitemap(), tailwind(), react(), partytown()],
   redirects: {
     "/html/[...slug]": "/blog/[...slug]",
