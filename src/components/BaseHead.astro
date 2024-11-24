@@ -1,17 +1,20 @@
 ---
-// Import the global.css file here so that it is included on
-// all pages through the use of the <BaseHead /> component.
-import '../styles/global.css';
 
-interface Props {
-	title: string;
-	description: string;
-	image?: string;
-}
+import '@/styles/global.css';
+import SEO from "@/components/SEO.astro";
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+import { getImage } from 'astro:assets'
+import faviconSrc from '../images/favicon.png'
+import faviconSvgSrc from '../images/favicon.svg'
 
-const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
+const appleTouchIcon = await getImage({
+  src: faviconSrc,
+  width: 180,
+  height: 180,
+  format: 'png'
+})
+const faviconSvg = await getImage({ src: faviconSvgSrc, format: 'svg' })
+
 ---
 
 <!-- Global Metadata -->
@@ -24,25 +27,10 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <link rel="preload" href="/fonts/Hubot-Sans.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
 
-<!-- Canonical URL -->
-<link rel="canonical" href={canonicalURL} />
-
-<!-- Primary Meta Tags -->
-<title>{title}</title>
-<meta name="title" content={title} />
-<meta name="description" content={description} />
 <script is:inline src="/js/animate.js"></script>
+<SEO />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content={Astro.url} />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, Astro.url)} />
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href={faviconSvg.src} type="image/svg+xml" />
+<link rel="apple-touch-icon" href={appleTouchIcon.src} />
+<link rel="manifest" href="/manifest.json" />
